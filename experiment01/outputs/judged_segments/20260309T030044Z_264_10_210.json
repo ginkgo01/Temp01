@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 210,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"多次直接说“标准解法中…”，还提前点名 J、K、GK 和相似三角形关系，明显像已知题解后的倒推，不像前文自然探索。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"虽承接了“前面坐标法不对”，但随后突然引入点 J、K 及具体相似关系和数值结论，和前文的坐标推导路线断裂明显。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"给出的几何方向和关键结论基本都与标准解一致，如 BD=4、由相似得 CJ=3/4、再用勾股与相似推进，未见明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续在多变量坐标中打转，修复后续明确转向正确的几何构造与相似三角形路径，更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"泄露过多标准题解结构：直接提示用 BCJ 与 BDE 相似、引入 K、GK，并给出 CJ=3/4 等关键中间结果，已接近完整答案路径。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "多次直接说“标准解法中…”，还提前点名 J、K、GK 和相似三角形关系，明显像已知题解后的倒推，不像前文自然探索。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "虽承接了“前面坐标法不对”，但随后突然引入点 J、K 及具体相似关系和数值结论，和前文的坐标推导路线断裂明显。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "给出的几何方向和关键结论基本都与标准解一致，如 BD=4、由相似得 CJ=3/4、再用勾股与相似推进，未见明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续在多变量坐标中打转，修复后续明确转向正确的几何构造与相似三角形路径，更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "泄露过多标准题解结构：直接提示用 BCJ 与 BDE 相似、引入 K、GK，并给出 CJ=3/4 等关键中间结果，已接近完整答案路径。"
+      }
+    },
+    "attempts_used": 2
+  }
+}

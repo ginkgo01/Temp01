@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1981.json",
+  "dataset_idx": 495,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 25,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"是在前文已基本得出答案后的复核性思考，检查零点唯一性、端点和样例值，都像自然验算过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文“再检查有没有遗漏”的语境展开，没有突然引入前文未铺垫的新条件或结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"对数定义域、分母不为零、端点排除、x=12的排除及单调性判断都正确，无明显逻辑错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"比原始后续更具体地验证了唯一零点、端点合法性和不等式变形，能更稳固地推进到正确结论。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽给出最终区间，但这是在前文几乎解完后的正常收束，没有额外暴露超出当前推理阶段的完整题解模板。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "是在前文已基本得出答案后的复核性思考，检查零点唯一性、端点和样例值，都像自然验算过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文“再检查有没有遗漏”的语境展开，没有突然引入前文未铺垫的新条件或结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "对数定义域、分母不为零、端点排除、x=12的排除及单调性判断都正确，无明显逻辑错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "比原始后续更具体地验证了唯一零点、端点合法性和不等式变形，能更稳固地推进到正确结论。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽给出最终区间，但这是在前文几乎解完后的正常收束，没有额外暴露超出当前推理阶段的完整题解模板。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

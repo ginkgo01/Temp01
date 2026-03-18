@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已提出的“固定A、看其余三点排列”和“交替排列才相交”的思路，像是自然推进而非完全事后倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文关于圆排列、固定A、统计相交顺序的讨论基本一致，虽然有些重复，但没有明显跳脱。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"结论和核心计数都对：固定A后其余3点有6种顺序，其中仅A-C-B-D与A-D-B-C两类导致AB与CD相交，因此概率为1/3。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停在准备枚举，修复后续明确给出判定条件、完成计数并得到正确答案，更推进了解题。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"已经直接给出完整计数结构和最终答案1/3，基本等于把标准解法核心结论提前说完了。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已提出的“固定A、看其余三点排列”和“交替排列才相交”的思路，像是自然推进而非完全事后倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于圆排列、固定A、统计相交顺序的讨论基本一致，虽然有些重复，但没有明显跳脱。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "结论和核心计数都对：固定A后其余3点有6种顺序，其中仅A-C-B-D与A-D-B-C两类导致AB与CD相交，因此概率为1/3。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停在准备枚举，修复后续明确给出判定条件、完成计数并得到正确答案，更推进了解题。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经直接给出完整计数结构和最终答案1/3，基本等于把标准解法核心结论提前说完了。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

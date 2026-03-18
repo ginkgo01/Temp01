@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 55,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"前文已经推到 k≡3(mod7)、n=3k+1 以及候选解 (16,13)，修复后续基本是在这些结果上继续确认，属于自然延伸。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"内容与前文两种参数化思路一致，也顺着前文对特解的讨论推进到通解检验，整体衔接尚自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"各步代数推导正确：k 的同余类、参数化 m=32-4k,n=3k+1、通解 m=16+4t,n=13-3t 以及最小值 3 都无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只试差为1和2，修复后续直接利用参数化和通解完成了系统验证，更能推进到正确结论。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"修复后续几乎完整展开了整道题的解法结构，并明确锁定答案 3，暴露程度偏高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "前文已经推到 k≡3(mod7)、n=3k+1 以及候选解 (16,13)，修复后续基本是在这些结果上继续确认，属于自然延伸。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "内容与前文两种参数化思路一致，也顺着前文对特解的讨论推进到通解检验，整体衔接尚自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "各步代数推导正确：k 的同余类、参数化 m=32-4k,n=3k+1、通解 m=16+4t,n=13-3t 以及最小值 3 都无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只试差为1和2，修复后续直接利用参数化和通解完成了系统验证，更能推进到正确结论。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "修复后续几乎完整展开了整道题的解法结构，并明确锁定答案 3，暴露程度偏高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

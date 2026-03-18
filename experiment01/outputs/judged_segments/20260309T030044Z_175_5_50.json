@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接提到“标准题解”并借其提示推进，明显不像在当前上下文下自然生成的思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"能部分衔接前文的 k 法与重排思路，但中途引入“标准题解”，且对 k 的含义有混用，过渡不够自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"整体方向和结论没有偏离正确答案，但“k=4,5”的讨论与前面“k≡3 mod7”的 k 不是同一参数，论证有变量混淆。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的零散试值，修复后续更聚焦于把目标转化为接近问题，明显更有助于走向正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接暴露了“标准题解”的核心转化——让 7m 接近 100，泄露了解题主结构。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接提到“标准题解”并借其提示推进，明显不像在当前上下文下自然生成的思考。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "能部分衔接前文的 k 法与重排思路，但中途引入“标准题解”，且对 k 的含义有混用，过渡不够自然。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "整体方向和结论没有偏离正确答案，但“k=4,5”的讨论与前面“k≡3 mod7”的 k 不是同一参数，论证有变量混淆。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的零散试值，修复后续更聚焦于把目标转化为接近问题，明显更有助于走向正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接暴露了“标准题解”的核心转化——让 7m 接近 100，泄露了解题主结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

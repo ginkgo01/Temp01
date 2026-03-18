@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"大体沿着前文已提出的 Burnside 思路推进，属于可能的自然思考；但“这与标准答案一致”明显带有已知结果后的视角。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"它直接承接前文对“固定一人”与“除以4”冲突的疑惑，继续用 Burnside 处理旋转，对上下文衔接较自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"对 90°、180°、270° 旋转下无不动点的判断正确，因此轨道数为 8!/4，数学结论无误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续纠结座位编号，修复后续直接完成关键的不动点分析，明显更接近并到达正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"它几乎直接给出完整题解框架和最终结论，甚至提到“与标准答案一致”，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "大体沿着前文已提出的 Burnside 思路推进，属于可能的自然思考；但“这与标准答案一致”明显带有已知结果后的视角。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "它直接承接前文对“固定一人”与“除以4”冲突的疑惑，继续用 Burnside 处理旋转，对上下文衔接较自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "对 90°、180°、270° 旋转下无不动点的判断正确，因此轨道数为 8!/4，数学结论无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续纠结座位编号，修复后续直接完成关键的不动点分析，明显更接近并到达正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "它几乎直接给出完整题解框架和最终结论，甚至提到“与标准答案一致”，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

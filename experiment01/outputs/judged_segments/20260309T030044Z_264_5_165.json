@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 165,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"明显以“标准题解中”“最终…结论”这种已知全解的视角回看，不像前文自然摸索出来的后续思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"虽然承接了“坐标法有问题”的反思，但随后直接引入BD=4、辅助点J、GK、BH=GK等前文从未建立的关键结论，跳步较大。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所提到的几何关系和计算方向与标准解一致，没有明显数学错误或自相矛盾。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续困在缩放与坐标误区中，修复后续明确转向勾股与相似三角形，显著更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"过度暴露了标准解结构，几乎把关键辅助点、核心相似关系和最终等量关系都提前点明，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "明显以“标准题解中”“最终…结论”这种已知全解的视角回看，不像前文自然摸索出来的后续思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "虽然承接了“坐标法有问题”的反思，但随后直接引入BD=4、辅助点J、GK、BH=GK等前文从未建立的关键结论，跳步较大。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所提到的几何关系和计算方向与标准解一致，没有明显数学错误或自相矛盾。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续困在缩放与坐标误区中，修复后续明确转向勾股与相似三角形，显著更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "过度暴露了标准解结构，几乎把关键辅助点、核心相似关系和最终等量关系都提前点明，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

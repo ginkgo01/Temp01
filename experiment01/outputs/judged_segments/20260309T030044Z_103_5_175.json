@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 175,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"直接引用“标准解法”并给出其分解结构与λ>3的关键信息，明显像已知题解后的倒推，不像顺着前文自然产生的想法。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"虽与前文都在讨论f(f(x))=x，但突然引入精确因式分解和判别式路线，缺少从前文推到这些结论的过渡。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"所述方向在数学上基本正确：提取不动点因子、看剩余二次式判别式，并进一步检查区间与f(x)≠x条件。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续停留在代换受阻，修复后续明确转向有效的因式分解与判别式分析，更接近正确解法。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"过度暴露了标准题解的核心结构，甚至点出λ>3这一关键结论，泄露程度明显过高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接引用“标准解法”并给出其分解结构与λ>3的关键信息，明显像已知题解后的倒推，不像顺着前文自然产生的想法。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "虽与前文都在讨论f(f(x))=x，但突然引入精确因式分解和判别式路线，缺少从前文推到这些结论的过渡。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所述方向在数学上基本正确：提取不动点因子、看剩余二次式判别式，并进一步检查区间与f(x)≠x条件。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续停留在代换受阻，修复后续明确转向有效的因式分解与判别式分析，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "过度暴露了标准题解的核心结构，甚至点出λ>3这一关键结论，泄露程度明显过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

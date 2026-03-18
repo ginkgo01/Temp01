@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已设的 p、q 和按和为7分类讨论的思路，推导路径像正常做题过程，不算明显倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文关于对面关系、p+q=1/3、枚举和为7配对的讨论衔接自然，只是把分类整理得更简洁。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"分类计数、概率方程和后续求解都正确，最终得到 p=5/24，答案 29 无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停留在分类框架，修复后续建立了正确方程并成功解出答案，明显推进了解题。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接给出了完整解法结构、关键代换和最终答案，暴露程度较高，像把标准题解压缩后直接写出。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已设的 p、q 和按和为7分类讨论的思路，推导路径像正常做题过程，不算明显倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于对面关系、p+q=1/3、枚举和为7配对的讨论衔接自然，只是把分类整理得更简洁。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "分类计数、概率方程和后续求解都正确，最终得到 p=5/24，答案 29 无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停留在分类框架，修复后续建立了正确方程并成功解出答案，明显推进了解题。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出了完整解法结构、关键代换和最终答案，暴露程度较高，像把标准题解压缩后直接写出。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"末句直接说“这与标准答案一致”，明显带有已知答案后的回填痕迹，不像自然推演中的自发思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"整体紧接前文对“是否除以4”“是否还要考虑其他对称性”的疑问展开，衔接自然，没有明显跳脱。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"按8个固定座位计数为8!，再按正方形的4种旋转等价除以4，得到10080；且题目只说明旋转等价，不需计入翻转。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的反复犹豫，修复后续明确确认了应除以4并得到正确结果，明显更推进到正解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"不仅给出完整解法和最终数值，还直接提到“标准答案一致”，泄露感很强，不像普通中途思路。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "末句直接说“这与标准答案一致”，明显带有已知答案后的回填痕迹，不像自然推演中的自发思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "整体紧接前文对“是否除以4”“是否还要考虑其他对称性”的疑问展开，衔接自然，没有明显跳脱。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "按8个固定座位计数为8!，再按正方形的4种旋转等价除以4，得到10080；且题目只说明旋转等价，不需计入翻转。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复犹豫，修复后续明确确认了应除以4并得到正确结果，明显更推进到正解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅给出完整解法和最终数值，还直接提到“标准答案一致”，泄露感很强，不像普通中途思路。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

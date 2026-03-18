@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 70,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"虽可承接前文已求出sin18°，但“这与标准答案一致”明显带入了已知答案的视角，不像自然思考过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"前文已经基本推出sin18°=(√5-1)/4，只是在反复混淆；修复后续先澄清该值再代入，衔接自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"sin²18°与sin³18°的计算都正确，相加得到1/8，数学上无明显错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原后续的重复犹豫，修复后续直接完成代入和化简，明显更接近并到达正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接提到“标准答案一致”并完整收束到最终结论，暴露了外部答案信息，不够像普通做题时的自然续写。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "虽可承接前文已求出sin18°，但“这与标准答案一致”明显带入了已知答案的视角，不像自然思考过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "前文已经基本推出sin18°=(√5-1)/4，只是在反复混淆；修复后续先澄清该值再代入，衔接自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "sin²18°与sin³18°的计算都正确，相加得到1/8，数学上无明显错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原后续的重复犹豫，修复后续直接完成代入和化简，明显更接近并到达正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接提到“标准答案一致”并完整收束到最终结论，暴露了外部答案信息，不够像普通做题时的自然续写。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"延续了前文“固定A、按圆周顺序计数、交替则相交”的探索路线，并保留了“需验证”“需要确认”等试探语气，不像突然切换到标准题解视角。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"与前文提到的圆排列、固定A、A-C-B-D型交错等内容衔接自然，没有凭空引入全新核心方法。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心判断正确：固定A后其余三点有6种相对顺序，只有两种交替次序使AB与CD相交，因此概率为1/3。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的反复犹豫，修复后续已经明确了计数框架和有利情形，明显更接近正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接给出了“6种中2种有利，因此概率1/3”的完整结论，并多次重复，基本已把解法和答案全部暴露出来。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文“固定A、按圆周顺序计数、交替则相交”的探索路线，并保留了“需验证”“需要确认”等试探语气，不像突然切换到标准题解视角。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文提到的圆排列、固定A、A-C-B-D型交错等内容衔接自然，没有凭空引入全新核心方法。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心判断正确：固定A后其余三点有6种相对顺序，只有两种交替次序使AB与CD相交，因此概率为1/3。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复犹豫，修复后续已经明确了计数框架和有利情形，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出了“6种中2种有利，因此概率1/3”的完整结论，并多次重复，基本已把解法和答案全部暴露出来。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

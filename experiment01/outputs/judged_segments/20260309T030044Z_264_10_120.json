@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 120,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"多次直接说“标准解法中…”，并提前点出 J、GK 等关键结构，明显像已知完整题解后的倒推。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"前半段能接上前文“坐标法走偏”的处境，但后半段突然引入 J、K、GK 等未铺垫对象，衔接较生硬。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"整体方向与正解一致，BD 用勾股、相似三角形等说法基本合理，但若干关键对应关系未说明清楚，正确性不算扎实。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续在错误坐标计算中打转，修复后续明显转向相似三角形与勾股定理，更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"几乎把标准题解的骨架直接透露出来了，包括辅助点 J、后续求 CJ/GJ/EJ/GK 的流程，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "多次直接说“标准解法中…”，并提前点出 J、GK 等关键结构，明显像已知完整题解后的倒推。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "前半段能接上前文“坐标法走偏”的处境，但后半段突然引入 J、K、GK 等未铺垫对象，衔接较生硬。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "整体方向与正解一致，BD 用勾股、相似三角形等说法基本合理，但若干关键对应关系未说明清楚，正确性不算扎实。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续在错误坐标计算中打转，修复后续明显转向相似三角形与勾股定理，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎把标准题解的骨架直接透露出来了，包括辅助点 J、后续求 CJ/GJ/EJ/GK 的流程，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

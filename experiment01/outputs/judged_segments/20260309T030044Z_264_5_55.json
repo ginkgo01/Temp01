@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 55,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"直接提到“标准解法”并引入交点J和相似三角形，明显像知道题解后倒推，不像前文自然探索产生的想法。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文还在纠结坐标设定与图不按比例，修复后续突然转向“标准解法”和新点J，衔接生硬。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"“BH应与EF垂直且长度相等”是明显错误；在矩形BEFH中，BH与EF应平行且相等。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只重新设坐标，修复后续至少抓住了3-4-5关系、辅助线和相似三角形方向，更接近正确解法。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接透露了标准解法的关键结构：作交点J、用相似三角形和比例分割，泄露程度较高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接提到“标准解法”并引入交点J和相似三角形，明显像知道题解后倒推，不像前文自然探索产生的想法。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在纠结坐标设定与图不按比例，修复后续突然转向“标准解法”和新点J，衔接生硬。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“BH应与EF垂直且长度相等”是明显错误；在矩形BEFH中，BH与EF应平行且相等。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只重新设坐标，修复后续至少抓住了3-4-5关系、辅助线和相似三角形方向，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接透露了标准解法的关键结构：作交点J、用相似三角形和比例分割，泄露程度较高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

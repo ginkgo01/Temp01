@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/number_theory/838.json",
+  "dataset_idx": 197,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"是在前文已基本算出指数范围、只剩反复怀疑的基础上做复核与枚举，像自然延续，不算明显倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文的疑问点：是否漏质因数、指数限制是否正确、组合数是否真为6，衔接自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"质因数分解、指数约束、组合计数和最终列举的x值都正确，无明显数学或逻辑错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续的重复犹豫，修复后续明确复核并完成枚举验证，更有效推进到正确结论。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"最后一步直接枚举出全部x值并完整收束到答案，和标准题解结构过于接近，暴露较充分。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "是在前文已基本算出指数范围、只剩反复怀疑的基础上做复核与枚举，像自然延续，不算明显倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文的疑问点：是否漏质因数、指数限制是否正确、组合数是否真为6，衔接自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "质因数分解、指数约束、组合计数和最终列举的x值都正确，无明显数学或逻辑错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续的重复犹豫，修复后续明确复核并完成枚举验证，更有效推进到正确结论。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "最后一步直接枚举出全部x值并完整收束到答案，和标准题解结构过于接近，暴露较充分。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

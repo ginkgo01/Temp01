@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"前文还在犹豫圆的相切关系与构型，修复版却直接锁定关键结构并一路算到答案，明显有事后倒推感。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"衔接较跳，直接引入“Q、R、S在与BC平行的同一直线上”等关键结论，前文并未明确建立。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心几何关系和角度结论是对的，最终能正确推出三角形PQS的最小角为30°；虽有个别论证表述略粗，但无实质性错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"比原始后续的反复猜测明显更有效，已经抓住等边、等腰与共线关系，实质推进到正确解法。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"基本把标准题解主线和最终答案都完整展开了，泄露程度过高，不像普通中途思考。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "前文还在犹豫圆的相切关系与构型，修复版却直接锁定关键结构并一路算到答案，明显有事后倒推感。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "衔接较跳，直接引入“Q、R、S在与BC平行的同一直线上”等关键结论，前文并未明确建立。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心几何关系和角度结论是对的，最终能正确推出三角形PQS的最小角为30°；虽有个别论证表述略粗，但无实质性错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "比原始后续的反复猜测明显更有效，已经抓住等边、等腰与共线关系，实质推进到正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "基本把标准题解主线和最终答案都完整展开了，泄露程度过高，不像普通中途思考。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 35,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已提出的“固定A、数圆排列、看交错顺序”的思路，像是在继续尝试枚举，而非突然换用全新视角。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文关于(4-1)!=6、固定A、交替排列导致相交等讨论衔接自然，没有凭空引入陌生关键结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"固定A后其余三点有6种顺序，其中仅A-C-B-D与A-D-B-C两种交错，得到2/6=1/3，数学上正确。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续仍停留在泛泛提问，这个版本已经明确了计数对象、相交判据和结果，明显更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接给出了完整枚举结论和最终概率1/3，基本把解法走完了，暴露程度偏高，不太像保留中的中间思考。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已提出的“固定A、数圆排列、看交错顺序”的思路，像是在继续尝试枚举，而非突然换用全新视角。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于(4-1)!=6、固定A、交替排列导致相交等讨论衔接自然，没有凭空引入陌生关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "固定A后其余三点有6种顺序，其中仅A-C-B-D与A-D-B-C两种交错，得到2/6=1/3，数学上正确。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续仍停留在泛泛提问，这个版本已经明确了计数对象、相交判据和结果，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出了完整枚举结论和最终概率1/3，基本把解法走完了，暴露程度偏高，不太像保留中的中间思考。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 55,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"围绕前文的核心冲突（7! 与 8!/4、固定位置法与 Burnside）继续反思，像是自然延伸出的中途思考，不像直接倒推终解。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"与前文“可能固定位置的方法有错”衔接顺畅，继续讨论旋转对称、群阶和不动点，没有明显断裂。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"整体方向基本对，但“180度旋转可能存在不动点”以及“固定一个人可能无法完全消除重复计数”都不够准确，存在误导性。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"比原后续更聚焦于关键处：重新检查旋转循环结构和 Burnside 的不动点分析，明显更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"T\",\n    \"reason\": \"没有直接给出最终答案或完整定稿式证明，只是提出应重新核查并暗示除以4的方向，仍保留了探索过程感。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "围绕前文的核心冲突（7! 与 8!/4、固定位置法与 Burnside）继续反思，像是自然延伸出的中途思考，不像直接倒推终解。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“可能固定位置的方法有错”衔接顺畅，继续讨论旋转对称、群阶和不动点，没有明显断裂。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "整体方向基本对，但“180度旋转可能存在不动点”以及“固定一个人可能无法完全消除重复计数”都不够准确，存在误导性。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "比原后续更聚焦于关键处：重新检查旋转循环结构和 Burnside 的不动点分析，明显更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接给出最终答案或完整定稿式证明，只是提出应重新核查并暗示除以4的方向，仍保留了探索过程感。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

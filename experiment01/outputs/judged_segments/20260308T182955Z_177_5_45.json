@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 45,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"出现“这与标准答案一致”的表述，明显带有已知完整答案后的回看痕迹，不像自然推理过程。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文已算出PS=2并指出P与S相切，修复后续却说“PQ和PS并非直接相切”，与前文衔接不一致。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"“PS=2却并非直接相切”这一判断明显错误；虽然后续角度算对了，但中间存在明确数学/逻辑错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只说要算边长，修复后续实际算出了PQS三边并用余弦定理得到30°，更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接写出“这与标准答案一致”并给出最终角度，泄露了答案信息，过于像已知题解后的补写。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“这与标准答案一致”的表述，明显带有已知完整答案后的回看痕迹，不像自然推理过程。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文已算出PS=2并指出P与S相切，修复后续却说“PQ和PS并非直接相切”，与前文衔接不一致。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“PS=2却并非直接相切”这一判断明显错误；虽然后续角度算对了，但中间存在明确数学/逻辑错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只说要算边长，修复后续实际算出了PQS三边并用余弦定理得到30°，更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接写出“这与标准答案一致”并给出最终角度，泄露了答案信息，过于像已知题解后的补写。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

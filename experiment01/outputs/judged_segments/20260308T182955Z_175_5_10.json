@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文想通过设差值变量来最小化的思路，按代入与同余逐步推进，像自然解题过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文“设差值、分析整数条件”的方向衔接顺畅，没有突然引入陌生结论或方法。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"设k=m-n后得到7n+3k=100、解出k≡3(mod 7)及示例(m,n)=(16,13)都正确，最小值为3。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停在k=7t+3，修复后续进一步找到可行解并完成最小值判断，更接近完整正确解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接照搬标准题解结构，也不是一开始就暴露答案，而是在已有思路上自然推到结果。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文想通过设差值变量来最小化的思路，按代入与同余逐步推进，像自然解题过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“设差值、分析整数条件”的方向衔接顺畅，没有突然引入陌生结论或方法。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "设k=m-n后得到7n+3k=100、解出k≡3(mod 7)及示例(m,n)=(16,13)都正确，最小值为3。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停在k=7t+3，修复后续进一步找到可行解并完成最小值判断，更接近完整正确解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接照搬标准题解结构，也不是一开始就暴露答案，而是在已有思路上自然推到结果。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

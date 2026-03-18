@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/675.json",
+  "dataset_idx": 62,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"出现“标准题解中使用了另一种方法”的表述，明显像已知完整题解后的回看，不像自然思考过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"前半段顺着已算出的特征方程继续求特征值和奇异值，衔接基本自然；后半段虽略显多余，但未破坏主线。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"特征方程、特征值、奇异值和最终结论C=4都正确，没有明显数学错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"原始后续已经顺利得到正确答案，修复版并未更有效推进，反而加入了与解题推进无关的元评论。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接提到“标准题解”及其方法，暴露了外部完整解法视角，泄露感明显。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“标准题解中使用了另一种方法”的表述，明显像已知完整题解后的回看，不像自然思考过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "前半段顺着已算出的特征方程继续求特征值和奇异值，衔接基本自然；后半段虽略显多余，但未破坏主线。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "特征方程、特征值、奇异值和最终结论C=4都正确，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "原始后续已经顺利得到正确答案，修复版并未更有效推进，反而加入了与解题推进无关的元评论。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接提到“标准题解”及其方法，暴露了外部完整解法视角，泄露感明显。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

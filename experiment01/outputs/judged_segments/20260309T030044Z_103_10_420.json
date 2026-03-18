@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 420,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接说“标准解法”“标准答案”，明显像已知完整解后倒推，不像前文自然思考延续。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还在代入 λ=4 试根，后文突然引入整体因式分解、判别式和最终区间，衔接很突兀。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"核心方向和最终结论是对的，但中间论证不完整：忽略了判别式在 λ=0 也非负，且未真正证明二次式根都对应区间内的非不动点。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"虽然跳跃很大，但确实把思路转到了正确的因式分解与判别式分析上，比原始后续更接近正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"过度暴露标准题解结构，还显式提到“标准答案一致”，泄露感很强。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“标准解法”“标准答案”，明显像已知完整解后倒推，不像前文自然思考延续。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在代入 λ=4 试根，后文突然引入整体因式分解、判别式和最终区间，衔接很突兀。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "核心方向和最终结论是对的，但中间论证不完整：忽略了判别式在 λ=0 也非负，且未真正证明二次式根都对应区间内的非不动点。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "虽然跳跃很大，但确实把思路转到了正确的因式分解与判别式分析上，比原始后续更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "过度暴露标准题解结构，还显式提到“标准答案一致”，泄露感很强。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

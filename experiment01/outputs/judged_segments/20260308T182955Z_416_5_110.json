@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 110,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"仍沿用前文已得到的\\\\(\\\\sin18^\\\\circ=(\\\\sqrt5-1)/4\\\\)做代入计算，像是自然延续的想法。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文其实已经算出了\\\\(\\\\sin^2 18^\\\\circ\\\\)和\\\\(\\\\sin^3 18^\\\\circ\\\\)，修复后续又从头重算，和紧邻上下文衔接略显回退。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"涉及的平方、立方及相加结论都正确，最终得到\\\\(1/8\\\\)无误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"原始后续已经直接完成了相加并得到答案，修复版反而重复前面步骤、细节更少，未明显更推进。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有引入标准题解中的另一套结构，只是在已有结果基础上继续代数化简。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "仍沿用前文已得到的\\(\\sin18^\\circ=(\\sqrt5-1)/4\\)做代入计算，像是自然延续的想法。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文其实已经算出了\\(\\sin^2 18^\\circ\\)和\\(\\sin^3 18^\\circ\\)，修复后续又从头重算，和紧邻上下文衔接略显回退。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "涉及的平方、立方及相加结论都正确，最终得到\\(1/8\\)无误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "原始后续已经直接完成了相加并得到答案，修复版反而重复前面步骤、细节更少，未明显更推进。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有引入标准题解中的另一套结构，只是在已有结果基础上继续代数化简。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/prealgebra/1558.json",
+  "dataset_idx": 44,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"出现“与标准答案一致”的说法，带有已知结果后回看验证的痕迹，不像单纯顺着前文自然思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"延续了前文的坐标设定和前两步位移，先补第三步再算直线距离，衔接自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"终点坐标、位移分量及勾股定理计算都正确，结果为1.25。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"原始后续本来就已顺利推到正确答案，修复版没有明显提升推进质量，反而加入了答案对照痕迹。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"明确写出“与标准答案一致”，暴露了外部已知答案的信息，不像正常做题过程。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“与标准答案一致”的说法，带有已知结果后回看验证的痕迹，不像单纯顺着前文自然思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "延续了前文的坐标设定和前两步位移，先补第三步再算直线距离，衔接自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "终点坐标、位移分量及勾股定理计算都正确，结果为1.25。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "原始后续本来就已顺利推到正确答案，修复版没有明显提升推进质量，反而加入了答案对照痕迹。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "明确写出“与标准答案一致”，暴露了外部已知答案的信息，不像正常做题过程。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

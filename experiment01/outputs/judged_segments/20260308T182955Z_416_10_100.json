@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 100,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已得到的sin18°、sin²18°与sin³18°思路，只是更稳定地整理计算，没有明显事后倒推痕迹。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文自然衔接，继续沿用已设的s=sin18°及其代数结果，没有凭空引入新方法或关键结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"平方、立方、展开、约分及最终相加都正确，结论1/8无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续更简洁清晰地完成收尾与复核，能稳定推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有引入标准题解中的另一套结构，也未提前泄露额外关键技巧，只是在现有推导上完成计算。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已得到的sin18°、sin²18°与sin³18°思路，只是更稳定地整理计算，没有明显事后倒推痕迹。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文自然衔接，继续沿用已设的s=sin18°及其代数结果，没有凭空引入新方法或关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "平方、立方、展开、约分及最终相加都正确，结论1/8无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续更简洁清晰地完成收尾与复核，能稳定推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有引入标准题解中的另一套结构，也未提前泄露额外关键技巧，只是在现有推导上完成计算。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

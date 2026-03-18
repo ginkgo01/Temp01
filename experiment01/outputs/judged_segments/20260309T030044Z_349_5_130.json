@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 130,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"M\", \"reason\": \"前几句像是在顺着前文矛盾继续反思，但“确认标准题解中…”明显带有已知外部答案后的回填痕迹。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文对7!与8!/4矛盾的困惑，回到Burnside并收束到轨道计数，整体衔接自然。\"},\n  \"correctness\": {\"label\": \"M\", \"reason\": \"非恒等旋转无不动点、结论8!/4=10080是对的，但把“固定一人法”失效归因于‘对称群大小与人数不同’并不准确。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续原地打转，修复版明确排除了非恒等旋转的不动点并推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接点出最终答案并显式提到‘标准题解’，泄露过多，不像真实做题中的自然中间思考。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "前几句像是在顺着前文矛盾继续反思，但“确认标准题解中…”明显带有已知外部答案后的回填痕迹。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文对7!与8!/4矛盾的困惑，回到Burnside并收束到轨道计数，整体衔接自然。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "非恒等旋转无不动点、结论8!/4=10080是对的，但把“固定一人法”失效归因于‘对称群大小与人数不同’并不准确。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续原地打转，修复版明确排除了非恒等旋转的不动点并推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接点出最终答案并显式提到‘标准题解’，泄露过多，不像真实做题中的自然中间思考。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

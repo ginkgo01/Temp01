@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 150,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"明显带有“已知标准题解后倒推”的痕迹，直接说“标准解法中”并引入J、K及精确数值，不像前文自然推演。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文一直在做坐标/向量分析，修复后续突然切到相似三角形并引入新点J、K，缺少过渡，衔接生硬。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"“BE和BF作为邻边更合理”是明显错误，BF是矩形对角线不是边；末句把GK直接当作BH也缺少必要论证。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"尽管表达方式有问题，但它把思路从原先错误分支拉回到接近正确的相似三角形路线，明显更接近正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"几乎直接暴露了标准解的核心结构、辅助点、关键中间量和最终长度，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "明显带有“已知标准题解后倒推”的痕迹，直接说“标准解法中”并引入J、K及精确数值，不像前文自然推演。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文一直在做坐标/向量分析，修复后续突然切到相似三角形并引入新点J、K，缺少过渡，衔接生硬。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“BE和BF作为邻边更合理”是明显错误，BF是矩形对角线不是边；末句把GK直接当作BH也缺少必要论证。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "尽管表达方式有问题，但它把思路从原先错误分支拉回到接近正确的相似三角形路线，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎直接暴露了标准解的核心结构、辅助点、关键中间量和最终长度，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

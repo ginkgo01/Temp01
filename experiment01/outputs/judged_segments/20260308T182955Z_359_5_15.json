@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1407.json",
+  "dataset_idx": 359,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 15,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"沿着前缀已得到的\\\\((x+y+z)S=24\\\\)和立方和恒等式继续联立，推进方式自然，不算明显倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文衔接顺畅，只是把\\\\(x+y+z\\\\)记为\\\\(s1\\\\)，没有凭空引入前文未铺垫的关键结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"恒等式使用、代入和化简都正确，得到\\\\(s1^3=64\\\\)、\\\\(s1=4\\\\)、\\\\(S=6\\\\)在题目语境下成立。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停在方程变形，修复后续进一步联立并解出了目标量，明显更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接给出了完整联立求解链条和最终答案，基本暴露了标准题解结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "沿着前缀已得到的\\((x+y+z)S=24\\)和立方和恒等式继续联立，推进方式自然，不算明显倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文衔接顺畅，只是把\\(x+y+z\\)记为\\(s1\\)，没有凭空引入前文未铺垫的关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "恒等式使用、代入和化简都正确，得到\\(s1^3=64\\)、\\(s1=4\\)、\\(S=6\\)在题目语境下成立。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停在方程变形，修复后续进一步联立并解出了目标量，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出了完整联立求解链条和最终答案，基本暴露了标准题解结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

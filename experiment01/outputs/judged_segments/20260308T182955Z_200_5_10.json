@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/prealgebra/2086.json",
+  "dataset_idx": 200,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文“先算出42 baps=70 yaps，再检查并合并比例”的思路，像是在复核结果而非倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已得到70 yaps、并想再检查一遍和建立直接比率的内容衔接自然，仅有少量重复。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"换算与比例推导都正确：42 baps=70 yaps=40 daps，直接比率法也一致。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停留在列关系，修复后续完成了换算、校验并得到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然给出了完整解和答案，但属于前文已接近得解后的正常收束与验算，没有明显暴露外部标准题解痕迹。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文“先算出42 baps=70 yaps，再检查并合并比例”的思路，像是在复核结果而非倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已得到70 yaps、并想再检查一遍和建立直接比率的内容衔接自然，仅有少量重复。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "换算与比例推导都正确：42 baps=70 yaps=40 daps，直接比率法也一致。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停留在列关系，修复后续完成了换算、校验并得到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然给出了完整解和答案，但属于前文已接近得解后的正常收束与验算，没有明显暴露外部标准题解痕迹。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

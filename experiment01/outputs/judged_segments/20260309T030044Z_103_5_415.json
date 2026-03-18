@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 415,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"直接提到“标准解法”并给出判别式与结论，明显像已知题解后的倒推，不像前文自然探索。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文还在尝试代入和展开 λ=4 的情形，修复后续却突然引入整体因式分解与判别式，缺少过渡。\"},\n  \"correctness\": {\"label\": \"M\", \"reason\": \"核心方向与最终答案一致，但将判别式非负简化说成 λ≥3，略过了 λ=0 的情形，且若干关键验证未实际完成。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续试根，修复后续转向因式分解、判别式和排除不动点，更接近正确解法。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"过度暴露标准题解结构，直接给出二次因子、判别式形式和最终范围，泄露明显。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接提到“标准解法”并给出判别式与结论，明显像已知题解后的倒推，不像前文自然探索。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在尝试代入和展开 λ=4 的情形，修复后续却突然引入整体因式分解与判别式，缺少过渡。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "核心方向与最终答案一致，但将判别式非负简化说成 λ≥3，略过了 λ=0 的情形，且若干关键验证未实际完成。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续试根，修复后续转向因式分解、判别式和排除不动点，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "过度暴露标准题解结构，直接给出二次因子、判别式形式和最终范围，泄露明显。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

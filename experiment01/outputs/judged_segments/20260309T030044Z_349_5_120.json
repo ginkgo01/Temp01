@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 120,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接说“标准题解通过…得到8!/4”明显像已知答案后的倒推，不像沿着前文自然摸索。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"总体承接了前文对固定位置法与Burnside矛盾的讨论，但中间直接跳到“标准题解”和结论，衔接略生硬。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"8!/4与Burnside不动点为0的判断是对的，但“固定位置法未完全消除所有对称性”并不准确，问题更在于一个人不能通过旋转到任意8个座位。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相较原始后续，它明显把思路拉回到正确的按4种旋转分组的方向，更接近正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"显式引用“标准题解”、直接给出8!/4和最终正确答案，泄露了解题结构与结果。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“标准题解通过…得到8!/4”明显像已知答案后的倒推，不像沿着前文自然摸索。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "总体承接了前文对固定位置法与Burnside矛盾的讨论，但中间直接跳到“标准题解”和结论，衔接略生硬。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "8!/4与Burnside不动点为0的判断是对的，但“固定位置法未完全消除所有对称性”并不准确，问题更在于一个人不能通过旋转到任意8个座位。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续，它明显把思路拉回到正确的按4种旋转分组的方向，更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "显式引用“标准题解”、直接给出8!/4和最终正确答案，泄露了解题结构与结果。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

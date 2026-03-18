@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"语气从前文的犹豫推敲突然变成结论式判定，直接给出“应为8!/4”和最终答案，像是已知题解后的回填。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"延续了前文“除以4还是固定一人”的主线，但对7!与8!/4矛盾的关键缺口没有自然展开，衔接略跳。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心结论8!/4=10080正确；把非恒等旋转视为无不动点也正确，整体无明显数学性错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续卡在座位映射细节，修复后续明显更接近并基本到达正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"几乎直接复现标准解结构，并明确给出最终答案10080，泄露程度较高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "语气从前文的犹豫推敲突然变成结论式判定，直接给出“应为8!/4”和最终答案，像是已知题解后的回填。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "延续了前文“除以4还是固定一人”的主线，但对7!与8!/4矛盾的关键缺口没有自然展开，衔接略跳。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心结论8!/4=10080正确；把非恒等旋转视为无不动点也正确，整体无明显数学性错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续卡在座位映射细节，修复后续明显更接近并基本到达正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎直接复现标准解结构，并明确给出最终答案10080，泄露程度较高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

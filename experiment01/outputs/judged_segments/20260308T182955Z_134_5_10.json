@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1126.json",
+  "dataset_idx": 134,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"前缀已算出中心、a、c、b，修复后续却回头按标准题解顺序重述一遍，较像事后整理而非当下自然延续。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"承接点停在“所以b=5”，自然下一步应判断开口方向并求和；修复后续却重新从定义和中点开始，衔接生硬且重复。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"a=12，中心(-3,2)，c=13，b=5，方程与最终求和16都正确，无明显数学错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相较原始后续并未提供更有效的新推进，主要是在重复前缀已完成的计算；原始后续本来就已接近正确收尾。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"修复后续几乎按完整标准解结构回放，并直接给出具体方程和最终结果，暴露度偏高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "前缀已算出中心、a、c、b，修复后续却回头按标准题解顺序重述一遍，较像事后整理而非当下自然延续。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "承接点停在“所以b=5”，自然下一步应判断开口方向并求和；修复后续却重新从定义和中点开始，衔接生硬且重复。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "a=12，中心(-3,2)，c=13，b=5，方程与最终求和16都正确，无明显数学错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相较原始后续并未提供更有效的新推进，主要是在重复前缀已完成的计算；原始后续本来就已接近正确收尾。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "修复后续几乎按完整标准解结构回放，并直接给出具体方程和最终结果，暴露度偏高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 200,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"多次直接说“标准解法”“标准答案”，像是已知结论后的回填，不像前文困惑状态下自然生长出的思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"能接上前文关于 Burnside 与固定位置法的冲突，但从“有矛盾”直接跳到“除以4正确”，中间关键化解过程较突兀。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"8!/4 与“非恒等旋转无不动点”本身是对的，但把固定位置法失效仅归因于“对称群大小与人数不同”解释偏粗糙，未真正说清矛盾来源。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续明显更接近正确方向，明确回到旋转群大小为4并导向正确计数。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"几乎直接给出完整标准思路与结论，暴露程度过高，不像普通做题过程中的中间修复。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "多次直接说“标准解法”“标准答案”，像是已知结论后的回填，不像前文困惑状态下自然生长出的思考。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "能接上前文关于 Burnside 与固定位置法的冲突，但从“有矛盾”直接跳到“除以4正确”，中间关键化解过程较突兀。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "8!/4 与“非恒等旋转无不动点”本身是对的，但把固定位置法失效仅归因于“对称群大小与人数不同”解释偏粗糙，未真正说清矛盾来源。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续明显更接近正确方向，明确回到旋转群大小为4并导向正确计数。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎直接给出完整标准思路与结论，暴露程度过高，不像普通做题过程中的中间修复。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已得到的同余结论，并顺着“n=3k+1”的思路继续求最小值，整体像自然解题过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文最后一句“n可以表示为3k+1”衔接自然，虽有简短回顾，但没有凭空引入未出现过的关键结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"代入得到m=32-4k、|m-n|=|31-7k|均正确，取最接近31/7的整数k=4或5，得到最小值3，结论无误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"原始后续本身已经顺畅且正确地完成求解，修复版主要是重复前面结论并加入冗余检查，没有明显更推进。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然最终明确给出答案，但仍是按正常推导收束到结果，没有明显照搬标准题解或站在已知答案视角剧透。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已得到的同余结论，并顺着“n=3k+1”的思路继续求最小值，整体像自然解题过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文最后一句“n可以表示为3k+1”衔接自然，虽有简短回顾，但没有凭空引入未出现过的关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "代入得到m=32-4k、|m-n|=|31-7k|均正确，取最接近31/7的整数k=4或5，得到最小值3，结论无误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "原始后续本身已经顺畅且正确地完成求解，修复版主要是重复前面结论并加入冗余检查，没有明显更推进。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然最终明确给出答案，但仍是按正常推导收束到结果，没有明显照搬标准题解或站在已知答案视角剧透。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

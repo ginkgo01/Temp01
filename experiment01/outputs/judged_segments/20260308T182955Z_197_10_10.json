@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/number_theory/838.json",
+  "dataset_idx": 197,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"出现“标准答案中的6个值”等表述，明显带有已知答案后回填的视角，不像自然推演。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"从前文已得出的质因数分解继续设x的指数并列不等式，衔接自然，没有凭空跳结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"指数约束3a≤8、3b≤4、3c≤2、3d≤1及组合数3×2×1×1=6都正确，无明显逻辑错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续的反复犹豫，修复版明确完成分类计数并排除了其他质因数，更推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"不仅直接给出最终答案，还显式提到“标准答案”，暴露了解题结果与完整收束结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“标准答案中的6个值”等表述，明显带有已知答案后回填的视角，不像自然推演。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "从前文已得出的质因数分解继续设x的指数并列不等式，衔接自然，没有凭空跳结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "指数约束3a≤8、3b≤4、3c≤2、3d≤1及组合数3×2×1×1=6都正确，无明显逻辑错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续的反复犹豫，修复版明确完成分类计数并排除了其他质因数，更推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅直接给出最终答案，还显式提到“标准答案”，暴露了解题结果与完整收束结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

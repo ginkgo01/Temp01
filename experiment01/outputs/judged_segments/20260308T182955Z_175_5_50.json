@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已做出的两种参数化与“考虑通解”的思路，像是自然继续检查整数解结构。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文“考虑线性丢番图方程通解”的方向衔接自然，没有凭空引入完全陌生的方法。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"有明显算错：由|m-n|=|3-7t|可知t=1时应为4，不是10；虽最终答案仍为3，但过程存在错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只举零散例子，修复后续给出了通解并直接把目标化为|3-7t|的最小化，更接近完整正确解法。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接照搬标准题解表述，仍保持为基于前文探索得到的自然推进，而非明显事后倒推。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已做出的两种参数化与“考虑通解”的思路，像是自然继续检查整数解结构。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“考虑线性丢番图方程通解”的方向衔接自然，没有凭空引入完全陌生的方法。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "有明显算错：由|m-n|=|3-7t|可知t=1时应为4，不是10；虽最终答案仍为3，但过程存在错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只举零散例子，修复后续给出了通解并直接把目标化为|3-7t|的最小化，更接近完整正确解法。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接照搬标准题解表述，仍保持为基于前文探索得到的自然推进，而非明显事后倒推。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

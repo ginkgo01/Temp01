@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/47.json",
+  "dataset_idx": 78,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"前文还在准备直接展开三次式比较系数，修复后续却突然使用已完成的因式分解结果并一路解完，较像事后倒推。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"直接引入左边的二次因子 x^2 + (a+3)x + a^2 + 3a，但前文并未推出 f(x)-f(a) 已提取出 (x-a)，衔接有明显跳步。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"系数比较关系写得对，代入化简无误，最终得到 a=-2, b=1，且满足 a≠0。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只展开右边，修复后续直接建立方程并求出解，更能推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"基本完整复现了标准解法结构并直接给出最终答案，暴露信息过多。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "前文还在准备直接展开三次式比较系数，修复后续却突然使用已完成的因式分解结果并一路解完，较像事后倒推。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "直接引入左边的二次因子 x^2 + (a+3)x + a^2 + 3a，但前文并未推出 f(x)-f(a) 已提取出 (x-a)，衔接有明显跳步。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "系数比较关系写得对，代入化简无误，最终得到 a=-2, b=1，且满足 a≠0。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只展开右边，修复后续直接建立方程并求出解，更能推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "基本完整复现了标准解法结构并直接给出最终答案，暴露信息过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1232.json",
+  "dataset_idx": 496,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"后半段直接给出完整验证并提到“与标准答案一致”，明显带有已知全解后的回看痕迹，不太像当前前缀下的自然实时思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"前两步紧接前文“先算分子分母的模”，随后用模的商性质得结论，整体衔接基本自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"代入、模长计算、|a/b|=|a|/|b| 的使用以及有理化验证都正确，结果为 5/13。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只算到分子分母模长，修复后续进一步得到 |w|=5/13，并补充了验证，更推进解题。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"不仅直接给出最终答案，还补全了另一种完整题解并提到“标准答案”，暴露程度过高，不像普通中途思路。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后半段直接给出完整验证并提到“与标准答案一致”，明显带有已知全解后的回看痕迹，不太像当前前缀下的自然实时思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "前两步紧接前文“先算分子分母的模”，随后用模的商性质得结论，整体衔接基本自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "代入、模长计算、|a/b|=|a|/|b| 的使用以及有理化验证都正确，结果为 5/13。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只算到分子分母模长，修复后续进一步得到 |w|=5/13，并补充了验证，更推进解题。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅直接给出最终答案，还补全了另一种完整题解并提到“标准答案”，暴露程度过高，不像普通中途思路。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

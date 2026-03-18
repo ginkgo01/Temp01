@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/47.json",
+  "dataset_idx": 78,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 15,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文“展开并比较系数”的思路，按常规代数步骤继续推导，看起来像真实解题过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已列出的左右两边系数自然衔接，没有凭空引入新方法或未铺垫的结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"系数比较、代入求解和常数项验证都正确，最终得到(a,b)=(-2,1)无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停留在列系数，修复后续明确建立方程并解出结果，显著推进了解题。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接套用标准题解中的另一条思路或提前剧透答案，而是顺着当前展开法自然完成推导。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文“展开并比较系数”的思路，按常规代数步骤继续推导，看起来像真实解题过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已列出的左右两边系数自然衔接，没有凭空引入新方法或未铺垫的结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "系数比较、代入求解和常数项验证都正确，最终得到(a,b)=(-2,1)无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停留在列系数，修复后续明确建立方程并解出结果，显著推进了解题。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接套用标准题解中的另一条思路或提前剧透答案，而是顺着当前展开法自然完成推导。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

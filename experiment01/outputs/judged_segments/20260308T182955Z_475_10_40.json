@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"所用思路（分类配对、设p=1/6+x）都是在前文基础上自然会想到的常规推进，不算明显倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文对“总和为7的配对分类”的讨论展开，并利用已得p+q=1/3继续求解，衔接自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"配对计数、方程建立与化简均正确，最终得到p=5/24，答案29无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，它明确写出方程并成功解出x与p，实质性推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"后续几乎完整复现了标准题解结构并直接给出最终答案，暴露程度偏高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "所用思路（分类配对、设p=1/6+x）都是在前文基础上自然会想到的常规推进，不算明显倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文对“总和为7的配对分类”的讨论展开，并利用已得p+q=1/3继续求解，衔接自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "配对计数、方程建立与化简均正确，最终得到p=5/24，答案29无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，它明确写出方程并成功解出x与p，实质性推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "后续几乎完整复现了标准题解结构并直接给出最终答案，暴露程度偏高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 115,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"更像事后总结：一开头直接回顾已得精确值和答案，还刻意讨论替代解法，不像当前数值验算节点上的自然续写。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文正停在“sin^3 18°≈…”的数值计算处，修复后续却跳回整体回顾与方法比较，和当前语境衔接不自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所述结论与中间式均正确：sin18°=(√5-1)/4，s^2=(3-√5)/8，s^3=(√5-2)/8，相加得1/8。\"\n  },\n  \"progress\": {\n    \"label\": \"F\",\n    \"reason\": \"相较原始后续并未更有效推进，只是在已得答案后重复确认和发散讨论，实际解题推进性偏弱。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"首句就直接给出sin18°精确值和最终答案1/8，暴露过多结论，像完整解后回顾而非真实做题过程。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "更像事后总结：一开头直接回顾已得精确值和答案，还刻意讨论替代解法，不像当前数值验算节点上的自然续写。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文正停在“sin^3 18°≈…”的数值计算处，修复后续却跳回整体回顾与方法比较，和当前语境衔接不自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所述结论与中间式均正确：sin18°=(√5-1)/4，s^2=(3-√5)/8，s^3=(√5-2)/8，相加得1/8。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相较原始后续并未更有效推进，只是在已得答案后重复确认和发散讨论，实际解题推进性偏弱。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "首句就直接给出sin18°精确值和最终答案1/8，暴露过多结论，像完整解后回顾而非真实做题过程。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

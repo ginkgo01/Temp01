@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 105,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"从前文对“0.5是否有误”和“6种圆排列”的犹豫，转向按圆排列计数是自然修正，整体像真实思路推进。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文已出现的交替排列判定和(4-1)!=6的想法，没有凭空换框架，衔接较顺。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"用6种圆排列计数并得出相交的2种、概率1/3是对的；后面的对称性验证虽简略，但结论无明显错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续打转，修复后续明确完成了关键计数，显著推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"它已经直接给出“2/6=1/3”并补上近乎完整的对称性论证，基本暴露了标准答案与完整解法结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "从前文对“0.5是否有误”和“6种圆排列”的犹豫，转向按圆排列计数是自然修正，整体像真实思路推进。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文已出现的交替排列判定和(4-1)!=6的想法，没有凭空换框架，衔接较顺。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "用6种圆排列计数并得出相交的2种、概率1/3是对的；后面的对称性验证虽简略，但结论无明显错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续打转，修复后续明确完成了关键计数，显著推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "它已经直接给出“2/6=1/3”并补上近乎完整的对称性论证，基本暴露了标准答案与完整解法结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1981.json",
+  "dataset_idx": 495,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已得的条件2<x<102，再去检查分母为零并做回顾性确认，像是自然推进出来的思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文“还需确保分母不为零”的节点衔接紧密，没有凭空引入新条件或跳步。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"正确解出log(2-log(x-2))=0对应x=12，并与此前条件合并得到(2,12)∪(12,102)，无明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续，修复版完整补上了排除x=12、复核外层对数条件并明确写出最终区间，显著推进到正确结论。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"只是顺着当前推理自然收束到结论，没有明显以已知标准答案为前提倒推或额外暴露完整题解模板。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已得的条件2<x<102，再去检查分母为零并做回顾性确认，像是自然推进出来的思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“还需确保分母不为零”的节点衔接紧密，没有凭空引入新条件或跳步。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "正确解出log(2-log(x-2))=0对应x=12，并与此前条件合并得到(2,12)∪(12,102)，无明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续，修复版完整补上了排除x=12、复核外层对数条件并明确写出最终区间，显著推进到正确结论。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "只是顺着当前推理自然收束到结论，没有明显以已知标准答案为前提倒推或额外暴露完整题解模板。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

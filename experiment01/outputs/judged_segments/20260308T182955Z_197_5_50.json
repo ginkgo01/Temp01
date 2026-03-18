@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/number_theory/838.json",
+  "dataset_idx": 197,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"是在前文反复自检基础上的继续确认，虽更精炼，但仍像是自然的复核过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文对指数限制和是否遗漏情况的反复检查，没有引入前文未铺垫的关键结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"质因数分解、指数约束、组合计数与列举结果都正确，结论为6无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的继续犹豫，修复后续明确完成了穷举与验证，更有效推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接给出完整组合计数、具体6个x值和最终确认，几乎等同于完整题解，暴露较多。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "是在前文反复自检基础上的继续确认，虽更精炼，但仍像是自然的复核过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文对指数限制和是否遗漏情况的反复检查，没有引入前文未铺垫的关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "质因数分解、指数约束、组合计数与列举结果都正确，结论为6无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的继续犹豫，修复后续明确完成了穷举与验证，更有效推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出完整组合计数、具体6个x值和最终确认，几乎等同于完整题解，暴露较多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

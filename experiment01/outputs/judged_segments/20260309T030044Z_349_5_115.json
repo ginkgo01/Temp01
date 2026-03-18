@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 115,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"延续了前文对 Burnside 与“固定一人”矛盾的反复权衡，语气仍是自我校验式推进，整体像真实思考过程。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"紧接前文核心卡点：7! 与 8!/4 的冲突，继续围绕“固定位置法是否适用”展开，没有明显跳脱。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"关于 Burnside 得出 8!/4 的方向是对的，但把固定位置法的问题说成“未完全消除旋转对称、导致重复计数”并不准确，真实症结更像是座位类型/轨道对应不当。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续只是重复困惑，修复后续更明确地把重心放到旋转群大小与轨道划分上，更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已经基本给出了标准解的核心结构：非恒等旋转无不动点、每个轨道大小为 4、因此应做 8!/4，泄露度偏高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文对 Burnside 与“固定一人”矛盾的反复权衡，语气仍是自我校验式推进，整体像真实思考过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文核心卡点：7! 与 8!/4 的冲突，继续围绕“固定位置法是否适用”展开，没有明显跳脱。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "关于 Burnside 得出 8!/4 的方向是对的，但把固定位置法的问题说成“未完全消除旋转对称、导致重复计数”并不准确，真实症结更像是座位类型/轨道对应不当。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只是重复困惑，修复后续更明确地把重心放到旋转群大小与轨道划分上，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经基本给出了标准解的核心结构：非恒等旋转无不动点、每个轨道大小为 4、因此应做 8!/4，泄露度偏高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 75,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"多次直接说“标准解法中…”，并点名相似三角形、交点J、垂足K等，明显像已知完整题解后的倒推，不像前文自然思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还停留在坐标设定与图形关系摸索，修复后续却突然引入J、K、相似三角形和GK=BH，衔接生硬、跳步明显。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所提到的关键关系基本都与标准题解一致，如BD=4、BCJ与BDE相似、再由GK求BH，未见明显数学错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续在错误坐标框架里打转，修复后续已经指向正确的几何构造与求解路径，更有希望做对。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已经几乎把完整解题骨架直接说出，包括BD=4、构造J与K、两次相似三角形和GK=BH，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "多次直接说“标准解法中…”，并点名相似三角形、交点J、垂足K等，明显像已知完整题解后的倒推，不像前文自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还停留在坐标设定与图形关系摸索，修复后续却突然引入J、K、相似三角形和GK=BH，衔接生硬、跳步明显。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所提到的关键关系基本都与标准题解一致，如BD=4、BCJ与BDE相似、再由GK求BH，未见明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续在错误坐标框架里打转，修复后续已经指向正确的几何构造与求解路径，更有希望做对。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经几乎把完整解题骨架直接说出，包括BD=4、构造J与K、两次相似三角形和GK=BH，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

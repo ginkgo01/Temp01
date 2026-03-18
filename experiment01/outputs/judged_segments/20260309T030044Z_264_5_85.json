@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 85,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"明显以“题解中…”的视角倒推，还直接引用CJ=3/4、GK=9/5等已解出的中间结果，不像当前上下文自然生成的思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还在坐标与垂直条件中摸索，这里突然切到辅助线J、相似三角形和GK，且无自然过渡，衔接断裂。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所提到的关键数值与关系（BD=4、△BCJ∼△BDE、CJ=3/4、GK=9/5）都与标准解一致，没有明显数学错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相较原始后续的停滞与泛泛而谈，修复后续至少指向了正确的辅助线、相似关系和关键长度，明显更接近正解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"过度暴露标准题解结构，直接点出辅助线J、相似三角形结论及GK=9/5，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "明显以“题解中…”的视角倒推，还直接引用CJ=3/4、GK=9/5等已解出的中间结果，不像当前上下文自然生成的思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在坐标与垂直条件中摸索，这里突然切到辅助线J、相似三角形和GK，且无自然过渡，衔接断裂。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所提到的关键数值与关系（BD=4、△BCJ∼△BDE、CJ=3/4、GK=9/5）都与标准解一致，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续的停滞与泛泛而谈，修复后续至少指向了正确的辅助线、相似关系和关键长度，明显更接近正解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "过度暴露标准题解结构，直接点出辅助线J、相似三角形结论及GK=9/5，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

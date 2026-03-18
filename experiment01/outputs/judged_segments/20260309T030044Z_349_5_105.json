@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 105,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"仍沿着前文反复出现的“7! 与 8!/4 冲突”继续反思，对Burnside和旋转群的回到主线是自然的，不算明显事后倒推。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"内容和前文的大矛盾主线相连，但前一句刚准备转入“4人坐正方形角”的检验例子，修复后续却直接跳回主问题，衔接略突兀。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"关于只考虑4种旋转、不同人时非平凡旋转无不动点、因此按4等分得到8!/4的方向是对的，也没有明显自相矛盾。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"比原始后续更直接回到8人正题，并把注意力集中在真正的症结——旋转群大小与轨道计数——更接近正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已经直接抛出了“每个轨道包含4个排列，因此应为8!/4”这一核心解法结构，泄露程度偏高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "仍沿着前文反复出现的“7! 与 8!/4 冲突”继续反思，对Burnside和旋转群的回到主线是自然的，不算明显事后倒推。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "内容和前文的大矛盾主线相连，但前一句刚准备转入“4人坐正方形角”的检验例子，修复后续却直接跳回主问题，衔接略突兀。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "关于只考虑4种旋转、不同人时非平凡旋转无不动点、因此按4等分得到8!/4的方向是对的，也没有明显自相矛盾。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "比原始后续更直接回到8人正题，并把注意力集中在真正的症结——旋转群大小与轨道计数——更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经直接抛出了“每个轨道包含4个排列，因此应为8!/4”这一核心解法结构，泄露程度偏高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

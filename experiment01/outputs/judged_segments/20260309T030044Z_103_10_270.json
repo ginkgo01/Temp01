@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 270,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"多次直接提到“标准答案中…”，明显是站在已知题解的视角回填，不像前文自然推演出的思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还停留在展开与试探阶段，修复后续却直接引入因式分解、判别式和结论区间，跳步明显。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所提到的关键数学方向基本正确：应分离不动点因子、分析二次因子的判别式，并指向正确答案区间(3,4]。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续在λ=2处展开，修复后续明显把思路拉回正确主线，更接近完整解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"不仅显式引用“标准答案”，还提前暴露因式分解结构、判别式结论和最终答案(3,4]，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "多次直接提到“标准答案中…”，明显是站在已知题解的视角回填，不像前文自然推演出的思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还停留在展开与试探阶段，修复后续却直接引入因式分解、判别式和结论区间，跳步明显。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所提到的关键数学方向基本正确：应分离不动点因子、分析二次因子的判别式，并指向正确答案区间(3,4]。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续在λ=2处展开，修复后续明显把思路拉回正确主线，更接近完整解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅显式引用“标准答案”，还提前暴露因式分解结构、判别式结论和最终答案(3,4]，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

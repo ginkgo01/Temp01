@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"前半段延续了前文“固定A、B并看C、D分居两侧”的思路，像自然探索；但末尾直接落到1/3，略有事后倒推感。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"整体承接前文关于弦两侧与圆排列的讨论，但中间突然出现“3种分配方式”“2/3”这类表述，衔接不够顺滑。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"存在明显不严谨甚至错误之处：把C、D相对AB两侧的情形粗糙地算成3种并得出2/3，没有依据，且最终1/3并未被有效推出。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续只是在原地犹豫，修复后续至少明确了交错排列/统计排列数这一更接近正解的方向。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"最后直接给出“最终发现…概率为1/3”，已经明显泄露标准答案，且基本点出了应走的计数结论。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "前半段延续了前文“固定A、B并看C、D分居两侧”的思路，像自然探索；但末尾直接落到1/3，略有事后倒推感。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "整体承接前文关于弦两侧与圆排列的讨论，但中间突然出现“3种分配方式”“2/3”这类表述，衔接不够顺滑。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "存在明显不严谨甚至错误之处：把C、D相对AB两侧的情形粗糙地算成3种并得出2/3，没有依据，且最终1/3并未被有效推出。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只是在原地犹豫，修复后续至少明确了交错排列/统计排列数这一更接近正解的方向。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "最后直接给出“最终发现…概率为1/3”，已经明显泄露标准答案，且基本点出了应走的计数结论。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"直接以“标准题解中使用了……”为出发点，并给出关键中间量，明显像已知完整解法后的倒推，不像前文自然思考。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文还在坐标设定和图形关系中摸索，修复后续却突然引入J、K、相似三角形和矩形GKBH，衔接很突兀。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"所提到的BD=4、引入J与K、利用相似和勾股得到GK=9/5并进而求BH，均与标准解法一致，没有明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续继续停留在坐标困惑中，修复后续明确指向正确辅助线和关键比例关系，更能推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"几乎把标准题解的主干结构和关键中间结果都提前暴露了，泄露程度过高，不像正常做题过程。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接以“标准题解中使用了……”为出发点，并给出关键中间量，明显像已知完整解法后的倒推，不像前文自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在坐标设定和图形关系中摸索，修复后续却突然引入J、K、相似三角形和矩形GKBH，衔接很突兀。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所提到的BD=4、引入J与K、利用相似和勾股得到GK=9/5并进而求BH，均与标准解法一致，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续继续停留在坐标困惑中，修复后续明确指向正确辅助线和关键比例关系，更能推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎把标准题解的主干结构和关键中间结果都提前暴露了，泄露程度过高，不像正常做题过程。"
+      }
+    },
+    "attempts_used": 2
+  }
+}

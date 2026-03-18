@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 245,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"后半段直接诉诸“标准解法”和确定答案，像已知结论后的回填；且没有自然挖出前文矛盾的真实来源。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"前几句延续了前文的7!与8!/4矛盾，但随后用“其他对称操作”“标准解法”强行收束，衔接不够自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"虽然最终答案对，但把问题归因于“固定位置仅消除部分旋转对称”或“还有其他对称操作”是错误的，逻辑解释不成立。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续困在矛盾中，这版至少明确转向Burnside/按4除的正确计数方向，更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接给出“标准解法”及完整结论8!/4=10080，泄露了标准答案和核心解法结构。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后半段直接诉诸“标准解法”和确定答案，像已知结论后的回填；且没有自然挖出前文矛盾的真实来源。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "前几句延续了前文的7!与8!/4矛盾，但随后用“其他对称操作”“标准解法”强行收束，衔接不够自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "虽然最终答案对，但把问题归因于“固定位置仅消除部分旋转对称”或“还有其他对称操作”是错误的，逻辑解释不成立。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续困在矛盾中，这版至少明确转向Burnside/按4除的正确计数方向，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出“标准解法”及完整结论8!/4=10080，泄露了标准答案和核心解法结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

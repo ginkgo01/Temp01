@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"M\", \"reason\": \"前两句与前文“排除不动点”思路一致，但随后直接抛出精确二次因子与判别式，较像已知解法后的倒推。\"},\n  \"coherence\": {\"label\": \"M\", \"reason\": \"能接上“先解 f(f(x))=x 再排除 f(x)=x”的主线，但与前文刚引入的 x,a 联立思路没有衔接，关键分解也来得较突兀。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心数学结论都对：二次因子、判别式、λ=3 仅给出不动点、最终范围为 (3,4]。仅有个别论证略省。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续明显推进到正确路线：抓住因式分解、判别式、边界 λ=3，并基本锁定答案区间。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"几乎直接给出了标准解的主干结构和最终答案，暴露程度较高，不像自然做题过程中的有限修补。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "前两句与前文“排除不动点”思路一致，但随后直接抛出精确二次因子与判别式，较像已知解法后的倒推。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "能接上“先解 f(f(x))=x 再排除 f(x)=x”的主线，但与前文刚引入的 x,a 联立思路没有衔接，关键分解也来得较突兀。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心数学结论都对：二次因子、判别式、λ=3 仅给出不动点、最终范围为 (3,4]。仅有个别论证略省。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续明显推进到正确路线：抓住因式分解、判别式、边界 λ=3，并基本锁定答案区间。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎直接给出了标准解的主干结构和最终答案，暴露程度较高，不像自然做题过程中的有限修补。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

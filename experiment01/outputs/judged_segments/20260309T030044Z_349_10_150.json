@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 150,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"延续了前文对 Burnside 与固定位置法冲突的思考，但后半段较快落到正确结论，略有“已知答案后回填”的味道。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"紧接前文的核心矛盾展开，继续围绕对称群大小、轨道数和固定位置法是否有效来讨论，衔接自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"结论 8!/4=10080 正确；把非恒等旋转下无不动点、每个轨道大小为 4 的判断也与本题相符。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续，修复版明显更接近并实际到达正确解法，摆脱了反复纠结而没有推进的状态。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接给出应采用 Burnside、总数除以 4、并算出 10080，基本已经完整暴露标准解结构与答案。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "延续了前文对 Burnside 与固定位置法冲突的思考，但后半段较快落到正确结论，略有“已知答案后回填”的味道。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文的核心矛盾展开，继续围绕对称群大小、轨道数和固定位置法是否有效来讨论，衔接自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "结论 8!/4=10080 正确；把非恒等旋转下无不动点、每个轨道大小为 4 的判断也与本题相符。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，修复版明显更接近并实际到达正确解法，摆脱了反复纠结而没有推进的状态。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出应采用 Burnside、总数除以 4、并算出 10080，基本已经完整暴露标准解结构与答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

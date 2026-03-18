@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"整体像是在前文卡住后重新整理思路的自然续写，没有明显站在已知完整题解的视角倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"延续了前文对五倍角、sin18°精确值记忆模糊等内容，衔接基本自然。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"多次把 sin18° 误写成“(√5-1)/4×2”并反复摇摆，存在明显错误表述和自相矛盾。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续继续分解四次式，修复后续主要在重复犹豫和回顾，没有更接近正确解法。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接泄露标准答案或完整标准题解结构，仍然像普通求解过程中的思考。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "整体像是在前文卡住后重新整理思路的自然续写，没有明显站在已知完整题解的视角倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "延续了前文对五倍角、sin18°精确值记忆模糊等内容，衔接基本自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "多次把 sin18° 误写成“(√5-1)/4×2”并反复摇摆，存在明显错误表述和自相矛盾。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续继续分解四次式，修复后续主要在重复犹豫和回顾，没有更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露标准答案或完整标准题解结构，仍然像普通求解过程中的思考。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

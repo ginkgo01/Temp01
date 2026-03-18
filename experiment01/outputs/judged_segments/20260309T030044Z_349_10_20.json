@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"出现“标准答案显示应为8!/4”这种站在已知答案视角的表述，明显不像前缀中自然推演出的思考。\"},\n  \"coherence\": {\"label\": \"M\", \"reason\": \"大体延续了前文对“除以4还是固定一人”的纠结，但插入“标准答案显示”这一外部信息，衔接感被削弱。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"涉及的数学判断如正方形有4种旋转、7!与8!/4不相等等都正确，没有明显逻辑硬伤。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相较原始后续，修复版没有给出Burnside/无不动点等关键推进，反而停留在反复怀疑与确认上，推进性更弱。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接提到“标准答案显示应为8!/4”，已经明显泄露答案方向与结果结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“标准答案显示应为8!/4”这种站在已知答案视角的表述，明显不像前缀中自然推演出的思考。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "大体延续了前文对“除以4还是固定一人”的纠结，但插入“标准答案显示”这一外部信息，衔接感被削弱。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "涉及的数学判断如正方形有4种旋转、7!与8!/4不相等等都正确，没有明显逻辑硬伤。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相较原始后续，修复版没有给出Burnside/无不动点等关键推进，反而停留在反复怀疑与确认上，推进性更弱。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接提到“标准答案显示应为8!/4”，已经明显泄露答案方向与结果结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

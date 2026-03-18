@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/47.json",
+  "dataset_idx": 78,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文的系数比较思路，先用常数项和一次项求解，再检查二次项，属于当前语境下自然可能出现的推理。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文刚列出左右两边系数的状态直接衔接，没有凭空引入新方法或未铺垫的结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"系数方程建立正确；由-a^3-3a^2=-a^2b得b=a+3，再由0=2ab+a^2解得a=-2，进而b=1，且二次项验证无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只列出方程，修复后续实际利用方程求出了(a,b)，明显更推进到正确解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接套用标准题解的特殊结构或外部结论，只是在已有展开基础上正常解方程，不显得刻意泄露答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文的系数比较思路，先用常数项和一次项求解，再检查二次项，属于当前语境下自然可能出现的推理。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文刚列出左右两边系数的状态直接衔接，没有凭空引入新方法或未铺垫的结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "系数方程建立正确；由-a^3-3a^2=-a^2b得b=a+3，再由0=2ab+a^2解得a=-2，进而b=1，且二次项验证无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只列出方程，修复后续实际利用方程求出了(a,b)，明显更推进到正确解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接套用标准题解的特殊结构或外部结论，只是在已有展开基础上正常解方程，不显得刻意泄露答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

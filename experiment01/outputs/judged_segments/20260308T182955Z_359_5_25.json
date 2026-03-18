@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1407.json",
+  "dataset_idx": 359,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 25,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已得到的T、S关系并准备继续代入化简，像是自然的中间思考，不像已知全解后的倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"内容紧接前文对T=24/S与-8=T(T^2-3S)的推导，虽然有重复回顾，但没有凭空引入新结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"复述的恒等式、代入过程和化简到-8=(24/S)[(24/S)^2-3S]均正确，没有明显数学错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续并未推进得更远，基本停留在同一展开起点，反而大量重复前文，离求出S没有更实质进展。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接泄露标准答案6，也没有突然切换到标准题解中的关键捷径结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已得到的T、S关系并准备继续代入化简，像是自然的中间思考，不像已知全解后的倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "内容紧接前文对T=24/S与-8=T(T^2-3S)的推导，虽然有重复回顾，但没有凭空引入新结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "复述的恒等式、代入过程和化简到-8=(24/S)[(24/S)^2-3S]均正确，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续并未推进得更远，基本停留在同一展开起点，反而大量重复前文，离求出S没有更实质进展。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露标准答案6，也没有突然切换到标准题解中的关键捷径结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文一直在尝试的“固定A、考察其余3点的6种顺序”思路，像是自然推进，不像直接套标准解。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文关于圆排列、固定A、统计相交情形的讨论衔接顺畅，没有突然引入完全陌生的方法。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心判断“端点交替出现时两弦相交”以及固定A后有2种相交、总共6种顺序，结论1/3是正确的。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续停留在举例和犹豫阶段，修复后续明确完成了分类计数，更接近并到达正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接给出“6种里只有2种相交，因此是1/3”的完整结论，基本已经把整道题做完，泄露程度偏高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文一直在尝试的“固定A、考察其余3点的6种顺序”思路，像是自然推进，不像直接套标准解。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于圆排列、固定A、统计相交情形的讨论衔接顺畅，没有突然引入完全陌生的方法。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心判断“端点交替出现时两弦相交”以及固定A后有2种相交、总共6种顺序，结论1/3是正确的。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续停留在举例和犹豫阶段，修复后续明确完成了分类计数，更接近并到达正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出“6种里只有2种相交，因此是1/3”的完整结论，基本已经把整道题做完，泄露程度偏高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

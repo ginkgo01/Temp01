@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 120,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"多次直接提到“标准题解中”“题解中提到”，明显像已知完整解法后的回填，不像前文自然推演。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还在沿坐标与点积计算H，修复后续却突然转向相似三角形、J与GK等新对象，衔接较生硬。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"提到的BD=4、利用相似三角形找比例等方向本身是对的，但表述较泛，且引入GK等关系时未给出必要定义与论证。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续在错误坐标方程上推进，修复后续至少指出应转向正确的4-3-5与相似三角形路线，更接近正解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已经明显暴露标准解的核心结构，直接点出BD=4、△BCJ与△BDE相似、GK关联等关键路径，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "多次直接提到“标准题解中”“题解中提到”，明显像已知完整解法后的回填，不像前文自然推演。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在沿坐标与点积计算H，修复后续却突然转向相似三角形、J与GK等新对象，衔接较生硬。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "提到的BD=4、利用相似三角形找比例等方向本身是对的，但表述较泛，且引入GK等关系时未给出必要定义与论证。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续在错误坐标方程上推进，修复后续至少指出应转向正确的4-3-5与相似三角形路线，更接近正解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经明显暴露标准解的核心结构，直接点出BD=4、△BCJ与△BDE相似、GK关联等关键路径，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

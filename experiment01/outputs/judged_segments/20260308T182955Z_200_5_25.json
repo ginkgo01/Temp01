@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/prealgebra/2086.json",
+  "dataset_idx": 200,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 25,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文反复核对换算方向、再用不同方法验证的思路，像是自然的继续思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已出现的42 baps→70 yaps→40 daps及比例法尝试直接衔接，没有凭空引入陌生结论。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"第三条把daps与baps的比例写成(7/4)/(3/5)=35/12有明显错误；正确的直接关系应为21/20。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"虽然第三条出错，但整体上明确完成了从42 baps到40 daps的换算，比原始后续更接近完整正确解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"主要是在前文已得到的结果上做复核与总结，没有额外暴露超出上下文的新题解模板。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文反复核对换算方向、再用不同方法验证的思路，像是自然的继续思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已出现的42 baps→70 yaps→40 daps及比例法尝试直接衔接，没有凭空引入陌生结论。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "第三条把daps与baps的比例写成(7/4)/(3/5)=35/12有明显错误；正确的直接关系应为21/20。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "虽然第三条出错，但整体上明确完成了从42 baps到40 daps的换算，比原始后续更接近完整正确解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "主要是在前文已得到的结果上做复核与总结，没有额外暴露超出上下文的新题解模板。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

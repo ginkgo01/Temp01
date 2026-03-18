@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 25,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文对五次方程、sin18°精确值和原式因式分解的摸索，像真实解题过程中的自然回退与尝试。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文“x=1是根但不符合sin18°”的处境衔接自然，也没有凭空引入全新的解法结论。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"存在明显不严谨/错误表述：把“有理根定理”与x=√5/4并提，以及对sin18°精确值的表述前后混乱。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"比原始后续更接近有效方向：明确可代入sin18°精确值，或利用原方程降幂，整体更有机会推进到正解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接给出1/8，也未复现标准题解结构；提到sin18°精确值仍属常见思路，不算过度泄露。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文对五次方程、sin18°精确值和原式因式分解的摸索，像真实解题过程中的自然回退与尝试。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“x=1是根但不符合sin18°”的处境衔接自然，也没有凭空引入全新的解法结论。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "存在明显不严谨/错误表述：把“有理根定理”与x=√5/4并提，以及对sin18°精确值的表述前后混乱。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "比原始后续更接近有效方向：明确可代入sin18°精确值，或利用原方程降幂，整体更有机会推进到正解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接给出1/8，也未复现标准题解结构；提到sin18°精确值仍属常见思路，不算过度泄露。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

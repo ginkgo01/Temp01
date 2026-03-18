@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 70,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"前文已接近得到 Burnside 结论，因此这样想并非不可能；但措辞较笃定，略有站在已知正确解视角回填的感觉。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"紧接前文“固定位置法与 Burnside 冲突”的疑问，继续围绕旋转群大小和不动点展开，衔接自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心判断正确：只按正方形的 4 个旋转等价，且非恒等旋转无不动点，因此应按 8!/4 计。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的反复犹豫，修复后续明确指出矛盾源于对称性处理，并把思路推进到正确方向。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已经基本给出标准解框架与结论依据（按对称群阶数 4 去除），泄露度偏高，不太像仍在自然摸索中。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "前文已接近得到 Burnside 结论，因此这样想并非不可能；但措辞较笃定，略有站在已知正确解视角回填的感觉。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文“固定位置法与 Burnside 冲突”的疑问，继续围绕旋转群大小和不动点展开，衔接自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心判断正确：只按正方形的 4 个旋转等价，且非恒等旋转无不动点，因此应按 8!/4 计。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复犹豫，修复后续明确指出矛盾源于对称性处理，并把思路推进到正确方向。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经基本给出标准解框架与结论依据（按对称群阶数 4 去除），泄露度偏高，不太像仍在自然摸索中。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

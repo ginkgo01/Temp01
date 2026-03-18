@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 380,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"多次直接提到“标准解法”，明显像是已知题解后倒推，不像前文自然推演出来的思路。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还停留在代入 λ=3 的具体计算，这里突然引入“因式分解后的二次因子”和判别式，关键结论没有承接推导。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"整体方向基本正确，但表述如“二次因子的根与不动点无关”不够准确，且若按严格表述判别式结论也略显粗糙。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相较原始后续继续局部算 λ=3，这里转向分离不动点与二次因子、用判别式分析，更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接暴露了标准题解的核心结构：先因式分解，再看二次因子判别式并锁定 λ>3，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "多次直接提到“标准解法”，明显像是已知题解后倒推，不像前文自然推演出来的思路。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还停留在代入 λ=3 的具体计算，这里突然引入“因式分解后的二次因子”和判别式，关键结论没有承接推导。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "整体方向基本正确，但表述如“二次因子的根与不动点无关”不够准确，且若按严格表述判别式结论也略显粗糙。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续继续局部算 λ=3，这里转向分离不动点与二次因子、用判别式分析，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接暴露了标准题解的核心结构：先因式分解，再看二次因子判别式并锁定 λ>3，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

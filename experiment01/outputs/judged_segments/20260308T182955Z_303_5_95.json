@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 95,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"末句直接说“与标准题解一致”，像对照答案后的回看，不像当前思路自然推进。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"整体仍承接前文的坐标推导与面积检验，主要是在做结果复核，没有凭空引入全新核心结论。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"写出“d=2(c-b)，因此dh=2(c-b)^2”是明显错误；应为dh=2(c-b)h。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只是列检查点，修复后续已经收束到dh=56并给出面积28，更接近完成正确解答。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"不仅直接给出最终答案28，还显式提到“标准题解一致”，有明显答案泄露痕迹。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "末句直接说“与标准题解一致”，像对照答案后的回看，不像当前思路自然推进。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "整体仍承接前文的坐标推导与面积检验，主要是在做结果复核，没有凭空引入全新核心结论。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "写出“d=2(c-b)，因此dh=2(c-b)^2”是明显错误；应为dh=2(c-b)h。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只是列检查点，修复后续已经收束到dh=56并给出面积28，更接近完成正确解答。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅直接给出最终答案28，还显式提到“标准题解一致”，有明显答案泄露痕迹。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

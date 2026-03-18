@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续前文已得到的参数化与同余条件来继续核验最小值，像是自然收束思路，不像事后倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"使用的 n=3k+1、m=32-4k、d≡3(mod7) 等结论都已在前文出现，承接自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"关键计算与结论均正确：k取4或5比较即可，且 d 的同余类分析也一致，最终最小值为3。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只尝试少量代值，修复后续直接利用已有结构完成最小值确认，更有效推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有凭空引入标准题解模板或外部结论，只是在前文已有推导基础上总结并验证答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续前文已得到的参数化与同余条件来继续核验最小值，像是自然收束思路，不像事后倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "使用的 n=3k+1、m=32-4k、d≡3(mod7) 等结论都已在前文出现，承接自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "关键计算与结论均正确：k取4或5比较即可，且 d 的同余类分析也一致，最终最小值为3。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只尝试少量代值，修复后续直接利用已有结构完成最小值确认，更有效推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有凭空引入标准题解模板或外部结论，只是在前文已有推导基础上总结并验证答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

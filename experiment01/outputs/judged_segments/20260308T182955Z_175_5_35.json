@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 35,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"开头把当前参数化里的 k 与先前设的 k=m-n 混淆，直接引用已知解，像事后倒填而非顺着当前上下文自然推进。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文刚得到 n=3k+1、m=32-4k，后文却说 k=3 对应 m=16,n=13，变量含义前后不一致，衔接断裂。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"按当前参数化，k=3 应得 n=10、m=20，|m-n|=10，不是 3，存在明显数学错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"原始后续已能直接正确收束；修复版加入错误的 k 讨论和多余检查，整体上并未更好推进解题。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽提前提到候选最小值和对应解，但仍是在已有思路内展开，没有直接照搬完整标准题解结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "开头把当前参数化里的 k 与先前设的 k=m-n 混淆，直接引用已知解，像事后倒填而非顺着当前上下文自然推进。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文刚得到 n=3k+1、m=32-4k，后文却说 k=3 对应 m=16,n=13，变量含义前后不一致，衔接断裂。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "按当前参数化，k=3 应得 n=10、m=20，|m-n|=10，不是 3，存在明显数学错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "原始后续已能直接正确收束；修复版加入错误的 k 讨论和多余检查，整体上并未更好推进解题。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽提前提到候选最小值和对应解，但仍是在已有思路内展开，没有直接照搬完整标准题解结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

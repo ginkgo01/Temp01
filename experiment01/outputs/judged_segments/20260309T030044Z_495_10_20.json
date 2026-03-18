@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1981.json",
+  "dataset_idx": 495,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文“再检查一遍条件”的语气，逐项核对限制条件，整体像是在已有候选答案基础上的复查。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已得到的条件x>2、x<102、x≠12自然衔接，没有凭空引入未出现的新结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"对数定义域、分母非零条件、端点排除与唯一排除点x=12的判断都正确，无明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"比原始后续更系统地检查了端点与外层真数符号，能更稳固地确认最终定义域。\"},\n  \"non_leakage\": {\"label\": \"M\", \"reason\": \"虽然基本是在做复核，但已明确给出(2,12)∪(12,102)并按标准解结构逐项验证，略显答案导向。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文“再检查一遍条件”的语气，逐项核对限制条件，整体像是在已有候选答案基础上的复查。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已得到的条件x>2、x<102、x≠12自然衔接，没有凭空引入未出现的新结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "对数定义域、分母非零条件、端点排除与唯一排除点x=12的判断都正确，无明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "比原始后续更系统地检查了端点与外层真数符号，能更稳固地确认最终定义域。"
+      },
+      "non_leakage": {
+        "label": "M",
+        "reason": "虽然基本是在做复核，但已明确给出(2,12)∪(12,102)并按标准解结构逐项验证，略显答案导向。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

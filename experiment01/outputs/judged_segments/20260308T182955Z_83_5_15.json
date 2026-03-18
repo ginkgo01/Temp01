@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/2046.json",
+  "dataset_idx": 83,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 15,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"前文已设f(x)=10^x-9^x-19并在讨论唯一性，转去看导数与单调性是自然可能出现的下一步。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文的函数视角衔接顺畅，没有凭空换题；从试值转向单调性分析也合理。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"导数表达式正确，且对x>0有(10/9)^x>1>ln9/ln10，因此f'(x)>0；再结合x<0时两边范围不可能相等，可得唯一解x=2。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续做数值试探，修复后续直接建立单调性并完成唯一性证明，更能推进到正确解法。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"修复后续几乎直接给出了完整证明结构和最终唯一解，暴露程度明显高于自然做题中的逐步探索。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "前文已设f(x)=10^x-9^x-19并在讨论唯一性，转去看导数与单调性是自然可能出现的下一步。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文的函数视角衔接顺畅，没有凭空换题；从试值转向单调性分析也合理。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "导数表达式正确，且对x>0有(10/9)^x>1>ln9/ln10，因此f'(x)>0；再结合x<0时两边范围不可能相等，可得唯一解x=2。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续做数值试探，修复后续直接建立单调性并完成唯一性证明，更能推进到正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "修复后续几乎直接给出了完整证明结构和最终唯一解，暴露程度明显高于自然做题中的逐步探索。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 85,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"是在前文已求出p、q后继续做代数与分类核对，像真实解题中的复查与收尾，不像凭空倒灌完整题解。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"紧接前文的2pq+1/9、p+q=1/3、pq=5/192继续验证并总结，没有引入前文未铺垫的新设定。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"分母换算、二次方程、判别式、根的筛选及最终m+n=29都正确，分类计数也无明显漏洞。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的中断与未完成验算，修复后续完成了关键核查并得出最终答案，更能推进到正确结论。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"T\",\n    \"reason\": \"没有直接套用标准题解中的x设法或整段现成结构，只是在既有p、q路线下完成必要验证与结论。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "是在前文已求出p、q后继续做代数与分类核对，像真实解题中的复查与收尾，不像凭空倒灌完整题解。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文的2pq+1/9、p+q=1/3、pq=5/192继续验证并总结，没有引入前文未铺垫的新设定。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "分母换算、二次方程、判别式、根的筛选及最终m+n=29都正确，分类计数也无明显漏洞。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的中断与未完成验算，修复后续完成了关键核查并得出最终答案，更能推进到正确结论。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接套用标准题解中的x设法或整段现成结构，只是在既有p、q路线下完成必要验证与结论。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

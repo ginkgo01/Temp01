@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1354.json",
+  "dataset_idx": 232,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"顺着前文已提出的“k 与 1997-k 配对”想法继续验证并计数，整体仍像是自然推进的思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文最后一句关于配对的猜想直接衔接，后续步骤也按“尝试配对→验证→计数”展开。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"首句称“所有ω^k（k=0到1996）满足ω^k≠1”明显错误，因为k=0时ω^0=1。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，明确找到了正确的配对方法并推进到接近完整解答。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"几乎完整暴露了标准解的关键 trick、配对恒等式、计数和最终答案，泄露过多。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "顺着前文已提出的“k 与 1997-k 配对”想法继续验证并计数，整体仍像是自然推进的思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文最后一句关于配对的猜想直接衔接，后续步骤也按“尝试配对→验证→计数”展开。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "首句称“所有ω^k（k=0到1996）满足ω^k≠1”明显错误，因为k=0时ω^0=1。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，明确找到了正确的配对方法并推进到接近完整解答。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎完整暴露了标准解的关键 trick、配对恒等式、计数和最终答案，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

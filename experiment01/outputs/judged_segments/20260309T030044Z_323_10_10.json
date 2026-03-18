@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"出现“与标准答案一致”等明显站在已知结论视角的表述，不太像此前自然推进的现场思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"延续了前文“固定A、枚举圆周顺序、判断交替排列”的思路，没有凭空换方法，衔接较自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心结论正确：固定A后其余三点有6种顺序，只有两种交替顺序使AB与CD相交，因此概率为1/3。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续的反复犹豫，修复版明确完成了有效枚举并得到正确概率，明显更接近完整解答。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接给出最终计数与答案，还明确说“与标准答案一致”，暴露了解题结果和结构，泄露过强。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“与标准答案一致”等明显站在已知结论视角的表述，不太像此前自然推进的现场思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "延续了前文“固定A、枚举圆周顺序、判断交替排列”的思路，没有凭空换方法，衔接较自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心结论正确：固定A后其余三点有6种顺序，只有两种交替顺序使AB与CD相交，因此概率为1/3。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续的反复犹豫，修复版明确完成了有效枚举并得到正确概率，明显更接近完整解答。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出最终计数与答案，还明确说“与标准答案一致”，暴露了解题结果和结构，泄露过强。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

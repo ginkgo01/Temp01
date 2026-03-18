@@ -1,0 +1,13 @@
+curl https://www.right.codes/codex/v1/chat/completions \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer sk-d91df136a2a74448adb137096981464a' \
+  -d '{
+    "model": "gpt-5.4-high",
+    "messages": [
+      {
+        "role": "user",
+        "content": "你好"
+      }
+    ],
+    "stream": false
+  }'

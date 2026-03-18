@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 15,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"虽沿用前文思路，但直接给出2/6=1/3且说“与标准答案一致”，带有明显事后知晓答案的痕迹，不像自然探索。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文关于固定A、考察圆周排列、用端点交错判定相交的思路衔接自然，没有明显断裂。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心结论正确：固定A后其余三点有6种相对顺序，其中仅A-C-B-D与A-D-B-C两类交错排列使AB与CD相交，所以概率为1/3。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的犹豫与空转，修复后续明确提出了可完成的计数框架，并推进到正确结论。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"基本把完整解法和最终答案都直接展开了，尤其“与标准答案一致”明显泄露外部已知结果，暴露过度。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "虽沿用前文思路，但直接给出2/6=1/3且说“与标准答案一致”，带有明显事后知晓答案的痕迹，不像自然探索。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于固定A、考察圆周排列、用端点交错判定相交的思路衔接自然，没有明显断裂。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心结论正确：固定A后其余三点有6种相对顺序，其中仅A-C-B-D与A-D-B-C两类交错排列使AB与CD相交，所以概率为1/3。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的犹豫与空转，修复后续明确提出了可完成的计数框架，并推进到正确结论。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "基本把完整解法和最终答案都直接展开了，尤其“与标准答案一致”明显泄露外部已知结果，暴露过度。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

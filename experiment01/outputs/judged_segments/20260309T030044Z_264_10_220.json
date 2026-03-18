@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 220,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"多次直接说“标准题解中…”，明显是站在已知题解的视角回填，不像基于前文自然推演出的思考。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"与前文坐标推导衔接很弱，突然引入BD、J、K及相似三角形，没有从已有变量和关系自然过渡。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"提到的关键结论如BD=4、相似三角形思路、最终BH=9/5基本都与标准解一致，没有明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的原地打转，修复后续至少转向了正确的几何切入点，更接近正确解法。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"不仅暴露了标准题解结构，还直接给出最终答案BH=9/5，泄露过多。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "多次直接说“标准题解中…”，明显是站在已知题解的视角回填，不像基于前文自然推演出的思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "与前文坐标推导衔接很弱，突然引入BD、J、K及相似三角形，没有从已有变量和关系自然过渡。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "提到的关键结论如BD=4、相似三角形思路、最终BH=9/5基本都与标准解一致，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的原地打转，修复后续至少转向了正确的几何切入点，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅暴露了标准题解结构，还直接给出最终答案BH=9/5，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文在几何关系与坐标法之间尝试的思路，推到等腰三角形与相似三角形也像是自然探索，并未明显站在已知全解的视角。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文对角平分线、垂直、坐标系和相似三角形的考虑基本衔接顺畅，没有突然引入未铺垫的结论。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"第4步坐标设定不满足AD∥BC：既然A(0,0), D(a,0)使AD水平，则B和C应有相同纵坐标，写成B(d,e), C(b,c)会破坏平行条件。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停留在坐标铺设，这里额外抓到了∠BAC=∠ACB从而ABC等腰这一关键推进，更接近正确解法。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接泄露辅助点构造、相似对应关系、倍数关系或最终答案，只是提出可能方向，暴露程度较低。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文在几何关系与坐标法之间尝试的思路，推到等腰三角形与相似三角形也像是自然探索，并未明显站在已知全解的视角。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文对角平分线、垂直、坐标系和相似三角形的考虑基本衔接顺畅，没有突然引入未铺垫的结论。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "第4步坐标设定不满足AD∥BC：既然A(0,0), D(a,0)使AD水平，则B和C应有相同纵坐标，写成B(d,e), C(b,c)会破坏平行条件。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停留在坐标铺设，这里额外抓到了∠BAC=∠ACB从而ABC等腰这一关键推进，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露辅助点构造、相似对应关系、倍数关系或最终答案，只是提出可能方向，暴露程度较低。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 70,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接提到“标准题解”并提前指向固定A、B标签与最终1/3，明显像已知答案后的倒推，不像前文自然探索。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"仍接续了前文的“交错顺序/固定AB/两侧”思路，但“标准题解提到”这一句较突兀，且从弧长分析突然跳到标签组合，衔接一般。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"“对于固定的AB弦，C和D位于不同弧的概率应为1/2”明显不对；若两弧长为l和1-l，该概率应为2l(1-l)，依赖AB位置。\"\n  },\n  \"progress\": {\n    \"label\": \"M\",\n    \"reason\": \"相比原始后续，确实引入了更接近正解的“标签分配/固定A”方向，但夹杂错误的1/2判断，推进有帮助但不稳定。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"显式暴露“标准题解”视角，并直接点出最终概率为1/3，泄露了答案与核心解法结构。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接提到“标准题解”并提前指向固定A、B标签与最终1/3，明显像已知答案后的倒推，不像前文自然探索。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "仍接续了前文的“交错顺序/固定AB/两侧”思路，但“标准题解提到”这一句较突兀，且从弧长分析突然跳到标签组合，衔接一般。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“对于固定的AB弦，C和D位于不同弧的概率应为1/2”明显不对；若两弧长为l和1-l，该概率应为2l(1-l)，依赖AB位置。"
+      },
+      "progress": {
+        "label": "M",
+        "reason": "相比原始后续，确实引入了更接近正解的“标签分配/固定A”方向，但夹杂错误的1/2判断，推进有帮助但不稳定。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "显式暴露“标准题解”视角，并直接点出最终概率为1/3，泄露了答案与核心解法结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

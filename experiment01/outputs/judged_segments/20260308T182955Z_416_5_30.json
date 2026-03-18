@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文“换一种思路”的探索口吻，提出多种备选方法并保留犹豫感，不像已知完整解后倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文从五次方程转向三角恒等式的思路衔接自然，也承接了前文提到的 54° 相关角。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"其中断言“cos36° 的精确值是 (1+√5)/4 × 2”明显错误；正确应为 cos36°=(1+√5)/4。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续反复纠结 sin18° 数值，这里提出了更具体的恒等变形和特殊角关系，推进性更强。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接泄露标准答案 1/8，也未完整复现标准题解结构，仍保持为过程中的尝试。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文“换一种思路”的探索口吻，提出多种备选方法并保留犹豫感，不像已知完整解后倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文从五次方程转向三角恒等式的思路衔接自然，也承接了前文提到的 54° 相关角。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "其中断言“cos36° 的精确值是 (1+√5)/4 × 2”明显错误；正确应为 cos36°=(1+√5)/4。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续反复纠结 sin18° 数值，这里提出了更具体的恒等变形和特殊角关系，推进性更强。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露标准答案 1/8，也未完整复现标准题解结构，仍保持为过程中的尝试。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

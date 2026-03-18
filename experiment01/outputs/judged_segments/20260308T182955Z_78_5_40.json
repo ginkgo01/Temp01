@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/47.json",
+  "dataset_idx": 78,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"前文已经通过比较系数算出a=-2、b=1，转而做验证与排查其他解是自然的后续思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"承接了前文“已求出结果并想再确认”的状态，没有凭空引入此前未出现的核心结论。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"代入a=-2后应为(x-a)^2=(x+2)^2，但文本写成了(x+a)^2，存在明显符号错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续里较混乱的导数尝试，这个版本更直接地朝验证并收束到正确答案推进。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽重复了已得到的答案，但并未额外展开标准题解细节，主要是在做结果核验。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "前文已经通过比较系数算出a=-2、b=1，转而做验证与排查其他解是自然的后续思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "承接了前文“已求出结果并想再确认”的状态，没有凭空引入此前未出现的核心结论。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "代入a=-2后应为(x-a)^2=(x+2)^2，但文本写成了(x+a)^2，存在明显符号错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续里较混乱的导数尝试，这个版本更直接地朝验证并收束到正确答案推进。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽重复了已得到的答案，但并未额外展开标准题解细节，主要是在做结果核验。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

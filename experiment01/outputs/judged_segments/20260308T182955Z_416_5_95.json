@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 95,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"内容像是在已知sin18°后继续权衡代入、因式分解、用已得方程等常见思路，没有明显站在已知完整题解的视角倒推。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文已明确进入“先计算s²”的直接代入阶段，修复后续却突然退回到泛泛讨论多种策略，和当前推进位置衔接不自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"所述变形如写成sin^2 18°(sin18°+1)、可用已得五次方程关系、再做数值校验等都没有明显数学错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"原始后续已经在正确计算s²和s³，离答案更近；修复后续只停留在方法讨论，没有实际算出关键量，推进性更差。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接泄露标准答案1/8，也没有完整复现标准题解的关键三角恒等变换链条。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "内容像是在已知sin18°后继续权衡代入、因式分解、用已得方程等常见思路，没有明显站在已知完整题解的视角倒推。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文已明确进入“先计算s²”的直接代入阶段，修复后续却突然退回到泛泛讨论多种策略，和当前推进位置衔接不自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所述变形如写成sin^2 18°(sin18°+1)、可用已得五次方程关系、再做数值校验等都没有明显数学错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "原始后续已经在正确计算s²和s³，离答案更近；修复后续只停留在方法讨论，没有实际算出关键量，推进性更差。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露标准答案1/8，也没有完整复现标准题解的关键三角恒等变换链条。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

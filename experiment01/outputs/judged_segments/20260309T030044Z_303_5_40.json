@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"末句直接提到“标准解法”，带有明显事后视角；且整体像在倒推几何套路，不像顺着当前推导自然产生。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"前文正在线性推进坐标与方程，修复后续突然改走几何观察路线，虽非完全不可能，但与已有方程衔接较弱。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"抓到“可证△ABC等腰”这一方向是对的，但“∠BAC=∠BCA（内错角）”表述不严谨，且“角平分线定理”在此处提法较松散。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相较原始后续只是在继续代数消元，修复后续已经触及等腰、相似、面积比例这些更接近正确解法的关键结构。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"明确说“标准解法中通过相似三角形和面积比例快速求解”，已经泄露了官方思路骨架。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "末句直接提到“标准解法”，带有明显事后视角；且整体像在倒推几何套路，不像顺着当前推导自然产生。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "前文正在线性推进坐标与方程，修复后续突然改走几何观察路线，虽非完全不可能，但与已有方程衔接较弱。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "抓到“可证△ABC等腰”这一方向是对的，但“∠BAC=∠BCA（内错角）”表述不严谨，且“角平分线定理”在此处提法较松散。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续只是在继续代数消元，修复后续已经触及等腰、相似、面积比例这些更接近正确解法的关键结构。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "明确说“标准解法中通过相似三角形和面积比例快速求解”，已经泄露了官方思路骨架。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

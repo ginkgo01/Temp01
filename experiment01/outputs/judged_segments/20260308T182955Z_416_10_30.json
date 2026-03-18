@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"后半段直接说“结合标准题解中的思路”，且提前点出1/8，明显不像自然摸索，更像知道答案后回填。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"虽承接了前文的五次方程与sin18°精确值思路，但中间多次重复错误记忆，最后又突然引入“标准题解”，衔接不自然。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"把sin18°、cos36°都反复写成带“×2”的错误形式，还提前假设结果为1/8，存在明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的反复空转，修复后续至少提出了半角、黄金分割、和差化积等更接近正确解法的方向。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接提到“标准题解中的思路”并泄露目标结果1/8，暴露了解题结构和答案，泄露过多。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后半段直接说“结合标准题解中的思路”，且提前点出1/8，明显不像自然摸索，更像知道答案后回填。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "虽承接了前文的五次方程与sin18°精确值思路，但中间多次重复错误记忆，最后又突然引入“标准题解”，衔接不自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "把sin18°、cos36°都反复写成带“×2”的错误形式，还提前假设结果为1/8，存在明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复空转，修复后续至少提出了半角、黄金分割、和差化积等更接近正确解法的方向。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接提到“标准题解中的思路”并泄露目标结果1/8，暴露了解题结构和答案，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

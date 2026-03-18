@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/algebra/1837.json",
+  "dataset_idx": 22,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"内容仍像顺着已建立的方程继续求解，虽较完整但没有明显“事后倒推”痕迹。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文关于按狗数成比例计酬、两种情形列比的思路衔接自然，只是有少量重复。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"方程建立、交叉相乘、整理求根及排除x=0都正确，最终得x=5无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只列到交叉相乘，修复后续把方程解完并得到正确结论，明显更推进解题。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接给出了完整求解结构和最终答案，基本等同于标准题解，暴露程度偏高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "内容仍像顺着已建立的方程继续求解，虽较完整但没有明显“事后倒推”痕迹。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于按狗数成比例计酬、两种情形列比的思路衔接自然，只是有少量重复。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "方程建立、交叉相乘、整理求根及排除x=0都正确，最终得x=5无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只列到交叉相乘，修复后续把方程解完并得到正确结论，明显更推进解题。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出了完整求解结构和最终答案，基本等同于标准题解，暴露程度偏高。"
+      }
+    },
+    "attempts_used": 2
+  }
+}

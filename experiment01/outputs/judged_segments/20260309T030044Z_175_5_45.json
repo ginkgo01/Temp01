@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 45,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"出现“注意到标准题解中……”这种外部视角，明显不像题中已有思路自然延续出来的自发思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"大体延续了前文的k参数化与检查负数的脉络，但突然提到“标准题解”且末句的k含义与前文有些混淆，衔接不够自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"前几句数学上基本对，但最后提出“检查k=3-7t”在当前n=3k+1的记号下并不严谨，存在变量混用和论证不充分的问题。\"\n  },\n  \"progress\": {\n    \"label\": \"F\",\n    \"reason\": \"相比原始后续并没有更实质地推进求解，更多是在复述已有结果和提醒检查，且没有完成更系统的收束。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接引用“标准题解”并点出“寻找7m接近100”的核心结构，明显暴露了解题路径。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“注意到标准题解中……”这种外部视角，明显不像题中已有思路自然延续出来的自发思考。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "大体延续了前文的k参数化与检查负数的脉络，但突然提到“标准题解”且末句的k含义与前文有些混淆，衔接不够自然。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "前几句数学上基本对，但最后提出“检查k=3-7t”在当前n=3k+1的记号下并不严谨，存在变量混用和论证不充分的问题。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续并没有更实质地推进求解，更多是在复述已有结果和提醒检查，且没有完成更系统的收束。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接引用“标准题解”并点出“寻找7m接近100”的核心结构，明显暴露了解题路径。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

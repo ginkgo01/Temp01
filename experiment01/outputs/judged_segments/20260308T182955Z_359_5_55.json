@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1407.json",
+  "dataset_idx": 359,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 55,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已设的T、S和已推到的代数方程，只是在继续化简后做核对，像自然的后续思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文从TS=24、-8=T(T^2-3S)推到关于S的方程的路线一致，没有凭空引入新设定或新方法。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"运算与恒等式检查都正确：24×576=13824，得64S^3=13824，从而S^3=216，实数解S=6。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，继续完成求解并补充了验算，能稳定收束到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有突然切换到标准题解的另一套结构，也未额外泄露完整官方解法，只是在既有思路上收尾。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已设的T、S和已推到的代数方程，只是在继续化简后做核对，像自然的后续思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文从TS=24、-8=T(T^2-3S)推到关于S的方程的路线一致，没有凭空引入新设定或新方法。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "运算与恒等式检查都正确：24×576=13824，得64S^3=13824，从而S^3=216，实数解S=6。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，继续完成求解并补充了验算，能稳定收束到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有突然切换到标准题解的另一套结构，也未额外泄露完整官方解法，只是在既有思路上收尾。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"表面上像是在自我整理思路，但前文其实已经走到同样的参数化并得到结论，这里换元重推一遍略有事后重写感。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"开头有承接前文的说明，整体逻辑也通顺，但与前文大量重复、像重启了一遍解法，衔接不算特别自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"同余推导、参数化、最小化 |31-7t| 以及对应的 m=16,n=13 都是正确的，没有明显数学或逻辑错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的反复确认与发散，修复后续更系统地收束到参数化和极值判断，能更快完成正确解答。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"M\",\n    \"reason\": \"虽然没有直接照搬标准题解表述，但给出了完整且较 polished 的求解结构与答案，略有成品化痕迹。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "表面上像是在自我整理思路，但前文其实已经走到同样的参数化并得到结论，这里换元重推一遍略有事后重写感。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "开头有承接前文的说明，整体逻辑也通顺，但与前文大量重复、像重启了一遍解法，衔接不算特别自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "同余推导、参数化、最小化 |31-7t| 以及对应的 m=16,n=13 都是正确的，没有明显数学或逻辑错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复确认与发散，修复后续更系统地收束到参数化和极值判断，能更快完成正确解答。"
+      },
+      "non_leakage": {
+        "label": "M",
+        "reason": "虽然没有直接照搬标准题解表述，但给出了完整且较 polished 的求解结构与答案，略有成品化痕迹。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

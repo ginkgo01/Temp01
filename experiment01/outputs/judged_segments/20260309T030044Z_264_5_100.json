@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 100,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"多次直接说“题解中提到”“结合标准解法”，明显像已知完整解法后的回填，不像前文自然思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"有承接前文“坐标法太复杂”的反思，但突然引入辅助点J、GJ、EJ等此前未铺垫对象，衔接不算自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"陈述的几何方向基本正确，没有明显数学错误；矩形给出BH与BE垂直、转向相似与勾股也都合理。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续纠缠缩放和bisectorpoint，修复版转向相似三角形与辅助构造，明显更接近正确路径。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已经泄露了标准解法的核心骨架：构造J、用相似三角形、再用GJ/EJ与勾股推进，暴露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "多次直接说“题解中提到”“结合标准解法”，明显像已知完整解法后的回填，不像前文自然思考。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "有承接前文“坐标法太复杂”的反思，但突然引入辅助点J、GJ、EJ等此前未铺垫对象，衔接不算自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "陈述的几何方向基本正确，没有明显数学错误；矩形给出BH与BE垂直、转向相似与勾股也都合理。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续纠缠缩放和bisectorpoint，修复版转向相似三角形与辅助构造，明显更接近正确路径。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经泄露了标准解法的核心骨架：构造J、用相似三角形、再用GJ/EJ与勾股推进，暴露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

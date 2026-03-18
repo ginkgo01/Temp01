@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"出现“标准解法中提到”的元信息，明显像已知题解后倒推，不像前文自然思考。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文正在走坐标与向量/余弦路线，修复后续突然切到纯几何并引入辅助线，衔接很生硬。\"},\n  \"correctness\": {\"label\": \"M\", \"reason\": \"“∠BAC=∠BCA、△BAC等腰”等方向是对的，但“设AB/AD = BC/CD”缺乏依据，含有不可靠尝试。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续在坐标上打转，修复后续更接近正确解法的关键结构：等腰、分割、相似、面积比。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"不仅提到“标准解法”，还基本泄露了核心解题骨架（等腰三角形、辅助线、相似三角形、面积比例）。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“标准解法中提到”的元信息，明显像已知题解后倒推，不像前文自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文正在走坐标与向量/余弦路线，修复后续突然切到纯几何并引入辅助线，衔接很生硬。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "“∠BAC=∠BCA、△BAC等腰”等方向是对的，但“设AB/AD = BC/CD”缺乏依据，含有不可靠尝试。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续在坐标上打转，修复后续更接近正确解法的关键结构：等腰、分割、相似、面积比。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅提到“标准解法”，还基本泄露了核心解题骨架（等腰三角形、辅助线、相似三角形、面积比例）。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

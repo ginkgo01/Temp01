@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"末句直接提到“标准题解中的4:1”，明显像已知答案后倒推，不像当前推导中的自然想法。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文一直在做坐标推导，修复后续虽引用了方程，但后半突然跳到相似与固定面积比，尤其4:1无铺垫。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"所写代数代入和“∠BAC=∠BCA从而△ABC等腰”的判断本身是对的，未出现明显数学硬伤。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只得到一个坐标关系，这里至少触及关键的等腰与面积比例方向，更接近正确解法。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"明确点出“标准题解中的4:1”已过度暴露标准解结构，泄露过强。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "末句直接提到“标准题解中的4:1”，明显像已知答案后倒推，不像当前推导中的自然想法。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文一直在做坐标推导，修复后续虽引用了方程，但后半突然跳到相似与固定面积比，尤其4:1无铺垫。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所写代数代入和“∠BAC=∠BCA从而△ABC等腰”的判断本身是对的，未出现明显数学硬伤。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只得到一个坐标关系，这里至少触及关键的等腰与面积比例方向，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "明确点出“标准题解中的4:1”已过度暴露标准解结构，泄露过强。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

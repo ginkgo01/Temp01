@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 70,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"直接说“标准题解中提到的相似三角形ACD与CEB”，明显像已知完整解法后的倒推，不像前文自然生长出的思路。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文正沿坐标与变量m继续推导，修复后续却突然切到几何构造并引入点E/三角形CEB，衔接断裂明显。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"其中“∠BAC=∠BCA，从而△ABC等腰”“△ACD是直角三角形”等判断本身都正确，未出现明显硬性数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续在代数里打转，修复后续抓到了等腰与相似三角形这一更接近正解的关键方向，更有希望推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"显式暴露了标准题解中的关键构造与相似关系，基本把正解骨架提前泄露出来了。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“标准题解中提到的相似三角形ACD与CEB”，明显像已知完整解法后的倒推，不像前文自然生长出的思路。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文正沿坐标与变量m继续推导，修复后续却突然切到几何构造并引入点E/三角形CEB，衔接断裂明显。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "其中“∠BAC=∠BCA，从而△ABC等腰”“△ACD是直角三角形”等判断本身都正确，未出现明显硬性数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续在代数里打转，修复后续抓到了等腰与相似三角形这一更接近正解的关键方向，更有希望推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "显式暴露了标准题解中的关键构造与相似关系，基本把正解骨架提前泄露出来了。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

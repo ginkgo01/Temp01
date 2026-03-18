@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/algebra/1837.json",
+  "dataset_idx": 22,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"内容基本像正常解题推进：重申比例方程、展开、移项、因式分解并验算，没有明显站在已知全解视角强行倒推的痕迹。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已建立的方程和即将交叉相乘的思路衔接自然，虽有少量重复，但没有突兀引入新设定。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"代数展开、合并同类项、因式分解和排除x=0都正确，最终得到x=5无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续只做到列出等式，修复后续继续完成求解并验证，明显更推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"修复后续直接给出完整求解路径、最终答案和验算，基本等同标准题解，暴露程度偏高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "内容基本像正常解题推进：重申比例方程、展开、移项、因式分解并验算，没有明显站在已知全解视角强行倒推的痕迹。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已建立的方程和即将交叉相乘的思路衔接自然，虽有少量重复，但没有突兀引入新设定。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "代数展开、合并同类项、因式分解和排除x=0都正确，最终得到x=5无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续只做到列出等式，修复后续继续完成求解并验证，明显更推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "修复后续直接给出完整求解路径、最终答案和验算，基本等同标准题解，暴露程度偏高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

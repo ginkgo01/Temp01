@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/algebra/1837.json",
+  "dataset_idx": 22,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"虽有总结口吻，但仍按常规解题流程推到因式分解与验根，没有明显先知答案后倒写的痕迹。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文已到20x-4x²=0并写到“整理一下”，修复后续却回头重述建模、列式和展开，衔接不自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"列方程、展开、化简、提取公因式、排除x=0并检查12-x≠0都正确，结论x=5无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续停在待整理状态，修复后续成功完成求解并给出有效解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"它几乎把标准题解从建模到验根完整重述了一遍，信息暴露过多，更像成型题解而非局部续写。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "虽有总结口吻，但仍按常规解题流程推到因式分解与验根，没有明显先知答案后倒写的痕迹。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文已到20x-4x²=0并写到“整理一下”，修复后续却回头重述建模、列式和展开，衔接不自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "列方程、展开、化简、提取公因式、排除x=0并检查12-x≠0都正确，结论x=5无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续停在待整理状态，修复后续成功完成求解并给出有效解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "它几乎把标准题解从建模到验根完整重述了一遍，信息暴露过多，更像成型题解而非局部续写。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

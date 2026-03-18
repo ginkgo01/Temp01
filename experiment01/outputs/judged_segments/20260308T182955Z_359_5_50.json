@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1407.json",
+  "dataset_idx": 359,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"先声称前面代数有误，随后又直接围绕 S=6、T=4 做验证与构造，多处像是拿已知答案回填，不像顺着当前推导自然展开。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"与前文虽有关联，但先说“需重新核对运算”，却没有真正重算，而是跳到代入 S=6 和多项式分析，衔接明显发散。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"“24*(576-3S^3)/S^3 = -8S^3”表述本身不对，混淆了原方程与乘以 S^3 后的结果；后面用代入验证也不足以严谨推出唯一结论。\"\n  },\n  \"progress\": {\n    \"label\": \"F\",\n    \"reason\": \"原始后续本来沿着正确代数化简即可到答案，修复版反而引入误判和无关的复根讨论，不是更好的推进。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接假设并确认 S=6、T=4，基本把目标答案提前端出，带有明显结果导向。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "先声称前面代数有误，随后又直接围绕 S=6、T=4 做验证与构造，多处像是拿已知答案回填，不像顺着当前推导自然展开。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "与前文虽有关联，但先说“需重新核对运算”，却没有真正重算，而是跳到代入 S=6 和多项式分析，衔接明显发散。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“24*(576-3S^3)/S^3 = -8S^3”表述本身不对，混淆了原方程与乘以 S^3 后的结果；后面用代入验证也不足以严谨推出唯一结论。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "原始后续本来沿着正确代数化简即可到答案，修复版反而引入误判和无关的复根讨论，不是更好的推进。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接假设并确认 S=6、T=4，基本把目标答案提前端出，带有明显结果导向。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 25,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"后半句直接试探性给出[ACD]=28，明显像已知答案后的倒推，不像基于前文自然推进的真实思考。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文正在做坐标与点积推导，修复后续却突然改走辅助线/相似三角形且未承接已有方程，衔接断裂明显。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"将角平分线定理写成AB/AD=BC/CD是明显错误；且“梯形面积分解为三角形ABC、ACD和其他部分”也不对。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续继续推进正确的坐标方程，修复后续转入含错误的泛泛猜测，离正确解更远。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接点出可能得到[ACD]=28，已经明显泄露答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后半句直接试探性给出[ACD]=28，明显像已知答案后的倒推，不像基于前文自然推进的真实思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文正在做坐标与点积推导，修复后续却突然改走辅助线/相似三角形且未承接已有方程，衔接断裂明显。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "将角平分线定理写成AB/AD=BC/CD是明显错误；且“梯形面积分解为三角形ABC、ACD和其他部分”也不对。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续继续推进正确的坐标方程，修复后续转入含错误的泛泛猜测，离正确解更远。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接点出可能得到[ACD]=28，已经明显泄露答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

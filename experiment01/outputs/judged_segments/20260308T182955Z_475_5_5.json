@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"从前文设出 p、q 后，继续按“和为7的六种有序组合”列概率并联立 p+q=1/3 求解，属于自然可行的推进，不算明显凭答案倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已设 p、q 并写出总概率方程的内容衔接顺畅，只是把原文未展开的求和计算直接具体化了。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"概率分解 2pq+4(1/6)^2、方程 2pq+1/9=47/288、以及解得 q=1/8、p=5/24 都正确，结论 m+n=29 无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停留在列举组合，修复后续已经建立关键方程并完成求解，明显更接近正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"修复后续几乎直接给出完整解法结构、关键方程、根的筛选和最终答案，暴露程度过高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "从前文设出 p、q 后，继续按“和为7的六种有序组合”列概率并联立 p+q=1/3 求解，属于自然可行的推进，不算明显凭答案倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已设 p、q 并写出总概率方程的内容衔接顺畅，只是把原文未展开的求和计算直接具体化了。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "概率分解 2pq+4(1/6)^2、方程 2pq+1/9=47/288、以及解得 q=1/8、p=5/24 都正确，结论 m+n=29 无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停留在列举组合，修复后续已经建立关键方程并完成求解，明显更接近正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "修复后续几乎直接给出完整解法结构、关键方程、根的筛选和最终答案，暴露程度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

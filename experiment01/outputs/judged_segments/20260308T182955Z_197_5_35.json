@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/number_theory/838.json",
+  "dataset_idx": 197,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 35,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"内容基本是沿着前文已建立的质因数分解与指数约束继续确认并收束到结论，属于自然可能的后续思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文的设元方式和不等式约束直接衔接，只是做了整理与确认，没有凭空引入新方法或未铺垫结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"指数限制、组合计数和列举出的x值都正确，最终答案6无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续更明确地完成了分类、计数和验证，明显更推进到正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"最后直接完整列举所有x并给出定论，呈现得过于像标准题解收尾，泄露了解答结构和答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "内容基本是沿着前文已建立的质因数分解与指数约束继续确认并收束到结论，属于自然可能的后续思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文的设元方式和不等式约束直接衔接，只是做了整理与确认，没有凭空引入新方法或未铺垫结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "指数限制、组合计数和列举出的x值都正确，最终答案6无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续更明确地完成了分类、计数和验证，明显更推进到正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "最后直接完整列举所有x并给出定论，呈现得过于像标准题解收尾，泄露了解答结构和答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

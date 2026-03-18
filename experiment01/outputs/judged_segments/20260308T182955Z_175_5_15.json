@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 15,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"延续了前文设k=m-n并解同余的思路，继续枚举最接近0的k值，属于自然可产生的后续推理。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"紧接前文的k=7t+3展开，没有凭空引入新方法或关键结论，衔接基本顺畅。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"代入计算k=3、-4、10时的m、n均正确，且由k取值序列可得最小|k|为3，结论无误。\"\n  },\n  \"progress\": {\n    \"label\": \"F\",\n    \"reason\": \"原始后续已经更直接地排除了k=0,1,2等更小绝对值情形；修复版虽得出正确答案，但论证更弱，未明显比原版更推进解题。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"T\",\n    \"reason\": \"没有跳到标准题解的另一套结构，也未明显站在已知答案视角直接倒推，仍保持为正常做题过程。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文设k=m-n并解同余的思路，继续枚举最接近0的k值，属于自然可产生的后续推理。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文的k=7t+3展开，没有凭空引入新方法或关键结论，衔接基本顺畅。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "代入计算k=3、-4、10时的m、n均正确，且由k取值序列可得最小|k|为3，结论无误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "原始后续已经更直接地排除了k=0,1,2等更小绝对值情形；修复版虽得出正确答案，但论证更弱，未明显比原版更推进解题。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有跳到标准题解的另一套结构，也未明显站在已知答案视角直接倒推，仍保持为正常做题过程。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

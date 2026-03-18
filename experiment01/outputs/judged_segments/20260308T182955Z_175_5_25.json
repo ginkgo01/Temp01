@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 25,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续前文已得出的 k≡3(mod7) 继续检验候选值，并辅以邻近整数验证，像真实思考过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文关于 k=m-n、k=7t+3 的推导自然衔接，没有凭空引入未铺垫的关键结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"列举的 k 值、对应差值及代入检验都正确，结论最小 |m-n|=3 无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的发散尝试，修复后续直接收束到候选值比较并完成最小值确认，更推进解题。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽已接近得出答案，但仍以逐步验证方式推进，没有直接套出标准题解框架或生硬泄露完整解法。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续前文已得出的 k≡3(mod7) 继续检验候选值，并辅以邻近整数验证，像真实思考过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于 k=m-n、k=7t+3 的推导自然衔接，没有凭空引入未铺垫的关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "列举的 k 值、对应差值及代入检验都正确，结论最小 |m-n|=3 无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的发散尝试，修复后续直接收束到候选值比较并完成最小值确认，更推进解题。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽已接近得出答案，但仍以逐步验证方式推进，没有直接套出标准题解框架或生硬泄露完整解法。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

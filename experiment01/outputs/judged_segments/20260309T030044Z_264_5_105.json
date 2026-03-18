@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 105,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接说“题解中使用了”“题解中提到的点J”，明显是站在已知标准解法的视角回填，不像前文自然推进出来的思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文一直在纠结坐标与 bisectorpoint 的含义，修复后续却突然引入题解视角、点J与GK，衔接生硬，关键对象属凭空出现。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所提到的方向基本与标准解一致：利用直角三角形、相似、交点J以及后续长度链条，没有明显数学性错误或自相矛盾。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续停留在猜测 bisectorpoint，修复后续已经转向正确的核心结构，明显更接近可完成的解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已泄露标准解的关键骨架：引入J、GK、BH=GK以及CJ/GJ/EJ的计算顺序，几乎把完整题解路线暴露出来。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“题解中使用了”“题解中提到的点J”，明显是站在已知标准解法的视角回填，不像前文自然推进出来的思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文一直在纠结坐标与 bisectorpoint 的含义，修复后续却突然引入题解视角、点J与GK，衔接生硬，关键对象属凭空出现。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所提到的方向基本与标准解一致：利用直角三角形、相似、交点J以及后续长度链条，没有明显数学性错误或自相矛盾。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续停留在猜测 bisectorpoint，修复后续已经转向正确的核心结构，明显更接近可完成的解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已泄露标准解的关键骨架：引入J、GK、BH=GK以及CJ/GJ/EJ的计算顺序，几乎把完整题解路线暴露出来。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

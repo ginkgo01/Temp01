@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 65,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"整体仍像是在现有坐标法卡住后尝试换思路，语气也多用“可能”“或许”，不像已知完整题解后的倒推。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文刚说要用行列式求△ACD面积并以冒号收束，修复后续却突然转去泛谈几何比例与相似，和当前推导衔接不顺。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"引用的已有关系式与代换计算基本正确，且“△ACD面积=(AC×CD)/2”在AC⊥CD下成立，没有明显硬性错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原后续直接锁定目标量dh，修复后续大量停留在猜测性表述和重复代换上，没有更实质地逼近所求面积。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接泄露标准构造、4倍面积关系或答案28，只是笼统提到相似与面积关系。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "整体仍像是在现有坐标法卡住后尝试换思路，语气也多用“可能”“或许”，不像已知完整题解后的倒推。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文刚说要用行列式求△ACD面积并以冒号收束，修复后续却突然转去泛谈几何比例与相似，和当前推导衔接不顺。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "引用的已有关系式与代换计算基本正确，且“△ACD面积=(AC×CD)/2”在AC⊥CD下成立，没有明显硬性错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原后续直接锁定目标量dh，修复后续大量停留在猜测性表述和重复代换上，没有更实质地逼近所求面积。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露标准构造、4倍面积关系或答案28，只是笼统提到相似与面积关系。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

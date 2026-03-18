@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 125,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"明确提到“标准解法中”，且直接点出交点J、垂足K等关键构造，明显带有已知完整题解后的倒推痕迹。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"从前文坐标尝试转向相似三角形并非完全突兀，但J、K等新辅助点的引入较突然，缺少从前文自然生长出来的过渡。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所提几何方向与标准解法一致，没有明显数学错误；表述多为策略性提示，未出现自相矛盾。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原后续继续在错误坐标路径上计算，这里转向正确的相似三角形与辅助线思路，明显更接近正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"几乎把标准题解的核心结构完整泄露出来：取J为BE与GC交点、作垂足K、用相似三角形并对应BH与GK。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "明确提到“标准解法中”，且直接点出交点J、垂足K等关键构造，明显带有已知完整题解后的倒推痕迹。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "从前文坐标尝试转向相似三角形并非完全突兀，但J、K等新辅助点的引入较突然，缺少从前文自然生长出来的过渡。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所提几何方向与标准解法一致，没有明显数学错误；表述多为策略性提示，未出现自相矛盾。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原后续继续在错误坐标路径上计算，这里转向正确的相似三角形与辅助线思路，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎把标准题解的核心结构完整泄露出来：取J为BE与GC交点、作垂足K、用相似三角形并对应BH与GK。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

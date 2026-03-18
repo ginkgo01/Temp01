@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 425,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接提到“标准答案”“标准解法”并围绕其倒推，明显不像前文自然推演出来的思路。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还在代入特定值和尝试因式分解，修复后续却突然引入二次因子判别式与结论区间，衔接很突兀。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"核心结论(3,4]和判别式形式是对的，但对“根确为区间内且对应非不动点”的论证较跳，表述不够严密。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续停留在λ=4的试算，修复后续明显转向正确的整体判别框架，更接近完整解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"显式暴露标准答案区间，并直接引用标准题解中的关键分解与判别式，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接提到“标准答案”“标准解法”并围绕其倒推，明显不像前文自然推演出来的思路。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在代入特定值和尝试因式分解，修复后续却突然引入二次因子判别式与结论区间，衔接很突兀。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "核心结论(3,4]和判别式形式是对的，但对“根确为区间内且对应非不动点”的论证较跳，表述不够严密。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续停留在λ=4的试算，修复后续明显转向正确的整体判别框架，更接近完整解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "显式暴露标准答案区间，并直接引用标准题解中的关键分解与判别式，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

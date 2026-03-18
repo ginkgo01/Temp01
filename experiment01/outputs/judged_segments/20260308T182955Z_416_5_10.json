@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文对sin18°精确值和五倍角方程的犹豫与回看，也像是在中途改换思路，整体仍像真实做题过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文提到的五倍角、精确值、原式拆分都有衔接，虽然来回切换思路，但没有明显凭空跳出全新结论。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"多次把sin18°写成“(√5-1)/4乘以2”之类混乱形式，且给出的sinθ+1的和差化积公式明显不对，存在实质性数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续执着于因式分解五次方程，这里转向原式因式分解与cos36°、sin18°的特殊值，方向上更接近可行解法。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接泄露标准答案，也未完整复现标准题解结构，只是提出若干可能路线与已知特殊角信息。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文对sin18°精确值和五倍角方程的犹豫与回看，也像是在中途改换思路，整体仍像真实做题过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文提到的五倍角、精确值、原式拆分都有衔接，虽然来回切换思路，但没有明显凭空跳出全新结论。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "多次把sin18°写成“(√5-1)/4乘以2”之类混乱形式，且给出的sinθ+1的和差化积公式明显不对，存在实质性数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续执着于因式分解五次方程，这里转向原式因式分解与cos36°、sin18°的特殊值，方向上更接近可行解法。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露标准答案，也未完整复现标准题解结构，只是提出若干可能路线与已知特殊角信息。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

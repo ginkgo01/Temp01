@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/47.json",
+  "dataset_idx": 78,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 25,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"沿用前文已列出的方程1、方程2继续消元求解，属于当前语境下自然可能出现的思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文的系数比较结果直接衔接，没有凭空引入新结论；虽未继续写常数项方程，但用已有两式求解是连贯的。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"代入化简正确，得到a=0或-2后利用a≠0排除0，进而求得b=1，结论与验证都无明显错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只解到一半并准备验证，修复后续实际完成了求解并检查，更推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接搬运标准题解结构，只是在已有方程基础上继续常规消元与验证，未显得过度剧透。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "沿用前文已列出的方程1、方程2继续消元求解，属于当前语境下自然可能出现的思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文的系数比较结果直接衔接，没有凭空引入新结论；虽未继续写常数项方程，但用已有两式求解是连贯的。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "代入化简正确，得到a=0或-2后利用a≠0排除0，进而求得b=1，结论与验证都无明显错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只解到一半并准备验证，修复后续实际完成了求解并检查，更推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接搬运标准题解结构，只是在已有方程基础上继续常规消元与验证，未显得过度剧透。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

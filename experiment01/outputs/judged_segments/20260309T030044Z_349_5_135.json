@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 135,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"紧扣前文的核心矛盾（7! 与 8!/4），只是顺着已出现的 Burnside 和对称群讨论做出取舍，属于自然可能的后续思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"与前文衔接顺畅，直接回应“固定一个人为什么不对”的疑问，没有凭空引入此前从未出现的关键概念。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"数学上正确：8 个不同的人在正方形桌子的 8 个座位上，按旋转群 C4 作用计数，非恒等旋转无不动点，因此结果是 8!/4=10080。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续原地怀疑群大小，修复后明确指出固定位置法失效的原因，并推进到正确答案。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接给出完整纠错逻辑、关键比较（圆桌 vs 正方形）以及最终答案，基本已把标准解结构说全了。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "紧扣前文的核心矛盾（7! 与 8!/4），只是顺着已出现的 Burnside 和对称群讨论做出取舍，属于自然可能的后续思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文衔接顺畅，直接回应“固定一个人为什么不对”的疑问，没有凭空引入此前从未出现的关键概念。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "数学上正确：8 个不同的人在正方形桌子的 8 个座位上，按旋转群 C4 作用计数，非恒等旋转无不动点，因此结果是 8!/4=10080。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续原地怀疑群大小，修复后明确指出固定位置法失效的原因，并推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出完整纠错逻辑、关键比较（圆桌 vs 正方形）以及最终答案，基本已把标准解结构说全了。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

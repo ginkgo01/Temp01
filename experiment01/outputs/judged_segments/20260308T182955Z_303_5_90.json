@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 90,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续前文坐标法与自检思路，像自然继续推导，而非突然切到已知全解的视角。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"承接前文已得到的 d=2(c-b)、m=c-b、(c-b)h=28，继续计算 dh 并复核条件，衔接自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心推导 d=2m、h=28/m、dh=56、[ACD]=28 是正确的；后面的数值试探虽未完成，但未形成错误结论。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续的犹豫收尾，修复版明确算出 dh 并锁定面积 28，更有效推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有泄露标准解中的辅助线、相似三角形等完整结构，只沿已有坐标路线前进。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续前文坐标法与自检思路，像自然继续推导，而非突然切到已知全解的视角。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "承接前文已得到的 d=2(c-b)、m=c-b、(c-b)h=28，继续计算 dh 并复核条件，衔接自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心推导 d=2m、h=28/m、dh=56、[ACD]=28 是正确的；后面的数值试探虽未完成，但未形成错误结论。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续的犹豫收尾，修复版明确算出 dh 并锁定面积 28，更有效推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有泄露标准解中的辅助线、相似三角形等完整结构，只沿已有坐标路线前进。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

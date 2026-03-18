@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"中途直接给出“概率为2/6=1/3”，还说“这与标准答案一致”，明显带有已知答案后倒推的痕迹，不像自然探索。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"整体仍沿着前文的“交错排列+固定A+数排列”思路推进，衔接基本自然，虽有些重复和小跳步。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心结论“弦相交当且仅当端点交错，计数得2/6=1/3”是正确的，未出现明显致命数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的反复犹豫，修复后续已经明确相交条件并完成计数，明显更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"已经基本暴露完整解法结构和最终答案，还显式提到“标准答案一致”，泄露过多。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "中途直接给出“概率为2/6=1/3”，还说“这与标准答案一致”，明显带有已知答案后倒推的痕迹，不像自然探索。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "整体仍沿着前文的“交错排列+固定A+数排列”思路推进，衔接基本自然，虽有些重复和小跳步。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心结论“弦相交当且仅当端点交错，计数得2/6=1/3”是正确的，未出现明显致命数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复犹豫，修复后续已经明确相交条件并完成计数，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经基本暴露完整解法结构和最终答案，还显式提到“标准答案一致”，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

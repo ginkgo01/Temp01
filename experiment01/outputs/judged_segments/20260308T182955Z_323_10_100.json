@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 100,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文对“0.5是否有误”和“6种圆排列”的思路，还呼应了前文提到听说答案可能是1/3，整体像自然修正。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"承接前文先反思0.5的漏洞，再回到固定A、统计6种圆排列，和已有思路衔接基本自然。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"其中“固定AB后，C和D落在不同弧上的概率应为1/2”这一说法本身不对；对一般AB，两弧长度不等，概率不恒为1/2。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的反复犹豫，修复后续明确转向按6种圆排列计数，并得到2/6的正确方向，更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接给出“恰好有2种”“因此概率为1/3”，基本把关键计数结论和答案提前暴露出来，泄露较重。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文对“0.5是否有误”和“6种圆排列”的思路，还呼应了前文提到听说答案可能是1/3，整体像自然修正。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "承接前文先反思0.5的漏洞，再回到固定A、统计6种圆排列，和已有思路衔接基本自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "其中“固定AB后，C和D落在不同弧上的概率应为1/2”这一说法本身不对；对一般AB，两弧长度不等，概率不恒为1/2。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复犹豫，修复后续明确转向按6种圆排列计数，并得到2/6的正确方向，更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出“恰好有2种”“因此概率为1/3”，基本把关键计数结论和答案提前暴露出来，泄露较重。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

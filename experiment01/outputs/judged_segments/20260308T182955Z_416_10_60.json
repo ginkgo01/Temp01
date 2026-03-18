@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 60,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"内容仍像是在已有尝试基础上的真实犹豫与回看，没有直接站在已知标准解的视角倒推。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文已几乎完成四次式平方分解并在展开验证，修复后续却突然退回到更早阶段泛泛重述，衔接感较弱。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"没有出现明显的数学结论性错误，提到的五倍角、四次式形式、用正五边形或黄金分割等都属合理方向。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续已成功识别平方分解并解出二次方程，修复后续反而回撤到开放性讨论，推进正确解的希望更小。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接泄露标准答案或完整标准题解结构，只是提出若干可能思路。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "内容仍像是在已有尝试基础上的真实犹豫与回看，没有直接站在已知标准解的视角倒推。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文已几乎完成四次式平方分解并在展开验证，修复后续却突然退回到更早阶段泛泛重述，衔接感较弱。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "没有出现明显的数学结论性错误，提到的五倍角、四次式形式、用正五边形或黄金分割等都属合理方向。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续已成功识别平方分解并解出二次方程，修复后续反而回撤到开放性讨论，推进正确解的希望更小。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露标准答案或完整标准题解结构，只是提出若干可能思路。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

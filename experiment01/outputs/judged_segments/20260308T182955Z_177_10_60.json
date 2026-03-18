@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 60,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"基于前文已得到的坐标与边长，继续识别 1:√3:2 比例并用余弦定理验证，整体上是自然可能出现的思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文刚算出的 PQ、QS、PS 三边长度衔接较顺，后续围绕这些长度求角，没有明显硬跳。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"有明显表述性错误：由 QR=2、RS=2、PR=2、PS=2 只能说明 QR、RS、PR、PS 这些对应圆相切，不能说“圆Q、R、S与P分别相切”；其中 PQ 并不相切。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续只停留在判断最小角对应哪条边，修复后续已经实质算出角Q=30°，明显更推进解题。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"后半段基本把答案、角度结构和完整结论一次性说完，还补入额外几何验证，泄露感较强，不太像自然进行中的思考。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "基于前文已得到的坐标与边长，继续识别 1:√3:2 比例并用余弦定理验证，整体上是自然可能出现的思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文刚算出的 PQ、QS、PS 三边长度衔接较顺，后续围绕这些长度求角，没有明显硬跳。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "有明显表述性错误：由 QR=2、RS=2、PR=2、PS=2 只能说明 QR、RS、PR、PS 这些对应圆相切，不能说“圆Q、R、S与P分别相切”；其中 PQ 并不相切。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续只停留在判断最小角对应哪条边，修复后续已经实质算出角Q=30°，明显更推进解题。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "后半段基本把答案、角度结构和完整结论一次性说完，还补入额外几何验证，泄露感较强，不太像自然进行中的思考。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"末句直接抛出“例如1/8”，像是已知答案后的倒推，不太像前文自然探索。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"承接了前文的五次方程与sin18°困惑，转向cos36°与恒等式，衔接基本自然。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"写出cos36° = (sqrt(5)+1)/4 × 2明显错误，数值会大于1。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比继续硬分解四次方程，转向18°/36°恒等式与已知特殊角值，更接近正确路线。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"显式提到“最终得到一个常数结果，例如1/8”，泄露了标准答案方向。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "末句直接抛出“例如1/8”，像是已知答案后的倒推，不太像前文自然探索。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "承接了前文的五次方程与sin18°困惑，转向cos36°与恒等式，衔接基本自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "写出cos36° = (sqrt(5)+1)/4 × 2明显错误，数值会大于1。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比继续硬分解四次方程，转向18°/36°恒等式与已知特殊角值，更接近正确路线。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "显式提到“最终得到一个常数结果，例如1/8”，泄露了标准答案方向。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

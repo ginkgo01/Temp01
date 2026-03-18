@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/number_theory/838.json",
+  "dataset_idx": 197,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 25,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"出现“这与标准题解一致”等表述，明显带有已知完整答案后的回看视角，不像当前思路中自然生成。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"承接前文已得到的质因数分解与指数约束，继续确认范围、计数并核查样例，整体衔接自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"质因数分解、指数限制、组合计数和列举的6个x值都正确，没有数学或逻辑错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续的反复举例与停顿，修复后续直接完成核查、计数和收束，更推进到正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"不仅直接给出最终答案，还完整列出所有x值，并显式提到“标准题解”，暴露程度过高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“这与标准题解一致”等表述，明显带有已知完整答案后的回看视角，不像当前思路中自然生成。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "承接前文已得到的质因数分解与指数约束，继续确认范围、计数并核查样例，整体衔接自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "质因数分解、指数限制、组合计数和列举的6个x值都正确，没有数学或逻辑错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续的反复举例与停顿，修复后续直接完成核查、计数和收束，更推进到正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅直接给出最终答案，还完整列出所有x值，并显式提到“标准题解”，暴露程度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

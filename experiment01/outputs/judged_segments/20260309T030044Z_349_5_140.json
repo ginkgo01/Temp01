@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 140,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"它延续了前文在 7! 与 8!/4 之间摇摆的思路，但“这与标准题解一致”“最终答案应为”带有明显事后确认感。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"整体上承接了前文对 Burnside 和固定位置法的冲突，不过“所有旋转操作的不动点数均为0”与前文已分析的恒等旋转不一致，衔接不够自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"存在明显数学错误：0° 旋转的不动点应为 8! 而不是 0；对固定位置法的问题归因也不准确。虽然结论 8!/4 对，但论证有硬伤。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续发散到小例子，这个修复后续重新抓住了 Burnside/按旋转除以 4 的主线，更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接提到“与标准题解一致”并给出最终答案，明显暴露了标准结论与解题结构。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "它延续了前文在 7! 与 8!/4 之间摇摆的思路，但“这与标准题解一致”“最终答案应为”带有明显事后确认感。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "整体上承接了前文对 Burnside 和固定位置法的冲突，不过“所有旋转操作的不动点数均为0”与前文已分析的恒等旋转不一致，衔接不够自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "存在明显数学错误：0° 旋转的不动点应为 8! 而不是 0；对固定位置法的问题归因也不准确。虽然结论 8!/4 对，但论证有硬伤。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续发散到小例子，这个修复后续重新抓住了 Burnside/按旋转除以 4 的主线，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接提到“与标准题解一致”并给出最终答案，明显暴露了标准结论与解题结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

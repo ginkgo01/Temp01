@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 25,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"语气上是试探性探索，不像直接背出完整题解；但它突然转向标准几何思路，且与前文正进行的坐标推导不太一致。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文已经进入坐标与点积方程计算，且停在“计算各个点积”处；修复后续却直接改谈面积比例和几何直觉，衔接明显断裂。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"其中“若AC平分角BAD，则AB/AD = BC/CD（角平分线定理）”明显误用角平分线定理，因为C并不在BD上；“由于AD平行于BC，角BAC与角BCA可能相等”也表述失准。\"\n  },\n  \"progress\": {\n    \"label\": \"F\",\n    \"reason\": \"相比原始后续继续推进正确的坐标方程，这个版本大多是模糊设想，还夹带错误定理，整体上更不利于走到正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"T\",\n    \"reason\": \"没有直接暴露答案28，也没有复现标准题解中的关键构造与完整比例链条，泄露度较低。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "语气上是试探性探索，不像直接背出完整题解；但它突然转向标准几何思路，且与前文正进行的坐标推导不太一致。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文已经进入坐标与点积方程计算，且停在“计算各个点积”处；修复后续却直接改谈面积比例和几何直觉，衔接明显断裂。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "其中“若AC平分角BAD，则AB/AD = BC/CD（角平分线定理）”明显误用角平分线定理，因为C并不在BD上；“由于AD平行于BC，角BAC与角BCA可能相等”也表述失准。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续继续推进正确的坐标方程，这个版本大多是模糊设想，还夹带错误定理，整体上更不利于走到正确解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接暴露答案28，也没有复现标准题解中的关键构造与完整比例链条，泄露度较低。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

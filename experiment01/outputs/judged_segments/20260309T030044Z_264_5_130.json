@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 130,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接说“标准题解中使用了…”，明显是站在已知题解的视角回填，不像前文自然推导出的新想法。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"从前文坐标/缩放思路突然跳到引入点J、相似三角形和后续构造，缺少过渡，且关键对象此前未铺垫。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"把“BE与DE的垂直性”当作关键关系是错误的；直角应在BD与DE之间，这属于明显数学表述错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"尽管有泄露和表述错误，但它确实把思路拉回到正确解法所需的相似三角形与辅助点方向，比原始后续更接近正解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"几乎直接暴露了标准题解框架：引入J、用勾股算BD、列相似比例、再把GK与BH对应，泄露程度过高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“标准题解中使用了…”，明显是站在已知题解的视角回填，不像前文自然推导出的新想法。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "从前文坐标/缩放思路突然跳到引入点J、相似三角形和后续构造，缺少过渡，且关键对象此前未铺垫。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "把“BE与DE的垂直性”当作关键关系是错误的；直角应在BD与DE之间，这属于明显数学表述错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "尽管有泄露和表述错误，但它确实把思路拉回到正确解法所需的相似三角形与辅助点方向，比原始后续更接近正解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎直接暴露了标准题解框架：引入J、用勾股算BD、列相似比例、再把GK与BH对应，泄露程度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

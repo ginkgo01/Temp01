@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"修复后续引用了前文已出现的设 k=m-n、k=3/-4 等结果，也表现出继续试探与核查的过程，整体像是顺着已有思路在想。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"它能接上前文 earlier 的 k=m-n 路线，但没有顺着最后一句 n=3k+1 继续展开，且突然提“对称性”“7m≈100”略显跳转。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"代入验证 k=3、-4 及 m=14、15 的计算都对，但把 3m+4n=100 说成有“对称性”不准确，7m≈100 也只是启发式而非严谨推导。\"\n  },\n  \"progress\": {\n    \"label\": \"F\",\n    \"reason\": \"相较原始后续已把问题化为 |31-7k| 的直接最小化，修复后续反而回退到试探 m=14、15，离完成解法更远。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"它直接给出 k=3 对应 (m,n)=(16,13) 且 |m-n|=3，已经明显暴露了答案核心。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "修复后续引用了前文已出现的设 k=m-n、k=3/-4 等结果，也表现出继续试探与核查的过程，整体像是顺着已有思路在想。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "它能接上前文 earlier 的 k=m-n 路线，但没有顺着最后一句 n=3k+1 继续展开，且突然提“对称性”“7m≈100”略显跳转。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "代入验证 k=3、-4 及 m=14、15 的计算都对，但把 3m+4n=100 说成有“对称性”不准确，7m≈100 也只是启发式而非严谨推导。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相较原始后续已把问题化为 |31-7k| 的直接最小化，修复后续反而回退到试探 m=14、15，离完成解法更远。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "它直接给出 k=3 对应 (m,n)=(16,13) 且 |m-n|=3，已经明显暴露了答案核心。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

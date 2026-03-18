@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"后半段直接引入J、K及两组特定相似三角形，几乎按标准解结构推进，明显像已知题解后的倒推。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"前几句与前文“重设坐标、利用矩形性质”能衔接，但J、K、GKBH矩形等关键构造出现过于突兀，缺少自然过渡。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所提关键关系与标准解一致：BD=4、利用相似求CJ/GJ、再求GK并由BH=GK得值，未见明显数学错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续仍停留在坐标设定与犹豫阶段，修复后续已经指向正确的几何构造和求解路径，推进明显。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"暴露了完整解题骨架，包括J、K的引入、具体相似三角形和最终由矩形得BH=GK，泄露程度过高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后半段直接引入J、K及两组特定相似三角形，几乎按标准解结构推进，明显像已知题解后的倒推。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "前几句与前文“重设坐标、利用矩形性质”能衔接，但J、K、GKBH矩形等关键构造出现过于突兀，缺少自然过渡。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所提关键关系与标准解一致：BD=4、利用相似求CJ/GJ、再求GK并由BH=GK得值，未见明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续仍停留在坐标设定与犹豫阶段，修复后续已经指向正确的几何构造和求解路径，推进明显。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "暴露了完整解题骨架，包括J、K的引入、具体相似三角形和最终由矩形得BH=GK，泄露程度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

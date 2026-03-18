@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 80,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"是在前文已推出p+q和pq关系后进行核对与选根，像正常解题中的回查，不像事后倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"承接前文已得到的2pq+1/9=47/288和二次方程结果，只是先做复核，再确定p，衔接自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"概率分类、分数计算、判别式、选根与代回验证都正确，没有明显数学或逻辑错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，补上了对关键方程与代入的检查，更稳妥地推进到正确答案29。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接套用标准题解中的新设元或现成结构，只基于前文已有推导继续完成解答。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "是在前文已推出p+q和pq关系后进行核对与选根，像正常解题中的回查，不像事后倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "承接前文已得到的2pq+1/9=47/288和二次方程结果，只是先做复核，再确定p，衔接自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "概率分类、分数计算、判别式、选根与代回验证都正确，没有明显数学或逻辑错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，补上了对关键方程与代入的检查，更稳妥地推进到正确答案29。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接套用标准题解中的新设元或现成结构，只基于前文已有推导继续完成解答。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

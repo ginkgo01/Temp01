@@ -122,7 +122,7 @@ def main() -> None:
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": prompt},
         ],
-        "temperature": 0.2,
+        "temperature": 0.8,
         "max_tokens": MAX_TOKENS,
         "stream": False,
     }

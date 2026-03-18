@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接说“标准题解提到总排列数除以4”明显带有已知答案后回推的视角，不像前文自然自发推进。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"大体延续了前文对7!与8!/4冲突的反思，但突然引入“标准题解”这种元信息，衔接感被削弱。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"关于正方形只考虑4种旋转、可用Burnside检查非恒等旋转无不动点、因此应按4来归类的方向是正确的，未见明显数学错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续只在7!处打转，修复后续明确转向旋转群阶数与不动点分析，更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"不仅点出“标准题解”，还基本给出了完整解题骨架（按4种旋转分类并检查不动点），泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“标准题解提到总排列数除以4”明显带有已知答案后回推的视角，不像前文自然自发推进。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "大体延续了前文对7!与8!/4冲突的反思，但突然引入“标准题解”这种元信息，衔接感被削弱。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "关于正方形只考虑4种旋转、可用Burnside检查非恒等旋转无不动点、因此应按4来归类的方向是正确的，未见明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只在7!处打转，修复后续明确转向旋转群阶数与不动点分析，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅点出“标准题解”，还基本给出了完整解题骨架（按4种旋转分类并检查不动点），泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

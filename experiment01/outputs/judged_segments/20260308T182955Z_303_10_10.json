@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"后续明显带有已知结论后回填的痕迹，如直接断言可得28、甚至说“符合标准题解”，不像前文自然探索出的思路。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"与前文原本正准备用夹角余弦继续推导的脉络衔接不顺，且中途突然引入AB=BC、d=2(c-b)等关键结论，缺少过渡。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"第3步把角平分线定理往AB/AD = BC/CD方向套用是明显不当的；后面虽能得到正确答案，但存在不严谨甚至错误表述。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续停留在搭方程阶段，修复后续至少给出了可通向正确答案的关键关系和面积计算方向。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"后续几乎直接给出完整解法骨架和最终答案，还出现“符合标准题解”这类表述，泄露感较强。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后续明显带有已知结论后回填的痕迹，如直接断言可得28、甚至说“符合标准题解”，不像前文自然探索出的思路。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "与前文原本正准备用夹角余弦继续推导的脉络衔接不顺，且中途突然引入AB=BC、d=2(c-b)等关键结论，缺少过渡。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "第3步把角平分线定理往AB/AD = BC/CD方向套用是明显不当的；后面虽能得到正确答案，但存在不严谨甚至错误表述。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续停留在搭方程阶段，修复后续至少给出了可通向正确答案的关键关系和面积计算方向。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "后续几乎直接给出完整解法骨架和最终答案，还出现“符合标准题解”这类表述，泄露感较强。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

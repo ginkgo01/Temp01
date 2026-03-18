@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 510,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"明显以“标准题解/标准答案”视角回填思路，不像前文自然推演出来的续写。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文尚未推出因式分解或二次因子，修复后续却直接谈“二次方程判别式”和最终范围，衔接突兀。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"结论(3,4]正确，对λ=3与λ>3的区分也基本符合标准解，没有明显数学性错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续试代x=0.5，修复后续直接转向判别式与根的分析，明显更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接引用“标准题解”“标准答案”并给出最终区间，泄露了解题结构和结果。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "明显以“标准题解/标准答案”视角回填思路，不像前文自然推演出来的续写。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文尚未推出因式分解或二次因子，修复后续却直接谈“二次方程判别式”和最终范围，衔接突兀。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "结论(3,4]正确，对λ=3与λ>3的区分也基本符合标准解，没有明显数学性错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续试代x=0.5，修复后续直接转向判别式与根的分析，明显更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接引用“标准题解”“标准答案”并给出最终区间，泄露了解题结构和结果。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

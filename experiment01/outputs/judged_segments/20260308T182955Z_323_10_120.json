@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 120,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已有的两条思路：0.5 的疑惑和 6 种圆排列计数，像是在原有思路上收束，而不是突然搬出标准题解。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文反复讨论的“固定 A、其余三点有 6 种顺序”“A-C-B-D 型才相交”自然衔接，没有明显断层。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心论证“固定 A 后其余三点有 6 种等可能圆排列，其中 2 种使 AB 与 CD 相交，因此概率为 1/3”是正确的；虽有个别解释略松，但无致命错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只是在 1/3 附近打转，修复后续明确完成了有利情形与总情形的计数，明显更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接照搬标准题解中“先不标号、再看 B 是否与 A 对顶”的结构，而是沿前文自然发展的圆排列思路得到结论。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已有的两条思路：0.5 的疑惑和 6 种圆排列计数，像是在原有思路上收束，而不是突然搬出标准题解。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文反复讨论的“固定 A、其余三点有 6 种顺序”“A-C-B-D 型才相交”自然衔接，没有明显断层。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心论证“固定 A 后其余三点有 6 种等可能圆排列，其中 2 种使 AB 与 CD 相交，因此概率为 1/3”是正确的；虽有个别解释略松，但无致命错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只是在 1/3 附近打转，修复后续明确完成了有利情形与总情形的计数，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接照搬标准题解中“先不标号、再看 B 是否与 A 对顶”的结构，而是沿前文自然发展的圆排列思路得到结论。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

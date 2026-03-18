@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 430,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接说“标准答案通过……发现……”，明显是站在已知题解的视角回填，不像前文自然推演出来的思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还在具体计算 λ=4 时的多项式分解，修复后续却突然跳到整体分解与判别式分析，缺少承接与推导。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"其中“当 λ≥3 时存在非不动点的解”是错的；λ=3 时额外根重合为不动点，不满足题意。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续做单点代入，修复后续转向分解 f(f(x))-x 与判别式分析，明显更接近完整正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"几乎直接泄露了标准解的主结构：分解、判别式、关键二次式以及 λ 在 (3,4] 的方向，暴露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“标准答案通过……发现……”，明显是站在已知题解的视角回填，不像前文自然推演出来的思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在具体计算 λ=4 时的多项式分解，修复后续却突然跳到整体分解与判别式分析，缺少承接与推导。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "其中“当 λ≥3 时存在非不动点的解”是错的；λ=3 时额外根重合为不动点，不满足题意。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续做单点代入，修复后续转向分解 f(f(x))-x 与判别式分析，明显更接近完整正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎直接泄露了标准解的主结构：分解、判别式、关键二次式以及 λ 在 (3,4] 的方向，暴露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

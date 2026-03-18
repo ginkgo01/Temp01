@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/675.json",
+  "dataset_idx": 62,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"出现“验证标准解法”这类元话语，并直接引用判别式结论和等号向量，明显像事后对照题解而非自然续写。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文虽已算到奇异值，但修复后续突然引入“标准解法”的二次型判别式和 v=[1,2]^T，缺少自然推导衔接。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"A^T A、特征方程、奇异值、C=4 以及等号向量 v=(1,2)^T 的验证都正确，没有明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，修复后续更明确地确认计算、交叉验证答案，并锁定最小值 C=4，推进更充分。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接暴露了标准题解的判别式思路、最大值 16 及取等向量，泄露了解题结构和关键信息。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“验证标准解法”这类元话语，并直接引用判别式结论和等号向量，明显像事后对照题解而非自然续写。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文虽已算到奇异值，但修复后续突然引入“标准解法”的二次型判别式和 v=[1,2]^T，缺少自然推导衔接。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "A^T A、特征方程、奇异值、C=4 以及等号向量 v=(1,2)^T 的验证都正确，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，修复后续更明确地确认计算、交叉验证答案，并锁定最小值 C=4，推进更充分。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接暴露了标准题解的判别式思路、最大值 16 及取等向量，泄露了解题结构和关键信息。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

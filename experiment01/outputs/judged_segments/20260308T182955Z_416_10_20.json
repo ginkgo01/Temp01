@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"整体像是在已有犹豫中继续试探不同路径，数值检验后猜到1/8也属常见做法，不算明显从完整题解倒推。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文正进行系数比较，修复后续却突然重启并改写因式分解与多种新思路，衔接生硬。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"给出的分解$(x-1)(16x^4+16x^3-16x^2-16x+1)$明显不对，且对$\\\\sin18^\\\\circ$的“乘以2”表述错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"虽然有错误，但加入数值验证并尝试转向$\\\\sin18^\\\\circ$精确值代入，较原后续单卡在四次式上更接近正确方向。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接点出“答案可能是1/8”并反复朝此验证，已明显暴露标准答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "整体像是在已有犹豫中继续试探不同路径，数值检验后猜到1/8也属常见做法，不算明显从完整题解倒推。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文正进行系数比较，修复后续却突然重启并改写因式分解与多种新思路，衔接生硬。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "给出的分解$(x-1)(16x^4+16x^3-16x^2-16x+1)$明显不对，且对$\\sin18^\\circ$的“乘以2”表述错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "虽然有错误，但加入数值验证并尝试转向$\\sin18^\\circ$精确值代入，较原后续单卡在四次式上更接近正确方向。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接点出“答案可能是1/8”并反复朝此验证，已明显暴露标准答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

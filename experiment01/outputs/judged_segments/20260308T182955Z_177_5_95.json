@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 95,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文基于坐标与边长计算的思路，也保留了对题意“相切”表述的怀疑，整体像是在原思路上继续核查。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文刚进入“计算角S”的具体推导，修复后续却回头重述边长并重算角Q，和当前局部上下文衔接不自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"QS=4、PS=2、PQ=2√3 以及由此得到的角Q=30°、角S=60°、角P=90°都正确，没有明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只列出角S的余弦定理一步，修复后续完成了角度验证并得出正确最小角，明显更推进解题。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接给出三角形PQS是30-60-90并明确最小角为30°，基本把剩余解答完整说出，暴露过多。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文基于坐标与边长计算的思路，也保留了对题意“相切”表述的怀疑，整体像是在原思路上继续核查。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文刚进入“计算角S”的具体推导，修复后续却回头重述边长并重算角Q，和当前局部上下文衔接不自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "QS=4、PS=2、PQ=2√3 以及由此得到的角Q=30°、角S=60°、角P=90°都正确，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只列出角S的余弦定理一步，修复后续完成了角度验证并得出正确最小角，明显更推进解题。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出三角形PQS是30-60-90并明确最小角为30°，基本把剩余解答完整说出，暴露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

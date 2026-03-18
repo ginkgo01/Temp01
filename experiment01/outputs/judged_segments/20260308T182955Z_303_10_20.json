@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"整体像是在已有坐标思路下继续摸索，包含试探性想法和待验证关系，没有明显站在已知完整解法的视角倒推。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文已推进到用夹角余弦建立角平分线方程，修复后续却退回泛泛规划，未承接当前推导节点，衔接较弱。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"两次提出“AC平分角BAD 可能推出 AB/AD = BC/CD”这一不成立的比例关系，虽带保留语气，但仍引入明显错误方向。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续继续具体化角平分线方程，修复后续 mostly 重复已知信息和泛化计划，且夹杂错误猜测，对解题推进帮助更小。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接暴露标准答案、关键构造或完整题解框架，仍保持普通做题过程中的探索感。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "整体像是在已有坐标思路下继续摸索，包含试探性想法和待验证关系，没有明显站在已知完整解法的视角倒推。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文已推进到用夹角余弦建立角平分线方程，修复后续却退回泛泛规划，未承接当前推导节点，衔接较弱。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "两次提出“AC平分角BAD 可能推出 AB/AD = BC/CD”这一不成立的比例关系，虽带保留语气，但仍引入明显错误方向。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续继续具体化角平分线方程，修复后续 mostly 重复已知信息和泛化计划，且夹杂错误猜测，对解题推进帮助更小。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接暴露标准答案、关键构造或完整题解框架，仍保持普通做题过程中的探索感。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

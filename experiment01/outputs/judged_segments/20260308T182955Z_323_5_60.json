@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 60,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"固定A、再看B/C/D的圆周顺序，这些想法在前文都已多次出现，作为续写是自然的。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"整体承接前文，但从“共有6种排列”直接跳到“占1/3”而未实际枚举，存在明显跳步。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"相交判据“C、D落在A、B分开的两弧上”是对的，最终概率1/3也正确，只是论证不完整。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原后续，它更明确地建立了固定A后按相对顺序计数的框架，明显更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"最后一句直接给出1/3而省略关键计数过程，答案数值泄露得过早。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "固定A、再看B/C/D的圆周顺序，这些想法在前文都已多次出现，作为续写是自然的。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "整体承接前文，但从“共有6种排列”直接跳到“占1/3”而未实际枚举，存在明显跳步。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "相交判据“C、D落在A、B分开的两弧上”是对的，最终概率1/3也正确，只是论证不完整。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原后续，它更明确地建立了固定A后按相对顺序计数的框架，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "最后一句直接给出1/3而省略关键计数过程，答案数值泄露得过早。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

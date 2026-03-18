@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1407.json",
+  "dataset_idx": 359,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 60,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已设的 T、S 和已推出的两个关系，像是在复核已有推导，不像突然换用完整标准解。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文的记号和公式一致，继续沿着代入消元求 S 的路线走，虽然有些重复，但没有凭空引入新结论。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"前四步代数基本正确，但最后一句称“代入 S=6 回原方程验证，发现所有条件均满足”并不成立；原方程是关于 x,y,z 的，不能只靠 S 就完成该验证。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续转去解三次方程，修复后续更直接地完成了对目标量 S 的求解，更接近正确结论。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接套用标准题解中的 s1^3 快速路线，而是沿用前文思路继续推导，暴露程度仍像正常做题过程。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已设的 T、S 和已推出的两个关系，像是在复核已有推导，不像突然换用完整标准解。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文的记号和公式一致，继续沿着代入消元求 S 的路线走，虽然有些重复，但没有凭空引入新结论。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "前四步代数基本正确，但最后一句称“代入 S=6 回原方程验证，发现所有条件均满足”并不成立；原方程是关于 x,y,z 的，不能只靠 S 就完成该验证。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续转去解三次方程，修复后续更直接地完成了对目标量 S 的求解，更接近正确结论。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接套用标准题解中的 s1^3 快速路线，而是沿用前文思路继续推导，暴露程度仍像正常做题过程。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"延续了前文已经出现的“固定A、看其余3点的6种顺序、交错排列”这些思路，语气也保持试探性，像是真实推导中的自然继续。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"和前文关于圆排列、固定A、相交当且仅当端点交错的讨论衔接顺畅，没有突然引入全新框架。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心判据“端点交错时相交”和最终的2/6=1/3结论是对的；虽有些表述不够严谨，但无明显数学性错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续停留在举例犹豫，这版已经明确了判据并接近完成计数，明显更推进到正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"最后一句已经直接透露“6种里有2种、所以概率1/3”，基本把答案和核心计数结构都提前说出了。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已经出现的“固定A、看其余3点的6种顺序、交错排列”这些思路，语气也保持试探性，像是真实推导中的自然继续。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "和前文关于圆排列、固定A、相交当且仅当端点交错的讨论衔接顺畅，没有突然引入全新框架。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心判据“端点交错时相交”和最终的2/6=1/3结论是对的；虽有些表述不够严谨，但无明显数学性错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续停留在举例犹豫，这版已经明确了判据并接近完成计数，明显更推进到正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "最后一句已经直接透露“6种里有2种、所以概率1/3”，基本把答案和核心计数结构都提前说出了。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/prealgebra/2086.json",
+  "dataset_idx": 200,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 15,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已算出42 baps=70 yaps的思路，继续换算并复核，像自然的做题过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文单位换算和检查思路衔接顺畅，没有凭空引入未出现的关键设定。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"比例关系和计算都正确：42 baps=70 yaps，70 yaps=40 daps，且4 daps=21/5 baps也成立。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续中错误写出daps/yaps=7/4并卡住，修复后续更稳定地推进到正确结论。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然给出了结论，但属于基于前文推导后的自然收束，没有明显从标准题解视角生硬泄露完整模板。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已算出42 baps=70 yaps的思路，继续换算并复核，像自然的做题过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文单位换算和检查思路衔接顺畅，没有凭空引入未出现的关键设定。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "比例关系和计算都正确：42 baps=70 yaps，70 yaps=40 daps，且4 daps=21/5 baps也成立。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续中错误写出daps/yaps=7/4并卡住，修复后续更稳定地推进到正确结论。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然给出了结论，但属于基于前文推导后的自然收束，没有明显从标准题解视角生硬泄露完整模板。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

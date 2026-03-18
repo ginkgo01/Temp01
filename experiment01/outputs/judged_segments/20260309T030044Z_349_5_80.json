@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 80,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"M\", \"reason\": \"延续了前文已出现的 Burnside/8!/4 思路，但“标准解法”“最终结论”这类表述带有较强事后总结感。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文 7! 与 8!/4 的冲突展开，使用的 Burnside、旋转/反射等概念都已在前文出现。\"},\n  \"correctness\": {\"label\": \"M\", \"reason\": \"8!/4=10080 及 Burnside 的主结论是对的，但把 7! 思路的问题说成“未完全消除所有旋转对称”并不够准确。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，它明确转向正确的 Burnside/按 4 折算路线，更接近正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接点明最终应取 8!/4 并给出 10080，基本把标准解法和答案都提前泄露了。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "延续了前文已出现的 Burnside/8!/4 思路，但“标准解法”“最终结论”这类表述带有较强事后总结感。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文 7! 与 8!/4 的冲突展开，使用的 Burnside、旋转/反射等概念都已在前文出现。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "8!/4=10080 及 Burnside 的主结论是对的，但把 7! 思路的问题说成“未完全消除所有旋转对称”并不够准确。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，它明确转向正确的 Burnside/按 4 折算路线，更接近正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接点明最终应取 8!/4 并给出 10080，基本把标准解法和答案都提前泄露了。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

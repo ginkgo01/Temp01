@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 65,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"承接前文已采用的坐标与边长计算，进一步观察到勾股关系并尝试判定特殊三角形，属于自然可能出现的思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文刚得到的 PS=2、PQ=2√3、QS=4 顺畅衔接，没有凭空引入前文未出现的关键结论。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"核心结论是对的，但中间一句把最小角/角Q的相关边关系说乱了：角Q的对边应是 PS=2，不是 QS=4，存在自相矛盾表述。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原后续，修复版直接利用边长识别直角三角形并求出最小角，更接近正确解答。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然已经推出答案，但采用的是前文坐标法的自然延伸，并未明显照搬标准几何题解的完整结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "承接前文已采用的坐标与边长计算，进一步观察到勾股关系并尝试判定特殊三角形，属于自然可能出现的思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文刚得到的 PS=2、PQ=2√3、QS=4 顺畅衔接，没有凭空引入前文未出现的关键结论。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "核心结论是对的，但中间一句把最小角/角Q的相关边关系说乱了：角Q的对边应是 PS=2，不是 QS=4，存在自相矛盾表述。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原后续，修复版直接利用边长识别直角三角形并求出最小角，更接近正确解答。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然已经推出答案，但采用的是前文坐标法的自然延伸，并未明显照搬标准几何题解的完整结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

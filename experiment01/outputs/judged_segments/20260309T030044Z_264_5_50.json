@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"直接以“标准题解中”“题解中引入”表述，明显像已知完整解法后的倒推，不像前文自然思考。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文还在纠结坐标与矩形边的判定，后文却突然引入J、K及BCJ与BDE相似，关键构造缺少自然过渡。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"提到的相似三角形、垂足K、矩形GKBH、勾股定理等方向与标准解一致，没有明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续停留在Asymptote坐标困惑中，修复后续明显把思路推进到正确解法框架。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"已经泄露了标准解的核心辅助点与主干结构，如J、K、相似三角形和GKBH矩形，暴露过多。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接以“标准题解中”“题解中引入”表述，明显像已知完整解法后的倒推，不像前文自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在纠结坐标与矩形边的判定，后文却突然引入J、K及BCJ与BDE相似，关键构造缺少自然过渡。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "提到的相似三角形、垂足K、矩形GKBH、勾股定理等方向与标准解一致，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续停留在Asymptote坐标困惑中，修复后续明显把思路推进到正确解法框架。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经泄露了标准解的核心辅助点与主干结构，如J、K、相似三角形和GKBH矩形，暴露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

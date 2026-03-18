@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"M\", \"reason\": \"整体像是在延续已有k法收尾，但开头“原思路……”带有明显评注口吻，略像事后整理而非当场自然思考。\"},\n  \"coherence\": {\"label\": \"M\", \"reason\": \"大体承接了前文已得出的k≡3(mod 7)并继续检查候选值，但“在-4和3之间，比如k=-11或k=10”这句衔接别扭。\"},\n  \"correctness\": {\"label\": \"M\", \"reason\": \"主结论最小值为3是对的，候选k的分析方向也对；但把-11、10放在“在-4和3之间”的语境下举例有明显表述/逻辑瑕疵。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续的重复兜圈子，修复后续更集中地验证同余条件下的最小|k|，更接近完整正确结论。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接搬运标准题解的新结构，只是在已有k=m-n的思路上做必要核查并得出结论，泄露感不强。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "整体像是在延续已有k法收尾，但开头“原思路……”带有明显评注口吻，略像事后整理而非当场自然思考。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "大体承接了前文已得出的k≡3(mod 7)并继续检查候选值，但“在-4和3之间，比如k=-11或k=10”这句衔接别扭。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "主结论最小值为3是对的，候选k的分析方向也对；但把-11、10放在“在-4和3之间”的语境下举例有明显表述/逻辑瑕疵。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续的重复兜圈子，修复后续更集中地验证同余条件下的最小|k|，更接近完整正确结论。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接搬运标准题解的新结构，只是在已有k=m-n的思路上做必要核查并得出结论，泄露感不强。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

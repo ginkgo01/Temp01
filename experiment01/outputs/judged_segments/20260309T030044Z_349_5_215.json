@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 215,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"延续了前文对“Burnside 与固定位置法冲突”的反思，转向检查对称群结构，这在已有思路中已多次出现，整体像自然修正。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"能接上前文的矛盾点，但跳过了对“每个轨道恰有一个A固定代表”为何失效的直接拆解，衔接略显跳步。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"结论 8!/4 是对的，但把固定一个人法失效简单归因为“群大小与人数不同”略粗糙，未点明座位在旋转下分成两个轨道这一关键。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续怀疑 Burnside，这个版本明确回到正确的群作用/Burnside 路线，明显更推进正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已直接给出核心判定“非恒等旋转无不动点，因此为 8!/4”，基本等同完整题解主干，泄露较多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文对“Burnside 与固定位置法冲突”的反思，转向检查对称群结构，这在已有思路中已多次出现，整体像自然修正。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "能接上前文的矛盾点，但跳过了对“每个轨道恰有一个A固定代表”为何失效的直接拆解，衔接略显跳步。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "结论 8!/4 是对的，但把固定一个人法失效简单归因为“群大小与人数不同”略粗糙，未点明座位在旋转下分成两个轨道这一关键。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续怀疑 Burnside，这个版本明确回到正确的群作用/Burnside 路线，明显更推进正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已直接给出核心判定“非恒等旋转无不动点，因此为 8!/4”，基本等同完整题解主干，泄露较多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

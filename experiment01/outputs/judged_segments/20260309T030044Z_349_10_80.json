@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 80,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"一上来就说“标准答案是8!/4”，明显像已知结论后倒推，不像前文自然推进的自发思考。\"},\n  \"coherence\": {\"label\": \"M\", \"reason\": \"它延续了前文关于7!与Burnside矛盾的线索，但突然引入“标准答案”，且重复前文已做过的不动点分析，衔接不算完全自然。\"},\n  \"correctness\": {\"label\": \"M\", \"reason\": \"Burnside部分与最终结果8!/4是对的，但把7!失效归因为“未完全消除所有旋转对称”并不准确，关键矛盾没有真正解释清楚。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续发散和犹豫，修复后续明确回到Burnside并得到正确结果，更能推进到正解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接点出“标准答案是8!/4”并基本给出完整解法框架，泄露过多，不像正常做题过程。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "一上来就说“标准答案是8!/4”，明显像已知结论后倒推，不像前文自然推进的自发思考。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "它延续了前文关于7!与Burnside矛盾的线索，但突然引入“标准答案”，且重复前文已做过的不动点分析，衔接不算完全自然。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "Burnside部分与最终结果8!/4是对的，但把7!失效归因为“未完全消除所有旋转对称”并不准确，关键矛盾没有真正解释清楚。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续发散和犹豫，修复后续明确回到Burnside并得到正确结果，更能推进到正解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接点出“标准答案是8!/4”并基本给出完整解法框架，泄露过多，不像正常做题过程。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

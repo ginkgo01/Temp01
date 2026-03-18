@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/986.json",
+  "dataset_idx": 151,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文正在核实行列式面积关系和3-4-5直角性的思路，整体像自然推进的检查过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前缀中的两个待确认点直接衔接，并补充了符号与顺序问题，没有明显断裂。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"所用结论都正确：边长为3,4,5的三角形是直角三角形，面积为6，行列式绝对值为面积两倍，平方为144。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"比原始后续更明确地处理了符号、点序和验证视角，更有助于稳定收束到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"第二步已直接给出面积、行列式绝对值和144，基本把完整解法与答案提前泄露出来。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文正在核实行列式面积关系和3-4-5直角性的思路，整体像自然推进的检查过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前缀中的两个待确认点直接衔接，并补充了符号与顺序问题，没有明显断裂。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所用结论都正确：边长为3,4,5的三角形是直角三角形，面积为6，行列式绝对值为面积两倍，平方为144。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "比原始后续更明确地处理了符号、点序和验证视角，更有助于稳定收束到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "第二步已直接给出面积、行列式绝对值和144，基本把完整解法与答案提前泄露出来。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

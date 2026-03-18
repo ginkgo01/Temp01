@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/prealgebra/1139.json",
+  "dataset_idx": 9,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"延续了前文“乘法部分是否其实不变、关键在加法怎么并入”的思路，像是在自然整理方向，不像直接倒背完整题解。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"与前文关于乘法结合律、加法能否提前参与计算的讨论衔接顺畅，没有明显跳步。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心判断正确：纯乘法部分改括号不改值，真正需要区分的是 +1 与哪些连续后缀因子一起成组。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"比原始后续更明确地提出“系统枚举加法结合位置”的方法，明显更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"M\",\n    \"reason\": \"没有直接给出最终个数和全部数值，但已经较明显地暴露了标准解的核心分类框架，泄露程度偏高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文“乘法部分是否其实不变、关键在加法怎么并入”的思路，像是在自然整理方向，不像直接倒背完整题解。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于乘法结合律、加法能否提前参与计算的讨论衔接顺畅，没有明显跳步。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心判断正确：纯乘法部分改括号不改值，真正需要区分的是 +1 与哪些连续后缀因子一起成组。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "比原始后续更明确地提出“系统枚举加法结合位置”的方法，明显更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "M",
+        "reason": "没有直接给出最终个数和全部数值，但已经较明显地暴露了标准解的核心分类框架，泄露程度偏高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

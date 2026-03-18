@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 55,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文坐标与代数设元路线，利用已得 d=2(c-b) 与 (c-b)h=28 推面积，像是自然发现的简化。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文方程组和变量替换紧密衔接，没有凭空引入新构造或未出现的关键结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"由 k=c-b 得 d=2k，且 kh=28；因此 [ACD]=dh/2=(2k)h/2=kh=28，计算与梯形面积检验都一致。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停留在代换，这里成功抓住 d 与 k 的关系并直接得到所求面积，明显推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有跳到标准题解的相似三角形结构，只基于当前代数推导完成求解，不属于明显泄露完整题解。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文坐标与代数设元路线，利用已得 d=2(c-b) 与 (c-b)h=28 推面积，像是自然发现的简化。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文方程组和变量替换紧密衔接，没有凭空引入新构造或未出现的关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "由 k=c-b 得 d=2k，且 kh=28；因此 [ACD]=dh/2=(2k)h/2=kh=28，计算与梯形面积检验都一致。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停留在代换，这里成功抓住 d 与 k 的关系并直接得到所求面积，明显推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有跳到标准题解的相似三角形结构，只基于当前代数推导完成求解，不属于明显泄露完整题解。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 165,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"从前文“先找不动点再排除”跳到精确因式分解和判别式，思路并非不可能，但明显带有较强的结果导向感。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"与前文“f(x)=x 的根也满足 f(f(x))=x”是衔接的，但直接引入分解式、判别式和区间结论，中间推导跳步较大。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所述关键数学事实基本正确：分解方向对，判别式 λ²(λ+1)(λ−3) 正确，λ=3 需单独排除，最终结论也正确。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续在变量替换上徘徊，修复后续明确转向正确的因式分解与判别式分析，显著推进解题。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已经几乎完整暴露标准解结构：分解、判别式、边界 λ=3 的处理以及最终答案 (3,4] 都被提前给出。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "从前文“先找不动点再排除”跳到精确因式分解和判别式，思路并非不可能，但明显带有较强的结果导向感。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文“f(x)=x 的根也满足 f(f(x))=x”是衔接的，但直接引入分解式、判别式和区间结论，中间推导跳步较大。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所述关键数学事实基本正确：分解方向对，判别式 λ²(λ+1)(λ−3) 正确，λ=3 需单独排除，最终结论也正确。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续在变量替换上徘徊，修复后续明确转向正确的因式分解与判别式分析，显著推进解题。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经几乎完整暴露标准解结构：分解、判别式、边界 λ=3 的处理以及最终答案 (3,4] 都被提前给出。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

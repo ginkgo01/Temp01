@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 500,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接说“标准答案显示”“标准题解中…”，明显是站在已知完整解法后倒推，不像前文自然思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还在试探区间与代值，修复后续突然引入现成分解式、判别式和答案范围，跳步明显。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所引入的因式分解、判别式以及排除λ=3、得到(3,4]的方向与标准解一致，没有明显数学错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续代入数值试探，修复后续转向关键分解与判别式分析，更接近完整正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"明显泄露标准答案与标准题解结构，几乎把正确路线直接端出，不像真实做题过程。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“标准答案显示”“标准题解中…”，明显是站在已知完整解法后倒推，不像前文自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在试探区间与代值，修复后续突然引入现成分解式、判别式和答案范围，跳步明显。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所引入的因式分解、判别式以及排除λ=3、得到(3,4]的方向与标准解一致，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续代入数值试探，修复后续转向关键分解与判别式分析，更接近完整正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "明显泄露标准答案与标准题解结构，几乎把正确路线直接端出，不像真实做题过程。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

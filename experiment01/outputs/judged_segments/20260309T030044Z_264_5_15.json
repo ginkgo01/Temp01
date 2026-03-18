@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 15,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"前两句像自然推进，但后面直接点到“BE 与 GC 的交点”和三角形 GEJ，带有明显按标准解倒推的痕迹。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"与前文重建坐标系、利用矩形性质的思路能衔接，但突然引入 GC 的交点与 J，动机铺垫不足。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"矩形的平行相等关系、考虑相似三角形和勾股定理的方向都没有明显数学错误，也不存在自相矛盾。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的泛泛而谈，这里给出了更具体且更接近正确解的构造与工具，明显更能推进求解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"M\",\n    \"reason\": \"没有直接泄露答案或完整计算，但已暴露出标准解中的关键构造（BE∩GC）和核心中间三角形，泄露程度偏高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "前两句像自然推进，但后面直接点到“BE 与 GC 的交点”和三角形 GEJ，带有明显按标准解倒推的痕迹。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文重建坐标系、利用矩形性质的思路能衔接，但突然引入 GC 的交点与 J，动机铺垫不足。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "矩形的平行相等关系、考虑相似三角形和勾股定理的方向都没有明显数学错误，也不存在自相矛盾。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的泛泛而谈，这里给出了更具体且更接近正确解的构造与工具，明显更能推进求解。"
+      },
+      "non_leakage": {
+        "label": "M",
+        "reason": "没有直接泄露答案或完整计算，但已暴露出标准解中的关键构造（BE∩GC）和核心中间三角形，泄露程度偏高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

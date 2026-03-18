@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1981.json",
+  "dataset_idx": 495,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"是在前文已基本得到结论后的复核与收尾，没有明显站在全知视角硬性倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文“是否还有其他问题”的自检，继续检查边界与分母为零情形，衔接自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"条件推导一致：x>2，2-log(x-2)>0给出x<102，分母不为零排除x=12，结论正确。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，更明确地验证了分母为零只对应x=12，并完成了最终整理。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有引入超出当前推理阶段的信息，只是在已有结论基础上做合理复核并给出结果。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "是在前文已基本得到结论后的复核与收尾，没有明显站在全知视角硬性倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文“是否还有其他问题”的自检，继续检查边界与分母为零情形，衔接自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "条件推导一致：x>2，2-log(x-2)>0给出x<102，分母不为零排除x=12，结论正确。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，更明确地验证了分母为零只对应x=12，并完成了最终整理。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有引入超出当前推理阶段的信息，只是在已有结论基础上做合理复核并给出结果。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

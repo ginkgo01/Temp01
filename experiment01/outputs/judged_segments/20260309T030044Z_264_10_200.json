@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 200,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"后续几乎直接切换到标准题解的辅助点 J、K 和矩形 GKBH 结构，明显像已知完整解法后的倒推，不像前文自然探索出的思路。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文一直在做坐标与参数设定，修复后续却突然引入 J、K、相似三角形和 GKBH 是矩形等关键结论，衔接很突兀。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"提到的关键关系基本与标准解一致，但多处只是笼统宣称、未定义清楚 K 就使用 GKBH，且混入另一套坐标方案，严谨性不足。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续陷入变量方程，修复后续明显更接近正确几何解法，提供了通向正确答案的有效方向。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"修复后续直接暴露了标准解的核心结构与步骤：作 J、作 K、用两组相似三角形并转化为 GKBH 矩形，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后续几乎直接切换到标准题解的辅助点 J、K 和矩形 GKBH 结构，明显像已知完整解法后的倒推，不像前文自然探索出的思路。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文一直在做坐标与参数设定，修复后续却突然引入 J、K、相似三角形和 GKBH 是矩形等关键结论，衔接很突兀。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "提到的关键关系基本与标准解一致，但多处只是笼统宣称、未定义清楚 K 就使用 GKBH，且混入另一套坐标方案，严谨性不足。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续陷入变量方程，修复后续明显更接近正确几何解法，提供了通向正确答案的有效方向。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "修复后续直接暴露了标准解的核心结构与步骤：作 J、作 K、用两组相似三角形并转化为 GKBH 矩形，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

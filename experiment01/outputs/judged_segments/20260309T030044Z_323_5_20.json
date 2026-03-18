@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已提出的“固定A、考察其余三点排列”和“交错排列”思路，像是自然推进而非明显套用完整题解。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文关于圆排列、固定A、判断交错条件的讨论衔接顺畅，没有突然引入前文完全未铺垫的新框架。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"“固定A后其余三点有6种顺序，其中2种使AB与CD相交”这一判断是正确的，对应概率确为1/3，且无明显逻辑矛盾。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续停留在泛泛提问，修复后续已经给出可执行的计数路线，并基本锁定正确方向，推进明显。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接点出了“2/6”和“概率为1/3”，已把核心计数和答案基本说出，泄露程度较高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已提出的“固定A、考察其余三点排列”和“交错排列”思路，像是自然推进而非明显套用完整题解。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于圆排列、固定A、判断交错条件的讨论衔接顺畅，没有突然引入前文完全未铺垫的新框架。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "“固定A后其余三点有6种顺序，其中2种使AB与CD相交”这一判断是正确的，对应概率确为1/3，且无明显逻辑矛盾。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续停留在泛泛提问，修复后续已经给出可执行的计数路线，并基本锁定正确方向，推进明显。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接点出了“2/6”和“概率为1/3”，已把核心计数和答案基本说出，泄露程度较高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

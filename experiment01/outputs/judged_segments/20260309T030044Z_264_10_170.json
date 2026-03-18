@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 170,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接以“标准题解中使用了”开头，明显像已知完整解法后的倒推，而非基于前文自然生发的思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文一直在坐标与矩形边的判定上打转，修复后续突然引入J、K、相似三角形和GKBH是矩形，衔接非常生硬。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所提到的关键关系如BD=4、△BCJ∼△BDE、BH=GK都与标准解一致，没有明显数学错误或自相矛盾。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的反复怀疑和停滞，修复后续明确转向正确的辅助线、相似三角形与勾股链条，显著更接近正解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"几乎把标准解的骨架全部点出，包括构造J、K、用哪些三角形相似、最后用GKBH矩形得到BH，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接以“标准题解中使用了”开头，明显像已知完整解法后的倒推，而非基于前文自然生发的思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文一直在坐标与矩形边的判定上打转，修复后续突然引入J、K、相似三角形和GKBH是矩形，衔接非常生硬。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所提到的关键关系如BD=4、△BCJ∼△BDE、BH=GK都与标准解一致，没有明显数学错误或自相矛盾。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复怀疑和停滞，修复后续明确转向正确的辅助线、相似三角形与勾股链条，显著更接近正解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎把标准解的骨架全部点出，包括构造J、K、用哪些三角形相似、最后用GKBH矩形得到BH，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 230,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"延续前文对 7! 与 8!/4 冲突的困惑继续排查，没有突然站在已知正解的视角直接收束。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"紧接前文继续讨论旋转群、Burnside、固定位置法和 4 人小例子，衔接自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"确认旋转群只有 4 个元素这点没问题，但“可能遗漏其他对称性”以及“人数与群大小匹配时固定位置法有效”的归因并不准确。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续放弃了“Burnside 可能无效”的明显歧路，把注意力重新放回真正的矛盾来源，更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"T\",\n    \"reason\": \"没有直接给出标准答案或完整标准推导，只是在排查方法冲突，泄露度较低。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续前文对 7! 与 8!/4 冲突的困惑继续排查，没有突然站在已知正解的视角直接收束。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文继续讨论旋转群、Burnside、固定位置法和 4 人小例子，衔接自然。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "确认旋转群只有 4 个元素这点没问题，但“可能遗漏其他对称性”以及“人数与群大小匹配时固定位置法有效”的归因并不准确。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续放弃了“Burnside 可能无效”的明显歧路，把注意力重新放回真正的矛盾来源，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接给出标准答案或完整标准推导，只是在排查方法冲突，泄露度较低。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

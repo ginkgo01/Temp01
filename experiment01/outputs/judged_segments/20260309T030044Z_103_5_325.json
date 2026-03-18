@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 325,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接提到“标准解法”及其判别式结论，明显像事后倒推，不像前文自然推演出的想法。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文刚建立方程组准备代入，修复后续却突然引入因式分解和判别式，缺少承接与推导。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心数学方向与结论一致：通过二次因子判别式定位到λ>3，并检查λ=3退化为不动点，整体无明显硬伤。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续仅继续代入打转，修复后续已经指向正确的关键结构：分解、判别式、排除λ=3。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"几乎直接暴露了标准题解骨架和答案区间(3,4]，泄露程度过高，不像真实做题过程中的局部修补。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接提到“标准解法”及其判别式结论，明显像事后倒推，不像前文自然推演出的想法。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文刚建立方程组准备代入，修复后续却突然引入因式分解和判别式，缺少承接与推导。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心数学方向与结论一致：通过二次因子判别式定位到λ>3，并检查λ=3退化为不动点，整体无明显硬伤。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续仅继续代入打转，修复后续已经指向正确的关键结构：分解、判别式、排除λ=3。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎直接暴露了标准题解骨架和答案区间(3,4]，泄露程度过高，不像真实做题过程中的局部修补。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

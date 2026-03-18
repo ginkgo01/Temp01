@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"推理几乎直接走到标准结构：Q,R,S共线、PRS等边、QRP等腰，并出现“与标准题解一致”，更像已知答案后的回填。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"延续了前文基于Asymptote坐标检查圆心距离的思路，后续转向角度关系与边长关系，整体衔接基本自然。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"最终答案对，但中间有明显不严谨/错误表述：由“Q与S不直接相切”不能推出QS过R；且用向量PQ和PS去验证∠PQS对应的不是该角。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的反复犹豫，修复后续已抓住共线、等边、等腰等关键几何关系，明显更接近正确解法。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"基本复现了标准题解的完整路径和结论，甚至直接提到“与标准题解一致”，泄露程度过高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "推理几乎直接走到标准结构：Q,R,S共线、PRS等边、QRP等腰，并出现“与标准题解一致”，更像已知答案后的回填。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "延续了前文基于Asymptote坐标检查圆心距离的思路，后续转向角度关系与边长关系，整体衔接基本自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "最终答案对，但中间有明显不严谨/错误表述：由“Q与S不直接相切”不能推出QS过R；且用向量PQ和PS去验证∠PQS对应的不是该角。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复犹豫，修复后续已抓住共线、等边、等腰等关键几何关系，明显更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "基本复现了标准题解的完整路径和结论，甚至直接提到“与标准题解一致”，泄露程度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

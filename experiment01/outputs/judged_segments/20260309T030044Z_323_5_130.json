@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 130,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"出现“这与标准答案一致”等元信息，明显带有已知答案后回填的痕迹，不像现场自然推理。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"内容紧接前文的几个卡点展开：6种排列、0.5 的疑惑、三种配对，衔接总体自然。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"把“四个点的圆排列数误认为6种”当作错误是明显不对的；固定A后其余三点的循环次序确实有6种。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原后续只反复描述交替顺序，修复版引入了三种配对的对称思路，并指出先前0.5论证的问题，更接近正确解法。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接写出“概率为1/3”且提到“与标准答案一致”，明显过度泄露答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“这与标准答案一致”等元信息，明显带有已知答案后回填的痕迹，不像现场自然推理。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "内容紧接前文的几个卡点展开：6种排列、0.5 的疑惑、三种配对，衔接总体自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "把“四个点的圆排列数误认为6种”当作错误是明显不对的；固定A后其余三点的循环次序确实有6种。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原后续只反复描述交替顺序，修复版引入了三种配对的对称思路，并指出先前0.5论证的问题，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接写出“概率为1/3”且提到“与标准答案一致”，明显过度泄露答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

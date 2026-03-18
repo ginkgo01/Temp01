@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1407.json",
+  "dataset_idx": 359,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"明显以“根据标准题解”视角直接引入关键结论，不像基于前文自然摸索出来的思考。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"虽沿用T,S记号，但突然切换到s1,s2并直接抛出s1^3=64，关键步骤不是从前文顺畅推出，衔接生硬。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心代数关系与结论都正确：由(s1)^3展开得64，进而s1=4、s2=6，且代回验证一致。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续硬解复杂方程，修复后续直接抓到(x+y+z)^3的展开，明显更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接暴露了标准题解的关键结构和中间结论（s1^3=64、s1=4、s2=6），泄露过多。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "明显以“根据标准题解”视角直接引入关键结论，不像基于前文自然摸索出来的思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "虽沿用T,S记号，但突然切换到s1,s2并直接抛出s1^3=64，关键步骤不是从前文顺畅推出，衔接生硬。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心代数关系与结论都正确：由(s1)^3展开得64，进而s1=4、s2=6，且代回验证一致。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续硬解复杂方程，修复后续直接抓到(x+y+z)^3的展开，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接暴露了标准题解的关键结构和中间结论（s1^3=64、s1=4、s2=6），泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

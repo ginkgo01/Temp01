@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 65,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"提出从坐标法转向几何观察是自然的，且由角平分与平行推出\\\\angle BAC=\\\\angle BCA的想法并不显得像直接背标准解。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"与前文正在做坐标代数的路线有明显转向，衔接不够顺，但所提几何观察仍和题设相关，不算完全断裂。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"“AC平分角BAD导致AB/AD = BC/CD”明显误用角平分线定理；C并不在三角形BAD的边BD上。\"\n  },\n  \"progress\": {\n    \"label\": \"M\",\n    \"reason\": \"发现BAC可能是等腰三角形这一点更接近正解方向，但后续没有落实关键构造且夹杂错误比例式，推进效果有限。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"T\",\n    \"reason\": \"没有直接泄露答案，也没有完整展开标准解中的辅助线与面积分配，只是给出较宽泛的方向提示。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "提出从坐标法转向几何观察是自然的，且由角平分与平行推出\\angle BAC=\\angle BCA的想法并不显得像直接背标准解。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文正在做坐标代数的路线有明显转向，衔接不够顺，但所提几何观察仍和题设相关，不算完全断裂。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“AC平分角BAD导致AB/AD = BC/CD”明显误用角平分线定理；C并不在三角形BAD的边BD上。"
+      },
+      "progress": {
+        "label": "M",
+        "reason": "发现BAC可能是等腰三角形这一点更接近正解方向，但后续没有落实关键构造且夹杂错误比例式，推进效果有限。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露答案，也没有完整展开标准解中的辅助线与面积分配，只是给出较宽泛的方向提示。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

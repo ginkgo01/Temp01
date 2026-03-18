@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 60,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"基本延续了前文已得到的同余与参数化思路，像是在收束结论而非事后倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文的k≡3 mod7和n=3k+1的推导，没有凭空引入全新关键结论，衔接自然。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"用单个负数例子n=-5就推出“负数解不会更优”有逻辑跳跃，论证不够严谨。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续的逐个试差，修复后续更集中利用已得参数化结果，更接近完整正确解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接照搬标准题解结构，只是在已有推导基础上总结并确认最小值。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "基本延续了前文已得到的同余与参数化思路，像是在收束结论而非事后倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文的k≡3 mod7和n=3k+1的推导，没有凭空引入全新关键结论，衔接自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "用单个负数例子n=-5就推出“负数解不会更优”有逻辑跳跃，论证不够严谨。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续的逐个试差，修复后续更集中利用已得参数化结果，更接近完整正确解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接照搬标准题解结构，只是在已有推导基础上总结并确认最小值。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"M\", \"reason\": \"前半部分像正常延续，但直接点出“7m-100”的关键结构，略有从已知题解倒推的痕迹。\"},\n  \"coherence\": {\"label\": \"M\", \"reason\": \"与前文的代数变形和整数条件基本衔接，但第三步突然引入“7m-100”而未先展开推导，略显跳步。\"},\n  \"correctness\": {\"label\": \"M\", \"reason\": \"整体方向正确，但“m ≡(100 mod4)/3 mod4”这种模运算除法写法不够规范，虽可理解其本意。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，明确引入整数约束、模分析和目标式转化，明显更接近正确解法。\"},\n  \"non_leakage\": {\"label\": \"M\", \"reason\": \"没有直接给出答案或完整推导，但提前暴露了“7m-100”这一标准题解中的关键中间结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "前半部分像正常延续，但直接点出“7m-100”的关键结构，略有从已知题解倒推的痕迹。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文的代数变形和整数条件基本衔接，但第三步突然引入“7m-100”而未先展开推导，略显跳步。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "整体方向正确，但“m ≡(100 mod4)/3 mod4”这种模运算除法写法不够规范，虽可理解其本意。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，明确引入整数约束、模分析和目标式转化，明显更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "M",
+        "reason": "没有直接给出答案或完整推导，但提前暴露了“7m-100”这一标准题解中的关键中间结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

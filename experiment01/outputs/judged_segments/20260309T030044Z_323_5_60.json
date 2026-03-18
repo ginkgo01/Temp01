@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 60,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"延续了前文反复在“圆排列/固定A后枚举”之间摇摆的风格，还保留了不确定与自我校验，像真实推理而非倒推标准解。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"与前文关于固定A、B并分析相对顺序有联系，但从“C、D在AB两侧”又跳回24种/6种排列，衔接略显回绕和重复。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"末尾给出“总共有三种可能，因此概率为2/3”的判断明显错误；对计数框架也较混乱，存在实质性数学偏差。\"\n  },\n  \"progress\": {\n    \"label\": \"M\",\n    \"reason\": \"相比原始后续，确实尝试把问题落到固定A后枚举6种顺序上，更接近可计算形式；但最终错误地走向2/3，推进效果好坏参半。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"T\",\n    \"reason\": \"没有直接暴露标准答案1/3，也没有引入“对顶点/三种配对中恰一组相交”的完整标准题解结构。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文反复在“圆排列/固定A后枚举”之间摇摆的风格，还保留了不确定与自我校验，像真实推理而非倒推标准解。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文关于固定A、B并分析相对顺序有联系，但从“C、D在AB两侧”又跳回24种/6种排列，衔接略显回绕和重复。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "末尾给出“总共有三种可能，因此概率为2/3”的判断明显错误；对计数框架也较混乱，存在实质性数学偏差。"
+      },
+      "progress": {
+        "label": "M",
+        "reason": "相比原始后续，确实尝试把问题落到固定A后枚举6种顺序上，更接近可计算形式；但最终错误地走向2/3，推进效果好坏参半。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接暴露标准答案1/3，也没有引入“对顶点/三种配对中恰一组相交”的完整标准题解结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

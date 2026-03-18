@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/2046.json",
+  "dataset_idx": 83,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"前文已经在讨论函数形式与唯一性，转去看10^x-9^x的单调性和导数，整体上是自然延伸。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"承接了前文的f(x)分析、x=1.5试值和“x=2是否唯一”的问题，没有明显断裂。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"由x=1.5时差值小于19不能推出“x=2是唯一可能的解”；导数恒正的论证表述也有逻辑跳步。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"比原始后续单纯继续试值更进一步，开始尝试用单调性证明唯一解，更接近正确解法。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"过早直接宣称“x=2唯一解”，并基本给出完整证明框架，题解结构暴露较重。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "前文已经在讨论函数形式与唯一性，转去看10^x-9^x的单调性和导数，整体上是自然延伸。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "承接了前文的f(x)分析、x=1.5试值和“x=2是否唯一”的问题，没有明显断裂。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "由x=1.5时差值小于19不能推出“x=2是唯一可能的解”；导数恒正的论证表述也有逻辑跳步。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "比原始后续单纯继续试值更进一步，开始尝试用单调性证明唯一解，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "过早直接宣称“x=2唯一解”，并基本给出完整证明框架，题解结构暴露较重。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/2046.json",
+  "dataset_idx": 83,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"前文已设f(x)并在讨论唯一性，转向用导数证明单调性是自然的下一步。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"延续了前文的函数视角和x=2已知为根的事实，没有明显脱节或凭空换题。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"把“x→-∞时f(x)→-19”直接推出“x<0时无解”不成立；对f'(x)恒正的论证也过于跳跃，缺少严格依据。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续试数值点，改为分析单调性，更有希望完整证明唯一解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"后续几乎直接给出完整证明框架和最终结论，呈现得过于成型，像已知题解后的总结。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "前文已设f(x)并在讨论唯一性，转向用导数证明单调性是自然的下一步。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "延续了前文的函数视角和x=2已知为根的事实，没有明显脱节或凭空换题。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "把“x→-∞时f(x)→-19”直接推出“x<0时无解”不成立；对f'(x)恒正的论证也过于跳跃，缺少严格依据。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续试数值点，改为分析单调性，更有希望完整证明唯一解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "后续几乎直接给出完整证明框架和最终结论，呈现得过于成型，像已知题解后的总结。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

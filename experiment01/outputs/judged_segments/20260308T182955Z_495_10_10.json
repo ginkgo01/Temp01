@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1981.json",
+  "dataset_idx": 495,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"出现“这与标准答案一致”等元话语，显得像已知结论后回填，不完全像当前思路自然推进。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文对“分母不为零”的条件展开，衔接自然，没有引入前文未铺垫的关键结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"对数真数条件、分母非零条件及合并区间的推导都正确，最终定义域为(2,12)∪(12,102)。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"明确求解并排除了x=12，顺利把前文条件合并成最终定义域，比原始后续更完整地收束到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接给出完整结论并提到“标准答案一致”，有明显答案泄露和事后核对痕迹。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“这与标准答案一致”等元话语，显得像已知结论后回填，不完全像当前思路自然推进。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文对“分母不为零”的条件展开，衔接自然，没有引入前文未铺垫的关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "对数真数条件、分母非零条件及合并区间的推导都正确，最终定义域为(2,12)∪(12,102)。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "明确求解并排除了x=12，顺利把前文条件合并成最终定义域，比原始后续更完整地收束到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出完整结论并提到“标准答案一致”，有明显答案泄露和事后核对痕迹。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

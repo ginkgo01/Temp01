@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1126.json",
+  "dataset_idx": 134,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"M\", \"reason\": \"内容更像事后检查清单而非顺着前文自然推进的思考，但大体仍围绕前文已出现的量展开。\"},\n  \"coherence\": {\"label\": \"M\", \"reason\": \"与前文主题相关，但没有承接前文已算出的具体数值继续求结论，而是回到泛泛核对，衔接感一般。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"“焦点位于同一水平线上…对称轴为x轴”表述明显不对；应是双曲线横向开口、对称轴经过中心且平行于x轴，不是x轴本身。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续，它没有继续完成方程与求和，只给出复查提示，对得到正确答案帮助更小。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接给出最终答案或完整解题收束，只是提示应检查哪些步骤，泄露较少。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "内容更像事后检查清单而非顺着前文自然推进的思考，但大体仍围绕前文已出现的量展开。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文主题相关，但没有承接前文已算出的具体数值继续求结论，而是回到泛泛核对，衔接感一般。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“焦点位于同一水平线上…对称轴为x轴”表述明显不对；应是双曲线横向开口、对称轴经过中心且平行于x轴，不是x轴本身。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续，它没有继续完成方程与求和，只给出复查提示，对得到正确答案帮助更小。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接给出最终答案或完整解题收束，只是提示应检查哪些步骤，泄露较少。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

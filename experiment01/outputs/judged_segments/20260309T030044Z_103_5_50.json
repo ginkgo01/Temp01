@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"“分解出不动点因子”是自然延伸，但随后直接跳到“二次方程判别式”和临界值3，带有较明显的事后倒推痕迹。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"与前文“先解f(f(x))=x并排除不动点”大方向一致，但中间未铺垫就引入二次方程、重根和最终区间，衔接偏跳。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心判断与标准结论一致：需分离不动点，临界在λ=3，λ=3需排除，最终为(3,4]。未见明显数学错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相较原始后续的停滞，这一版本明确指向正确突破口：因式分解、判别式分析、边界λ=3检查，明显更接近完整解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"不仅暴露了解题主线，还直接给出了最终解集(3,4]，泄露程度过高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "“分解出不动点因子”是自然延伸，但随后直接跳到“二次方程判别式”和临界值3，带有较明显的事后倒推痕迹。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文“先解f(f(x))=x并排除不动点”大方向一致，但中间未铺垫就引入二次方程、重根和最终区间，衔接偏跳。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心判断与标准结论一致：需分离不动点，临界在λ=3，λ=3需排除，最终为(3,4]。未见明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续的停滞，这一版本明确指向正确突破口：因式分解、判别式分析、边界λ=3检查，明显更接近完整解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅暴露了解题主线，还直接给出了最终解集(3,4]，泄露程度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

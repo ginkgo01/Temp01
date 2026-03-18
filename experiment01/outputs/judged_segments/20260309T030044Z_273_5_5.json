@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/prealgebra/993.json",
+  "dataset_idx": 273,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"M\", \"reason\": \"前两步像自然验算，但整体更像事后整理的检查清单，且末句直接提到1250，有些倒推痕迹。\"},\n  \"coherence\": {\"label\": \"M\", \"reason\": \"与前文已得出“1里拉=1/800美元”基本衔接，但没有真正算出10,000÷8，却在最后突然引用1250，衔接略跳。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"汇率关系、换算方法和约分思路都正确，没有明显数学或逻辑错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续，修复版少了关键的最终计算与明确收束，实际推进到完整正确解的力度更弱。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"最后直接给出1250而未自然推导，明显暴露了标准答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "前两步像自然验算，但整体更像事后整理的检查清单，且末句直接提到1250，有些倒推痕迹。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文已得出“1里拉=1/800美元”基本衔接，但没有真正算出10,000÷8，却在最后突然引用1250，衔接略跳。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "汇率关系、换算方法和约分思路都正确，没有明显数学或逻辑错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续，修复版少了关键的最终计算与明确收束，实际推进到完整正确解的力度更弱。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "最后直接给出1250而未自然推导，明显暴露了标准答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

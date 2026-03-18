@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文基于 Asymptote 坐标继续算距离、判定相切关系的思路，整体像是顺着已有尝试往前推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文对 Q、R、S 共线及 P 到各点距离的讨论衔接自然，主要仍在用坐标分析三角形 P Q S。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"有明显错误：RS 的垂直平分线应为 x=1，而不是 y 轴；该处表述属于明确的几何错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的反复猜测，修复后续直接计算 PQ、PS、QS 并推进到 30°，明显更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"几乎直接给出了完整求解结构和最终答案，还出现了“符合标准题解”的表述，泄露感较强。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文基于 Asymptote 坐标继续算距离、判定相切关系的思路，整体像是顺着已有尝试往前推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文对 Q、R、S 共线及 P 到各点距离的讨论衔接自然，主要仍在用坐标分析三角形 P Q S。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "有明显错误：RS 的垂直平分线应为 x=1，而不是 y 轴；该处表述属于明确的几何错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复猜测，修复后续直接计算 PQ、PS、QS 并推进到 30°，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎直接给出了完整求解结构和最终答案，还出现了“符合标准题解”的表述，泄露感较强。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

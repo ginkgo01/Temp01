@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/number_theory/838.json",
+  "dataset_idx": 197,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"从已分解出10!的质因数后，继续设x的质因数形式、列不等式、再计数组合，属于很自然的后续思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文的2^8·3^4·5^2·7^1直接衔接，没有凭空引入未说明的关键结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"指数约束、可选范围、独立计数和排除更大质因数都正确，结论6无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停在指数范围，这个版本继续完成了计数并收束到正确答案，更推进解题。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然给出了最终答案，但推导过程是顺着当前思路自然完成的，没有明显照搬标准题解或过度剧透。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "从已分解出10!的质因数后，继续设x的质因数形式、列不等式、再计数组合，属于很自然的后续思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文的2^8·3^4·5^2·7^1直接衔接，没有凭空引入未说明的关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "指数约束、可选范围、独立计数和排除更大质因数都正确，结论6无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停在指数范围，这个版本继续完成了计数并收束到正确答案，更推进解题。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然给出了最终答案，但推导过程是顺着当前思路自然完成的，没有明显照搬标准题解或过度剧透。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 480,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接说“观察到标准答案中…”，明显是站在已知题解的视角倒推，不像前文自然思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还在尝试代值和摸索范围，后文突然引入因式分解、判别式及结论来源，衔接生硬。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"核心方向和最终区间是对的，但对根在[0,1]内且不与不动点重合的论证被大幅省略，结论跳得较快。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续只继续代x=1/2试探，修复后续转向正确的分解与判别式路线，更接近标准解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"不仅点名“标准答案”，还直接暴露了关键分解、判别式和最终范围，泄露过多题解结构。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“观察到标准答案中…”，明显是站在已知题解的视角倒推，不像前文自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在尝试代值和摸索范围，后文突然引入因式分解、判别式及结论来源，衔接生硬。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "核心方向和最终区间是对的，但对根在[0,1]内且不与不动点重合的论证被大幅省略，结论跳得较快。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只继续代x=1/2试探，修复后续转向正确的分解与判别式路线，更接近标准解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅点名“标准答案”，还直接暴露了关键分解、判别式和最终范围，泄露过多题解结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

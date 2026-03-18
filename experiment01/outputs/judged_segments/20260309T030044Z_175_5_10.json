@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文“把一个变量表示成另一个变量并利用整数条件”的自然思路，没有明显站在已知答案后倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已写出的 n=(100-3m)/4、以及想把 |m-n| 转成单变量分析的想法衔接自然，只是略有重复。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"模运算与整除条件处理正确：100≡0(mod 4)，故 3m≡0(mod 4)，进一步得到 m≡0(mod 4) 没有明显错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续已推出 k≡3(mod 7) 并几乎得到最小值，修复后续只停留在重述代入与整除约束，推进到正确解法的力度更弱。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接暴露标准答案 3，也没有完整展开标准题解中的关键表达式与收尾步骤，泄露程度低。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文“把一个变量表示成另一个变量并利用整数条件”的自然思路，没有明显站在已知答案后倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已写出的 n=(100-3m)/4、以及想把 |m-n| 转成单变量分析的想法衔接自然，只是略有重复。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "模运算与整除条件处理正确：100≡0(mod 4)，故 3m≡0(mod 4)，进一步得到 m≡0(mod 4) 没有明显错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续已推出 k≡3(mod 7) 并几乎得到最小值，修复后续只停留在重述代入与整除约束，推进到正确解法的力度更弱。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接暴露标准答案 3，也没有完整展开标准题解中的关键表达式与收尾步骤，泄露程度低。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 145,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接说“标准解法中使用了相似三角形”，明显带有已知题解后的倒推视角，不像前文自然探索。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"开头有承接前文纠错，但随后突然转向“标准解法”和相似三角形，且未自然接上前面正在列式的坐标推导。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"“BE与BF应垂直”是错误的；按矩形BEFH的顶点顺序，BF是对角线，不是与BE相邻的边。\"\n  },\n  \"progress\": {\n    \"label\": \"F\",\n    \"reason\": \"相比原始后续的具体列式，修复后续变成泛泛而谈，还引入错误边关系，离正确求解更远。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"明确提到“标准解法中使用了相似三角形”，属于明显泄露题解方向。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“标准解法中使用了相似三角形”，明显带有已知题解后的倒推视角，不像前文自然探索。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "开头有承接前文纠错，但随后突然转向“标准解法”和相似三角形，且未自然接上前面正在列式的坐标推导。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“BE与BF应垂直”是错误的；按矩形BEFH的顶点顺序，BF是对角线，不是与BE相邻的边。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续的具体列式，修复后续变成泛泛而谈，还引入错误边关系，离正确求解更远。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "明确提到“标准解法中使用了相似三角形”，属于明显泄露题解方向。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

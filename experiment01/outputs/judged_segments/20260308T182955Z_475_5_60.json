@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 60,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续前文已有的方程 2pq+1/9=47/288 与 p+q=1/3，自然地继续代数求解，没有明显倒推痕迹。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文衔接顺畅，先化简求出 pq，再结合 p+q 建立二次方程，步骤连续。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"分数化简、判别式、求根及大小比较都正确，最终得到 p=5/24，答案 29 无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只做到通分，修复后续完整推进到求出 p 的值并得到最终答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然直接解到了答案，但采用的是前文自然延伸出的常规代数法，没有明显照搬标准题解结构或刻意泄露。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续前文已有的方程 2pq+1/9=47/288 与 p+q=1/3，自然地继续代数求解，没有明显倒推痕迹。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文衔接顺畅，先化简求出 pq，再结合 p+q 建立二次方程，步骤连续。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "分数化简、判别式、求根及大小比较都正确，最终得到 p=5/24，答案 29 无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只做到通分，修复后续完整推进到求出 p 的值并得到最终答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然直接解到了答案，但采用的是前文自然延伸出的常规代数法，没有明显照搬标准题解结构或刻意泄露。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 100,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已求出sin18°精确值并继续代入计算的思路，没有明显从完整题解倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文“已得到s并准备计算s^3+s^2”自然衔接，虽有少量重复回顾，但无突兀跳转。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"s^2、s^3的展开与化简都正确，相加得到1/8也正确，数值检验一致。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续停在‘需要再验证’，修复后续完整收束到正确答案，更推进解题。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有引入标准题解中的另一套结构性技巧，只沿用当前链条直接算出结果，泄露感较弱。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已求出sin18°精确值并继续代入计算的思路，没有明显从完整题解倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“已得到s并准备计算s^3+s^2”自然衔接，虽有少量重复回顾，但无突兀跳转。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "s^2、s^3的展开与化简都正确，相加得到1/8也正确，数值检验一致。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续停在‘需要再验证’，修复后续完整收束到正确答案，更推进解题。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有引入标准题解中的另一套结构性技巧，只沿用当前链条直接算出结果，泄露感较弱。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

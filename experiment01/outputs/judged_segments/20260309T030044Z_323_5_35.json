@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 35,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"出现“标准题解中提到”“这与标准答案一致”等表述，明显带有已知结论后回填的痕迹，不像自然摸索。\"},\n  \"coherence\": {\"label\": \"M\", \"reason\": \"整体承接了前文的“固定A、数排列”思路，但从“在AB两侧”直接跳到“有2种”略显突兀，论证不够连贯。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心结论2/6=1/3是对的，固定A后统计其余三点的相对次序也能得到正确概率。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原后续的反复犹疑，修复版明确转向可行的计数框架，并推进到了正确数值。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接提到“标准题解”“标准答案”，且提前暴露1/3，泄露了解题结果与结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“标准题解中提到”“这与标准答案一致”等表述，明显带有已知结论后回填的痕迹，不像自然摸索。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "整体承接了前文的“固定A、数排列”思路，但从“在AB两侧”直接跳到“有2种”略显突兀，论证不够连贯。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心结论2/6=1/3是对的，固定A后统计其余三点的相对次序也能得到正确概率。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原后续的反复犹疑，修复版明确转向可行的计数框架，并推进到了正确数值。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接提到“标准题解”“标准答案”，且提前暴露1/3，泄露了解题结果与结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

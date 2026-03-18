@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/47.json",
+  "dataset_idx": 78,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 45,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"前文确实已经用比较系数算出过a=-2、b=1，因此转而说“已得到解并做验证”在表面上是可能出现的思路。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文正进行导数法并停在“二重根则导数为零”，修复后续却突然切回总结式验证，和当前推导节点衔接不自然。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"代入a=-2后右边应为(x+2)^2(x-1)，文中写成了“(x+a)^2(x-b)”这一代入表述有明显错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只继续求a，修复后续直接围绕已得的(-2,1)做确认，更接近完整正确结论。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"一开头就直接给出a=-2、b=1，并总结唯一性，泄露了最终答案和结论结构，探索感较弱。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "前文确实已经用比较系数算出过a=-2、b=1，因此转而说“已得到解并做验证”在表面上是可能出现的思路。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文正进行导数法并停在“二重根则导数为零”，修复后续却突然切回总结式验证，和当前推导节点衔接不自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "代入a=-2后右边应为(x+2)^2(x-1)，文中写成了“(x+a)^2(x-b)”这一代入表述有明显错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只继续求a，修复后续直接围绕已得的(-2,1)做确认，更接近完整正确结论。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "一开头就直接给出a=-2、b=1，并总结唯一性，泄露了最终答案和结论结构，探索感较弱。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

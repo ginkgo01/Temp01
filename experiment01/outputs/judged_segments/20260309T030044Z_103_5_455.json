@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 455,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接以“标准解法”口吻引入判别式和最终范围，明显像已知题解后的倒推，不像前文自然探索。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文尚在尝试图像/方程存在性分析，这里突然给出因式分解后的二次因子与判别式，跳跃较大且带有外部视角。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心数学判断基本正确：判别式阈值在3，需排除λ=3只给不动点，最终区间为(3,4]。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相较原始后续，明确抓住了关键结构——因式分解、判别式、检验λ=3与λ>3，明显更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"不仅暴露了解题主线，还直接给出关键判别式结构和最终答案(3,4]，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接以“标准解法”口吻引入判别式和最终范围，明显像已知题解后的倒推，不像前文自然探索。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文尚在尝试图像/方程存在性分析，这里突然给出因式分解后的二次因子与判别式，跳跃较大且带有外部视角。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心数学判断基本正确：判别式阈值在3，需排除λ=3只给不动点，最终区间为(3,4]。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续，明确抓住了关键结构——因式分解、判别式、检验λ=3与λ>3，明显更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅暴露了解题主线，还直接给出关键判别式结构和最终答案(3,4]，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

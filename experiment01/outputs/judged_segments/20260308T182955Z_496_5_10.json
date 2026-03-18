@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1232.json",
+  "dataset_idx": 496,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"结尾用“已通过两种方法交叉验证”作总结，但正文并未真正完成第二种验证，带有事后回看式表述。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"前文已算出3z+1=4+3i、5z+7=12+5i及其模，后文继续用|a/b|=|a|/|b|收束，衔接自然。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"核心结果5/13是对的，但第4句说“若进一步验证”，第5句又说“已通过两种方法交叉验证”，存在明显逻辑不一致。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续展开繁琐除法，修复后续更直接地回到模的性质并推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"只是基于前文已有计算进行收尾和复核，没有额外泄露超出当前进度的完整标准题解结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "结尾用“已通过两种方法交叉验证”作总结，但正文并未真正完成第二种验证，带有事后回看式表述。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "前文已算出3z+1=4+3i、5z+7=12+5i及其模，后文继续用|a/b|=|a|/|b|收束，衔接自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "核心结果5/13是对的，但第4句说“若进一步验证”，第5句又说“已通过两种方法交叉验证”，存在明显逻辑不一致。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续展开繁琐除法，修复后续更直接地回到模的性质并推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "只是基于前文已有计算进行收尾和复核，没有额外泄露超出当前进度的完整标准题解结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

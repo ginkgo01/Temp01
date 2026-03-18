@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 35,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"出现“原题的解法中使用了…”这类表述，像是已知题解后倒推，不像自然续写中的真实思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"整体仍承接前文对sin18°精确值和因式分解的犹豫，也延续了sin²θ(sinθ+1)的思路，衔接基本自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"仍反复把sin18°误写成“(√5-1)/4×2”并与“(√5-1)/4”混用，存在明显错误和自相矛盾。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的原地打转，新增了把1写成sin90°并考虑和差化积的方向，更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接点出标准解中的关键步骤“sin18°+sin90°→2sin54°cos36°”，暴露了解题结构。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“原题的解法中使用了…”这类表述，像是已知题解后倒推，不像自然续写中的真实思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "整体仍承接前文对sin18°精确值和因式分解的犹豫，也延续了sin²θ(sinθ+1)的思路，衔接基本自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "仍反复把sin18°误写成“(√5-1)/4×2”并与“(√5-1)/4”混用，存在明显错误和自相矛盾。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的原地打转，新增了把1写成sin90°并考虑和差化积的方向，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接点出标准解中的关键步骤“sin18°+sin90°→2sin54°cos36°”，暴露了解题结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

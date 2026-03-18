@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1407.json",
+  "dataset_idx": 359,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"从第三式联想到基本对称和并引入s1,s2，是前文“对称多项式/恒等式”思路下自然可能出现的推进。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"与前文“所以整个第三式可以写成：”的直接衔接较弱，且中途引入s3未定义，并直接给出s1s2=24，存在跳步。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"所用恒等式与代入关系正确：第三式给出s1s2=24，且x^3+y^3+z^3=s1^3-3s1s2+3s3，最终得到s2=6无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停在改写第三式，修复后续已经建立方程并推进到可直接求出目标值。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"基本完整暴露了标准解法结构和最终答案，已不太像做题中的自然中间思考。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "从第三式联想到基本对称和并引入s1,s2，是前文“对称多项式/恒等式”思路下自然可能出现的推进。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "与前文“所以整个第三式可以写成：”的直接衔接较弱，且中途引入s3未定义，并直接给出s1s2=24，存在跳步。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所用恒等式与代入关系正确：第三式给出s1s2=24，且x^3+y^3+z^3=s1^3-3s1s2+3s3，最终得到s2=6无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停在改写第三式，修复后续已经建立方程并推进到可直接求出目标值。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "基本完整暴露了标准解法结构和最终答案，已不太像做题中的自然中间思考。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

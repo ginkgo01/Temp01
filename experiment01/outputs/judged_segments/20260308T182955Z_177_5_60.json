@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 60,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"延续了前文已采用坐标并算出边长的思路，用余弦定理继续求角，像是自然推进而非明显倒推标准解。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"与前文“已得PS=2，PQ=2√3，QS=4”衔接顺畅，没有凭空引入前文未铺垫的关键结论。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"边长与余弦定理计算均正确，得到∠Q=30°、∠S=60°、∠P=90°，结论无误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续只停留在判断最短边对应最小角，修复后续真正完成了角度计算并得到正确答案。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"T\",\n    \"reason\": \"虽然给出了完整坐标法求解，但没有照搬标准题解的几何结构与论证路径，不属于明显泄露标准解。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已采用坐标并算出边长的思路，用余弦定理继续求角，像是自然推进而非明显倒推标准解。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“已得PS=2，PQ=2√3，QS=4”衔接顺畅，没有凭空引入前文未铺垫的关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "边长与余弦定理计算均正确，得到∠Q=30°、∠S=60°、∠P=90°，结论无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停留在判断最短边对应最小角，修复后续真正完成了角度计算并得到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然给出了完整坐标法求解，但没有照搬标准题解的几何结构与论证路径，不属于明显泄露标准解。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

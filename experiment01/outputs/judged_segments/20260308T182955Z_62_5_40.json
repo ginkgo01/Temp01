@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/675.json",
+  "dataset_idx": 62,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"前文只是准备复查计算，修复版却额外引入“非正规矩阵”与特定等号向量v=(1,2)，尤其后者未从前文推导，较像事后补写。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"内容仍围绕A^TA复核、澄清谱半径误区并收束到算子范数，和前文奇异值思路基本连贯。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"A^TA=\\\\begin{pmatrix}4&6\\\\\\\\6&13\\\\end{pmatrix}、特征值16和1、A非正规、以及v=(1,2)时比值为4都正确，结论C=4无误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续只重复验算，修复版补充了不能用谱半径的原因和等号情形验证，更能巩固正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接点出最终值并补上标准题解里常见的等号向量(1,2)，暴露的信息偏多，不太像普通检查过程。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "前文只是准备复查计算，修复版却额外引入“非正规矩阵”与特定等号向量v=(1,2)，尤其后者未从前文推导，较像事后补写。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "内容仍围绕A^TA复核、澄清谱半径误区并收束到算子范数，和前文奇异值思路基本连贯。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "A^TA=\\begin{pmatrix}4&6\\\\6&13\\end{pmatrix}、特征值16和1、A非正规、以及v=(1,2)时比值为4都正确，结论C=4无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只重复验算，修复版补充了不能用谱半径的原因和等号情形验证，更能巩固正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接点出最终值并补上标准题解里常见的等号向量(1,2)，暴露的信息偏多，不太像普通检查过程。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

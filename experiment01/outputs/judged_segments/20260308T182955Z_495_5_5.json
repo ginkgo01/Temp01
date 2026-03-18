@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1981.json",
+  "dataset_idx": 495,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"是在前文已列出限制条件基础上继续求解，先补内层与外层条件，再处理分母为零，思路自然。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文“还需确保分母不为零”直接衔接，继续解出对应排除点并合并条件，没有明显跳步。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"正确得到x>2、x<102及x≠12，最终定义域写成(2,12)∪(12,102)无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，补上了分母不为零的关键约束并完成区间合并，明显更接近并达到正确解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽已接近完整解答，但每一步都由当前条件顺推得到，没有生硬提前泄露答案或凭空引用标准结论。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "是在前文已列出限制条件基础上继续求解，先补内层与外层条件，再处理分母为零，思路自然。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“还需确保分母不为零”直接衔接，继续解出对应排除点并合并条件，没有明显跳步。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "正确得到x>2、x<102及x≠12，最终定义域写成(2,12)∪(12,102)无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，补上了分母不为零的关键约束并完成区间合并，明显更接近并达到正确解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽已接近完整解答，但每一步都由当前条件顺推得到，没有生硬提前泄露答案或凭空引用标准结论。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

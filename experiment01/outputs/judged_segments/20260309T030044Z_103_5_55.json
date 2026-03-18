@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 55,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"M\", \"reason\": \"延续了前文“分离不动点与二周期点”的思路，但突然给出完整因式分解和判别式，略有倒推痕迹。\"},\n  \"coherence\": {\"label\": \"M\", \"reason\": \"与前文要排除不动点的想法能接上，但从原方程直接跳到精确分解，推导衔接不够自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"因式分解、判别式、λ=3需排除以及最终范围(3,4]都与标准解一致，没有明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续显著推进到正确主线：分解方程、看判别式、排除边界并锁定参数范围。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"几乎直接暴露了标准题解的核心结构与最终答案，信息量明显超过自然探索式后续。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "延续了前文“分离不动点与二周期点”的思路，但突然给出完整因式分解和判别式，略有倒推痕迹。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文要排除不动点的想法能接上，但从原方程直接跳到精确分解，推导衔接不够自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "因式分解、判别式、λ=3需排除以及最终范围(3,4]都与标准解一致，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续显著推进到正确主线：分解方程、看判别式、排除边界并锁定参数范围。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎直接暴露了标准题解的核心结构与最终答案，信息量明显超过自然探索式后续。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

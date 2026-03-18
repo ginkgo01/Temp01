@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/541.json",
+  "dataset_idx": 206,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"整体像是在已得出结果后做复核：检查方向向量、截距、代数细节与代点验证，属于自然可能的后续思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文“再重新核对一遍”衔接自然，继续围绕斜率、截距和代点验证展开，没有凭空引入新设定。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"最后一步把t=1时的y误算成4，原方程应得y=-1+3=2，因此后面的“发现矛盾”是由算错导致的。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"原始后续已正确完成验证并收束到答案；修复后续反而引入错误矛盾，降低了通向正确解的稳定性。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有额外暴露超出当前推理状态的完整标准题解结构，内容仍像普通解题中的复核过程。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "整体像是在已得出结果后做复核：检查方向向量、截距、代数细节与代点验证，属于自然可能的后续思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“再重新核对一遍”衔接自然，继续围绕斜率、截距和代点验证展开，没有凭空引入新设定。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "最后一步把t=1时的y误算成4，原方程应得y=-1+3=2，因此后面的“发现矛盾”是由算错导致的。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "原始后续已正确完成验证并收束到答案；修复后续反而引入错误矛盾，降低了通向正确解的稳定性。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有额外暴露超出当前推理状态的完整标准题解结构，内容仍像普通解题中的复核过程。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

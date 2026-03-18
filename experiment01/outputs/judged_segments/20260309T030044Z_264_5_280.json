@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 280,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"直接以“标准解法中”切入，并点出BD=4、GKJ/EGJ、GKBH等关键结构，明显像已知题解后的倒推，不像前文自然摸索。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文一直在坐标与缩放上打转，修复后续突然引入J、K、GK及矩形GKBH，缺少过渡，关键对象与结论都是凭空出现。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"提到的关键关系与标准解法一致：可由勾股得BD=4，再借助相似三角形与矩形对边相等求BH，未见明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续犹豫并停留在错误答案1，修复后续明确转向正确的辅助线与相似三角形路径，更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"几乎把标准题解的核心框架都暴露出来了，包括BD=4、GKJ∼EGJ、GKBH为矩形等，泄露程度过高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接以“标准解法中”切入，并点出BD=4、GKJ/EGJ、GKBH等关键结构，明显像已知题解后的倒推，不像前文自然摸索。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文一直在坐标与缩放上打转，修复后续突然引入J、K、GK及矩形GKBH，缺少过渡，关键对象与结论都是凭空出现。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "提到的关键关系与标准解法一致：可由勾股得BD=4，再借助相似三角形与矩形对边相等求BH，未见明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续犹豫并停留在错误答案1，修复后续明确转向正确的辅助线与相似三角形路径，更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎把标准题解的核心框架都暴露出来了，包括BD=4、GKJ∼EGJ、GKBH为矩形等，泄露程度过高。"
+      }
+    },
+    "attempts_used": 2
+  }
+}

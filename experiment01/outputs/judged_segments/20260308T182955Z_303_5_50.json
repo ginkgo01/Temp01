@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文的坐标联立思路，继续代入、设元、整理方程，像是自然推进而非事后倒推标准解。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"内容基本承接前文已有的 d=2c-2b、(c-b)h=28、h^2=cd-c^2 等式，没有凭空引入全新关键结论。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"前半段代数基本正确，但后面把 CD 的长度尝试写成含 cd-c^2 的形式明显不对，且面积推进中出现了不可靠的推导。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"虽然多做了代换，但没有抓住已得 d=2(c-b) 与 (c-b)h=28 可直接求 [ACD]=dh/2=28 的关键，反而走向更混乱的方向。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接暴露标准答案或标准题解结构，仍然保持在普通解题过程中的探索状态。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文的坐标联立思路，继续代入、设元、整理方程，像是自然推进而非事后倒推标准解。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "内容基本承接前文已有的 d=2c-2b、(c-b)h=28、h^2=cd-c^2 等式，没有凭空引入全新关键结论。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "前半段代数基本正确，但后面把 CD 的长度尝试写成含 cd-c^2 的形式明显不对，且面积推进中出现了不可靠的推导。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "虽然多做了代换，但没有抓住已得 d=2(c-b) 与 (c-b)h=28 可直接求 [ACD]=dh/2=28 的关键，反而走向更混乱的方向。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接暴露标准答案或标准题解结构，仍然保持在普通解题过程中的探索状态。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

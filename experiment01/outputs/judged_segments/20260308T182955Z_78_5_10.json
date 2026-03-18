@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/47.json",
+  "dataset_idx": 78,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"从题设中的$(x-a)^2$联想到二重根，再用导数条件求$a$，属于当前语境下较自然的思路转向。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已注意到右侧因式结构相衔接，改用“重根+导数”并不突兀，后续代入比较系数也顺畅。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"展开$(x+2)^2(x-b)$时一次项写成了$(4b-4)x$，正确应为$(4-4b)x$，存在明显代数错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只是在列左边系数，修复后续直接利用重根条件求出$a=-2$，明显更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"后续几乎完整给出了求解路径并已确定$b=1$，基本把答案直接暴露出来了。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "从题设中的$(x-a)^2$联想到二重根，再用导数条件求$a$，属于当前语境下较自然的思路转向。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已注意到右侧因式结构相衔接，改用“重根+导数”并不突兀，后续代入比较系数也顺畅。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "展开$(x+2)^2(x-b)$时一次项写成了$(4b-4)x$，正确应为$(4-4b)x$，存在明显代数错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只是在列左边系数，修复后续直接利用重根条件求出$a=-2$，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "后续几乎完整给出了求解路径并已确定$b=1$，基本把答案直接暴露出来了。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 205,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"前两句承接前文的困惑还算自然，但“这与标准题解一致”明显带入了题外已知信息，像是事后回填。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"能接上前文关于“旋转群是否只有4个”的疑问，但对7!与8!/4的核心矛盾解释得过快，衔接上有些跳。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"最终答案8!/4=10080是对的，但把固定一个人法出错的原因简单归结为“每个轨道有4个排列”并不准确，遗漏了座位分成两个旋转轨道这一关键点。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续反复打转，修复后续明确回到旋转群大小与Burnside思路，确实更接近并达到正确结论。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接给出10080并引用“标准题解一致”，几乎把终局结论和解法框架完整暴露了。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "前两句承接前文的困惑还算自然，但“这与标准题解一致”明显带入了题外已知信息，像是事后回填。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "能接上前文关于“旋转群是否只有4个”的疑问，但对7!与8!/4的核心矛盾解释得过快，衔接上有些跳。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "最终答案8!/4=10080是对的，但把固定一个人法出错的原因简单归结为“每个轨道有4个排列”并不准确，遗漏了座位分成两个旋转轨道这一关键点。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续反复打转，修复后续明确回到旋转群大小与Burnside思路，确实更接近并达到正确结论。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出10080并引用“标准题解一致”，几乎把终局结论和解法框架完整暴露了。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 60,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接以“标准题解中使用了…”为出发点，并按标准解结构推进，明显像已知完整解后倒推，不像前文自然思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文一直在坐标设定与图形关系中摸索，修复后续却突然引入标准题解、辅助点J与K及矩形结论，衔接生硬。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所用结论与标准解基本一致：BD=4、三角形相似、EJ=15/4、GK=9/5、BH=GK，数学上无明显错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的反复坐标尝试，修复后续直接转向有效的几何思路，明显更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"不仅暴露了标准题解思路，还几乎给出了完整解题结构和最终结果，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接以“标准题解中使用了…”为出发点，并按标准解结构推进，明显像已知完整解后倒推，不像前文自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文一直在坐标设定与图形关系中摸索，修复后续却突然引入标准题解、辅助点J与K及矩形结论，衔接生硬。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所用结论与标准解基本一致：BD=4、三角形相似、EJ=15/4、GK=9/5、BH=GK，数学上无明显错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复坐标尝试，修复后续直接转向有效的几何思路，明显更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅暴露了标准题解思路，还几乎给出了完整解题结构和最终结果，泄露过多。"
+      }
+    },
+    "attempts_used": 3
+  }
+}

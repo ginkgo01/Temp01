@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 60,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"出现“这与标准题解一致”等明显站在已知答案视角的表述，不太像前文语境下自然生成的继续思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"整体承接了前文对 Burnside 和固定位置法冲突的讨论，但对“为什么固定一人得 7! 不对”没有真正解释清楚，衔接略跳。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"Burnside 部分与最终答案 8!/4=10080 是对的，但“固定一个人的位置无法消除对称性”的解释并不准确，存在轻微逻辑瑕疵。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续停留在矛盾处，修复后续明确推进到正确的群作用/Burnside 结论，更接近完整正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"不仅直接给出完整结论，还明确提到“标准题解一致”，泄露了外部答案视角，过于像事后总结。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“这与标准题解一致”等明显站在已知答案视角的表述，不太像前文语境下自然生成的继续思考。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "整体承接了前文对 Burnside 和固定位置法冲突的讨论，但对“为什么固定一人得 7! 不对”没有真正解释清楚，衔接略跳。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "Burnside 部分与最终答案 8!/4=10080 是对的，但“固定一个人的位置无法消除对称性”的解释并不准确，存在轻微逻辑瑕疵。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续停留在矛盾处，修复后续明确推进到正确的群作用/Burnside 结论，更接近完整正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅直接给出完整结论，还明确提到“标准题解一致”，泄露了外部答案视角，过于像事后总结。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/47.json",
+  "dataset_idx": 78,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已解出a=-2、b=1后的验算思路，像正常做题者会进行的检查与确认。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文“验证方程2是否成立”展开，并继续核对常数项与唯一性，衔接自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"代入验证、常数项比较、唯一性判断都正确；未出现明显数学或逻辑错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续更集中于完成验证和收束结论，减少了无关发散，更有助于结束正确解答。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有突然引入标准题解中的全新结构，只是在已有结果基础上做常规验算与确认，不算过度泄露。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已解出a=-2、b=1后的验算思路，像正常做题者会进行的检查与确认。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文“验证方程2是否成立”展开，并继续核对常数项与唯一性，衔接自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "代入验证、常数项比较、唯一性判断都正确；未出现明显数学或逻辑错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续更集中于完成验证和收束结论，减少了无关发散，更有助于结束正确解答。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有突然引入标准题解中的全新结构，只是在已有结果基础上做常规验算与确认，不算过度泄露。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

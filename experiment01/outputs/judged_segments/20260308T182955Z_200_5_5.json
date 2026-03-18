@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/prealgebra/2086.json",
+  "dataset_idx": 200,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文先理清单位换算、再逐步转换的思路，语气与内容都像自然推进出来的。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"先从baps转到yaps，再从yaps转到daps，正好承接前文已提出的转换路径，没有突兀跳步。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"5 yaps=3 baps 推得 1 bap=5/3 yaps，42 baps=70 yaps；再由 4 daps=7 yaps 推得 70 yaps=40 daps，计算正确。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续中的疑问和停顿，修复版更直接完成了换算并明确确认结果，更有效推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然给出了完整换算，但仍是按常规思考顺序展开，没有明显像在照搬标准题解或提前泄露答案结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文先理清单位换算、再逐步转换的思路，语气与内容都像自然推进出来的。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "先从baps转到yaps，再从yaps转到daps，正好承接前文已提出的转换路径，没有突兀跳步。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "5 yaps=3 baps 推得 1 bap=5/3 yaps，42 baps=70 yaps；再由 4 daps=7 yaps 推得 70 yaps=40 daps，计算正确。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续中的疑问和停顿，修复版更直接完成了换算并明确确认结果，更有效推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然给出了完整换算，但仍是按常规思考顺序展开，没有明显像在照搬标准题解或提前泄露答案结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

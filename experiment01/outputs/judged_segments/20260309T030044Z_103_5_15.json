@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 15,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"有一定自然性，延续了“排除不动点”的思路，但直接点出分解、判别式和 λ=3 的特殊性，略显事后设计感。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"与前文“先解 f(f(x))=x，再排除 f(x)=x”的思路衔接自然，没有明显断裂。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"分解为不动点因子与二次因子、再看判别式与 λ=3 特例的方向都与正确解法一致，未见明显数学错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续只是机械重写方程，修复后续明确指出关键分解、判别式和特殊值检查，显著推进到正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已经暴露了标准题解的核心结构：先因式分解、再看二次判别式、单查 λ=3、最后考察 λ>3，泄露程度较高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "有一定自然性，延续了“排除不动点”的思路，但直接点出分解、判别式和 λ=3 的特殊性，略显事后设计感。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“先解 f(f(x))=x，再排除 f(x)=x”的思路衔接自然，没有明显断裂。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "分解为不动点因子与二次因子、再看判别式与 λ=3 特例的方向都与正确解法一致，未见明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只是机械重写方程，修复后续明确指出关键分解、判别式和特殊值检查，显著推进到正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经暴露了标准题解的核心结构：先因式分解、再看二次判别式、单查 λ=3、最后考察 λ>3，泄露程度较高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

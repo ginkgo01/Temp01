@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"延续了前文“固定A、看其余三点排列”的思路，但很快直接断言“只有两种情况”并给出1/3，略显像事后整理而非现场推演。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"与前文反复讨论的圆排列、固定A、3!种顺序、交错即相交等内容衔接自然，没有明显凭空换题解。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心结论正确：固定A后，B、C、D的圆周顺序共6种，其中恰有2种为端点交错，从而AB与CD相交，概率为2/6=1/3。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的反复犹疑，修复版已经明确锁定可行计数框架并推进到正确结论，更接近完整解答。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接给出“6种里2种成立，因此是1/3”的完整主干结论，基本已把答案和解法核心全部暴露出来。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "延续了前文“固定A、看其余三点排列”的思路，但很快直接断言“只有两种情况”并给出1/3，略显像事后整理而非现场推演。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文反复讨论的圆排列、固定A、3!种顺序、交错即相交等内容衔接自然，没有明显凭空换题解。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心结论正确：固定A后，B、C、D的圆周顺序共6种，其中恰有2种为端点交错，从而AB与CD相交，概率为2/6=1/3。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复犹疑，修复版已经明确锁定可行计数框架并推进到正确结论，更接近完整解答。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出“6种里2种成立，因此是1/3”的完整主干结论，基本已把答案和解法核心全部暴露出来。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

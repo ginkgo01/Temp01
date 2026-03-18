@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 45,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"两次直接提到“标准解法中…”，明显像已知题解后的倒推，不像前文自然思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还在坐标设定与位置关系上摸索，这里突然跳到“标准解法”、交点J和相似三角形，衔接生硬。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"内容基本没有明显数学错误；相似、勾股、交点构造等方向本身都成立，只是表述较提示化。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原后续继续困在坐标设定中，修复后续明确指向相似三角形与关键交点，更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已明显暴露标准题解结构：引入J、用相似三角形和勾股推进到BH，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "两次直接提到“标准解法中…”，明显像已知题解后的倒推，不像前文自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在坐标设定与位置关系上摸索，这里突然跳到“标准解法”、交点J和相似三角形，衔接生硬。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "内容基本没有明显数学错误；相似、勾股、交点构造等方向本身都成立，只是表述较提示化。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原后续继续困在坐标设定中，修复后续明确指向相似三角形与关键交点，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已明显暴露标准题解结构：引入J、用相似三角形和勾股推进到BH，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

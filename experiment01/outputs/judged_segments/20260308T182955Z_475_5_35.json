@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 35,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文对和为7的六种有序配对进行分类的思路，并继续使用前面已得到的 p+q=1/3，整体像自然推进而非凭空倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前缀中正在分析 (x,y)、(y,x) 及其余配对的脉络一致，顺势把其余四个配对归为普通概率 1/6 的情形，没有明显断裂。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"概率分解、方程建立与求解均正确：2pq+1/9=47/288，结合 p+q=1/3 得 p=5/24，最终 m+n=29。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续停留在反复分类，修复后续明确完成了概率求和、列方程并解出结果，显著推进到正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"修复后续几乎直接给出了完整标准解法和最终答案，暴露了剩余核心推导结构，泄露程度偏高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文对和为7的六种有序配对进行分类的思路，并继续使用前面已得到的 p+q=1/3，整体像自然推进而非凭空倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前缀中正在分析 (x,y)、(y,x) 及其余配对的脉络一致，顺势把其余四个配对归为普通概率 1/6 的情形，没有明显断裂。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "概率分解、方程建立与求解均正确：2pq+1/9=47/288，结合 p+q=1/3 得 p=5/24，最终 m+n=29。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续停留在反复分类，修复后续明确完成了概率求和、列方程并解出结果，显著推进到正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "修复后续几乎直接给出了完整标准解法和最终答案，暴露了剩余核心推导结构，泄露程度偏高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

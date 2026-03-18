@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 95,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"先反思前面的0.5思路，再转回已多次提到的圆排列枚举，是当前上下文下自然会出现的推进。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文关于固定A、枚举圆排列、判断A-C-B-D型是否相交的思路，没有明显断裂。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"用固定A后其余三点的6种相对次序来计数，恰有A-C-B-D和A-D-B-C两类交错，得到2/6=1/3，结论正确。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停留在继续举例，修复后续明确完成了计数并得到正确概率，更接近完整解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"沿用前文已铺垫的排列分析，没有突然引入标准题解中的全新巧解结构，整体仍像正常思考收束。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "先反思前面的0.5思路，再转回已多次提到的圆排列枚举，是当前上下文下自然会出现的推进。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文关于固定A、枚举圆排列、判断A-C-B-D型是否相交的思路，没有明显断裂。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "用固定A后其余三点的6种相对次序来计数，恰有A-C-B-D和A-D-B-C两类交错，得到2/6=1/3，结论正确。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停留在继续举例，修复后续明确完成了计数并得到正确概率，更接近完整解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "沿用前文已铺垫的排列分析，没有突然引入标准题解中的全新巧解结构，整体仍像正常思考收束。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

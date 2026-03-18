@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 90,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"前文已解出p=5/24、q=1/8并准备代入检验，修复后续做的正是核对与收尾，符合自然思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文的2pq+1/9=47/288、p+q=1/3、p=5/24、q=1/8无缝衔接，没有凭空引入新设定。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"概率分解、条件检查和最终答案29都正确；第二句虽写法略省，但实质验证无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续只做单次数值验算，修复版还补查了和为1/3及大小关系，更完整地收束到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有引入标准题解中的新技巧或倒推结构，只是在已有推导基础上做必要验证并给出结论。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "前文已解出p=5/24、q=1/8并准备代入检验，修复后续做的正是核对与收尾，符合自然思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文的2pq+1/9=47/288、p+q=1/3、p=5/24、q=1/8无缝衔接，没有凭空引入新设定。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "概率分解、条件检查和最终答案29都正确；第二句虽写法略省，但实质验证无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续只做单次数值验算，修复版还补查了和为1/3及大小关系，更完整地收束到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有引入标准题解中的新技巧或倒推结构，只是在已有推导基础上做必要验证并给出结论。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

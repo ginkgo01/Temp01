@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/47.json",
+  "dataset_idx": 78,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"紧接前文本应代入a=-2继续求b，但修复后续一开头就把b=1当作已知，更像站在已知结果后的回看验证。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"与前一句“代入原来的方程中，求b的值”衔接不顺，直接跳到“已得a=-2和b=1”再做验证，推进线索发生回跳。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"代入验证、展开计算以及讨论a=0时得到b=-3都正确，没有明显数学或逻辑错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续直接由a=-2求出b，修复后续主要是在重复验证和旁支讨论，对主线求解推进并没有更强。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"开头直接点出a=-2、b=1，并进行多重回验，答案暴露过早，较像事后整理而非实时求解。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "紧接前文本应代入a=-2继续求b，但修复后续一开头就把b=1当作已知，更像站在已知结果后的回看验证。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "与前一句“代入原来的方程中，求b的值”衔接不顺，直接跳到“已得a=-2和b=1”再做验证，推进线索发生回跳。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "代入验证、展开计算以及讨论a=0时得到b=-3都正确，没有明显数学或逻辑错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续直接由a=-2求出b，修复后续主要是在重复验证和旁支讨论，对主线求解推进并没有更强。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "开头直接点出a=-2、b=1，并进行多重回验，答案暴露过早，较像事后整理而非实时求解。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

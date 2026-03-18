@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 75,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已基本求出sin18°精确值的状态，转而代入原式计算，像是自然推进而非事后倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文“已解出x=(√5-1)/4但反复确认”的语境衔接顺畅，没有凭空引入新方法或新结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"平方、立方展开及化简均正确：sin²18°=(3-√5)/8，sin³18°=(√5-2)/8，相加得1/8。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续的重复怀疑与打转，修复后续直接利用已得结果完成计算，明显更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"只是沿着前文已建立的思路继续代数计算，没有突然搬出标准题解结构或不自然地预设完整答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已基本求出sin18°精确值的状态，转而代入原式计算，像是自然推进而非事后倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“已解出x=(√5-1)/4但反复确认”的语境衔接顺畅，没有凭空引入新方法或新结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "平方、立方展开及化简均正确：sin²18°=(3-√5)/8，sin³18°=(√5-2)/8，相加得1/8。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续的重复怀疑与打转，修复后续直接利用已得结果完成计算，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "只是沿着前文已建立的思路继续代数计算，没有突然搬出标准题解结构或不自然地预设完整答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

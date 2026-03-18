@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 355,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接说“标准解法”并给出精确分解、判别式和最终区间，明显像已知题解后的倒推，不像前文自然摸索出的思路。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还在尝试代值与局部探索，这里突然引入完整因式分解与判别式结论，缺少过渡和推导，衔接较生硬。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"分解思路、判别式 λ²(λ+1)(λ−3) 以及最终结论 λ∈(3,4] 都与标准解一致，没有明显数学错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续试 λ=3 的局部代入，这一修复直接转向正确的因式分解主线，明显更接近完整解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"几乎把标准题解的核心结构和最终答案都提前暴露出来了，泄露程度过高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“标准解法”并给出精确分解、判别式和最终区间，明显像已知题解后的倒推，不像前文自然摸索出的思路。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在尝试代值与局部探索，这里突然引入完整因式分解与判别式结论，缺少过渡和推导，衔接较生硬。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "分解思路、判别式 λ²(λ+1)(λ−3) 以及最终结论 λ∈(3,4] 都与标准解一致，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续试 λ=3 的局部代入，这一修复直接转向正确的因式分解主线，明显更接近完整解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎把标准题解的核心结构和最终答案都提前暴露出来了，泄露程度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

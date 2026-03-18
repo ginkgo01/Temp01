@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1981.json",
+  "dataset_idx": 495,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已得出的三个条件，随后做边界与遗漏检查，像是自然复核而非明显事后倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文“再检查一遍是否还有问题”的语境衔接顺畅，没有凭空引入新结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"对数真数、分母不为零、端点与x=12的排除都处理正确，最终区间结论无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续更系统地核查了端点和零点问题，能更稳地推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然给出了最终结论，但是在已有推导基础上的正常收束，没有过度暴露标准题解模板。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已得出的三个条件，随后做边界与遗漏检查，像是自然复核而非明显事后倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“再检查一遍是否还有问题”的语境衔接顺畅，没有凭空引入新结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "对数真数、分母不为零、端点与x=12的排除都处理正确，最终区间结论无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续更系统地核查了端点和零点问题，能更稳地推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然给出了最终结论，但是在已有推导基础上的正常收束，没有过度暴露标准题解模板。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

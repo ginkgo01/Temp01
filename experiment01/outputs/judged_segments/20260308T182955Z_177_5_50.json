@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"前文已算出PQ=2√3而非2，修复后续却声称P与Q也相切、且迅速锁定30-60-90，明显像倒推答案而非自然思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"虽然接着算边长，但中途凭空引入“Q、S在两腰上”“P到Q和S均为2”等前文未支持且与前文计算冲突的结论，衔接不自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"存在明显错误：PQ≠2，所以“圆P与Q、R、S均相切”错误；“P到Q和S的距离均为2、P在QS垂直平分线上”也错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续只算出PQ和QS，修复后续至少补出了PS并据此判断△PQS的角，方向上更接近求出正确答案。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接给出△PQS为直角三角形、30°和60°并明确最小角为30°，基本把完整结论提前泄露了。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "前文已算出PQ=2√3而非2，修复后续却声称P与Q也相切、且迅速锁定30-60-90，明显像倒推答案而非自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "虽然接着算边长，但中途凭空引入“Q、S在两腰上”“P到Q和S均为2”等前文未支持且与前文计算冲突的结论，衔接不自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "存在明显错误：PQ≠2，所以“圆P与Q、R、S均相切”错误；“P到Q和S的距离均为2、P在QS垂直平分线上”也错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只算出PQ和QS，修复后续至少补出了PS并据此判断△PQS的角，方向上更接近求出正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出△PQS为直角三角形、30°和60°并明确最小角为30°，基本把完整结论提前泄露了。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

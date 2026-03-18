@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 85,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已采用的坐标与边长计算思路，只是在余弦定理后顺势算出角度并做简单验证，像正常解题推进。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"虽然有少量重复前文已得边长，但核心上紧接着前文已列出的余弦定理继续计算，没有引入前文未铺垫的关键结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"边长PS=2、PQ=2√3、QS=4计算正确；由余弦定理得cos∠Q=√3/2，从而∠Q=30°，其余角为60°、90°也一致。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只化简到cos值，修复后续直接确定了最小角并完成了结果验证，更接近完整正确解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接搬运标准题解中的构造与结论链条，而是沿着当前坐标法自然算到答案，泄露感不强。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已采用的坐标与边长计算思路，只是在余弦定理后顺势算出角度并做简单验证，像正常解题推进。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "虽然有少量重复前文已得边长，但核心上紧接着前文已列出的余弦定理继续计算，没有引入前文未铺垫的关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "边长PS=2、PQ=2√3、QS=4计算正确；由余弦定理得cos∠Q=√3/2，从而∠Q=30°，其余角为60°、90°也一致。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只化简到cos值，修复后续直接确定了最小角并完成了结果验证，更接近完整正确解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接搬运标准题解中的构造与结论链条，而是沿着当前坐标法自然算到答案，泄露感不强。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

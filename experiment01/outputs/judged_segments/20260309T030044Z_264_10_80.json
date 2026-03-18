@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 80,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"后半段几乎直接切到标准辅助线 J、K 与整套相似三角形路线，和前文长期纠结坐标法的状态不太像自然生长出的思路，更像已知题解后的倒推。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"与前文坐标分析衔接很弱，突然改走纯几何并引入 J、K、GKBH 为矩形等关键结构，存在明显跳步和凭空设点。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心数学路线与标准解一致：先得 BD=4，再用 BCJ 与 BDE 相似、再求 EJ、再由 GK 与 BH 对应得到结果，未见明显算错或自相矛盾。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续陷在坐标未知量里，修复后续明显转向可行且接近正确答案的解法，推进性很强。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"基本暴露了标准题解的主要骨架，包括设 J、设 K、两次相似与矩形对应，泄露程度过高，不像普通思考中的有限修补。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后半段几乎直接切到标准辅助线 J、K 与整套相似三角形路线，和前文长期纠结坐标法的状态不太像自然生长出的思路，更像已知题解后的倒推。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "与前文坐标分析衔接很弱，突然改走纯几何并引入 J、K、GKBH 为矩形等关键结构，存在明显跳步和凭空设点。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心数学路线与标准解一致：先得 BD=4，再用 BCJ 与 BDE 相似、再求 EJ、再由 GK 与 BH 对应得到结果，未见明显算错或自相矛盾。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续陷在坐标未知量里，修复后续明显转向可行且接近正确答案的解法，推进性很强。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "基本暴露了标准题解的主要骨架，包括设 J、设 K、两次相似与矩形对应，泄露程度过高，不像普通思考中的有限修补。"
+      }
+    },
+    "attempts_used": 3
+  }
+}

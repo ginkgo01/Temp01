@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 25,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"从前文的犹豫状态突然切到一条几乎完整的求解路线，还硬插入“P在QS垂直平分线上”等结论，像是已知答案后的倒推。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文还在怀疑哪些圆相切、坐标是否可用，修复版却直接确定平行关系并开始算角，转折过猛且夹带与坐标矛盾的说法。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"Q(-2,0)、S(2,0)时QS的垂直平分线是x=0，但P=(1,√3)不在其上；且PQ=2√3、PS=2、QS=4并不构成等腰三角形。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"尽管有错误，但它确实利用坐标和边长把思路推进到可计算角度的位置，比原始后续更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"已经直接完成边长计算、余弦定理求角并下结论30°，基本把终解提前泄露出来了。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "从前文的犹豫状态突然切到一条几乎完整的求解路线，还硬插入“P在QS垂直平分线上”等结论，像是已知答案后的倒推。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在怀疑哪些圆相切、坐标是否可用，修复版却直接确定平行关系并开始算角，转折过猛且夹带与坐标矛盾的说法。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "Q(-2,0)、S(2,0)时QS的垂直平分线是x=0，但P=(1,√3)不在其上；且PQ=2√3、PS=2、QS=4并不构成等腰三角形。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "尽管有错误，但它确实利用坐标和边长把思路推进到可计算角度的位置，比原始后续更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经直接完成边长计算、余弦定理求角并下结论30°，基本把终解提前泄露出来了。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -50,7 +50,7 @@ def build_payload(model: str, prompt: str) -> dict:
             {"role": "user", "content": prompt},
         ],
         "temperature": 0.2,
-        "max_tokens": 128,
+        "max_tokens": 10000,
         "stream": False,
     }
 
@@ -80,8 +80,8 @@ def main() -> int:
     parser.add_argument("--base-url", default=None, help="覆盖 base url，例如 http://localhost:6002/v1")
     parser.add_argument("--api-key", default=None, help="覆盖 API Key")
     parser.add_argument("--model", default=None, help="覆盖模型名")
-    parser.add_argument("--prompt", default="请只回复：pong", help="测试提示词")
-    parser.add_argument("--timeout", type=float, default=15.0, help="请求超时（秒）")
+    parser.add_argument("--prompt", default="请问，你知道逻辑斯蒂映射 (Logistic Map) 是什么吗？", help="测试提示词")
+    parser.add_argument("--timeout", type=float, default=150.0, help="请求超时（秒）")
     args = parser.parse_args()
 
     settings_base_url, settings_api_key, settings_model = load_settings_from_file(Path(args.settings))

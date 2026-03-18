@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/675.json",
+  "dataset_idx": 62,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 25,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已确定的“算子范数=最大奇异值”思路，先求A^TA特征值再检验取等，整体像正常解题推进。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已算出A^TA自然衔接，后续求特征值、奇异值并验证取等，步骤顺序连贯。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"A^TA、特征方程、特征值16和1、奇异值4和1，以及v=(1,2)时比值为4都正确。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只写到行列式展开，修复后续已经有效推进并到达正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"几乎直接给出了完整解法、最终答案和取等向量，暴露程度偏高，不太像仍在探索中的自然后续。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已确定的“算子范数=最大奇异值”思路，先求A^TA特征值再检验取等，整体像正常解题推进。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已算出A^TA自然衔接，后续求特征值、奇异值并验证取等，步骤顺序连贯。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "A^TA、特征方程、特征值16和1、奇异值4和1，以及v=(1,2)时比值为4都正确。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只写到行列式展开，修复后续已经有效推进并到达正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎直接给出了完整解法、最终答案和取等向量，暴露程度偏高，不太像仍在探索中的自然后续。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

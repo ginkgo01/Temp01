@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"一开头就说“注意到标准解法中使用了…”，明显是站在已知题解的视角回填，不像前文自然思考。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文还在坐标设点与矩形结构里摸索，修复后续突然引入标准解法、点J/K、相似三角形和矩形GKBH，衔接很突兀。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"所用关键计算与标准解一致：BD=4、CJ=3/4、GJ=9/4、GK=9/5，最终BH=9/5，整体没有明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续空转于坐标设定，修复后续直接抓住正确中间量和相似关系，明显更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"几乎把标准题解的完整结构和最终答案都直接暴露出来了，超过了自然修补思路的程度。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "一开头就说“注意到标准解法中使用了…”，明显是站在已知题解的视角回填，不像前文自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在坐标设点与矩形结构里摸索，修复后续突然引入标准解法、点J/K、相似三角形和矩形GKBH，衔接很突兀。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所用关键计算与标准解一致：BD=4、CJ=3/4、GJ=9/4、GK=9/5，最终BH=9/5，整体没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续空转于坐标设定，修复后续直接抓住正确中间量和相似关系，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎把标准题解的完整结构和最终答案都直接暴露出来了，超过了自然修补思路的程度。"
+      }
+    },
+    "attempts_used": 2
+  }
+}

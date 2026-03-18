@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"前半段顺着前文的 k 参数化继续验证较自然，但后半段突然转向 m 接近 100/7、|7m-100| 的结构，略有倒推标准解的痕迹。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"与前文已有的 k=m-n、n=3k+1 等结果能接上，但后面引入新的 m 视角时推导不完整，且 m=14 的例子前后矛盾，衔接不够稳。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"存在明显错误：先说 m=14 时 n=13、差为1，随后又算出 n=14.5；且 |m-n| 应为 |7m-100|/4，不是 /7。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续只做零散代入，修复后续更集中在已得到的参数化和最小化思路上，明确靠近正确结论 m=16,n=13。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"M\",\n    \"reason\": \"提到了较接近标准题解的“让 7m 接近 100”的框架，但仍以探索和验证口吻呈现，没有直接完整泄露官方解法。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "前半段顺着前文的 k 参数化继续验证较自然，但后半段突然转向 m 接近 100/7、|7m-100| 的结构，略有倒推标准解的痕迹。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文已有的 k=m-n、n=3k+1 等结果能接上，但后面引入新的 m 视角时推导不完整，且 m=14 的例子前后矛盾，衔接不够稳。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "存在明显错误：先说 m=14 时 n=13、差为1，随后又算出 n=14.5；且 |m-n| 应为 |7m-100|/4，不是 /7。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只做零散代入，修复后续更集中在已得到的参数化和最小化思路上，明确靠近正确结论 m=16,n=13。"
+      },
+      "non_leakage": {
+        "label": "M",
+        "reason": "提到了较接近标准题解的“让 7m 接近 100”的框架，但仍以探索和验证口吻呈现，没有直接完整泄露官方解法。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

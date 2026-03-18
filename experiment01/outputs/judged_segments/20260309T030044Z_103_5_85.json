@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 85,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"因式分解思路并非不可能从前文“需排除不动点”自然想到，但直接点出因子、判别式和λ>3，明显带有较强的结果导向感。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"与前文“固定点也是f(f(x))=x的解”有一定衔接，但从x,a联立方程突然切到整体因式分解，过渡偏跳。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心判断与标准解一致：分离不动点后分析二次因子，最终有效参数范围是λ>3（结合题设即(3,4]）。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续停留在旧方程上打转，修复后续明确转向关键的因式分解与判别式分析，明显更接近正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"基本暴露了标准题解的主干结构，并直接给出“当λ>3时”这一结论，泄露度过高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "因式分解思路并非不可能从前文“需排除不动点”自然想到，但直接点出因子、判别式和λ>3，明显带有较强的结果导向感。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文“固定点也是f(f(x))=x的解”有一定衔接，但从x,a联立方程突然切到整体因式分解，过渡偏跳。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心判断与标准解一致：分离不动点后分析二次因子，最终有效参数范围是λ>3（结合题设即(3,4]）。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续停留在旧方程上打转，修复后续明确转向关键的因式分解与判别式分析，明显更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "基本暴露了标准题解的主干结构，并直接给出“当λ>3时”这一结论，泄露度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 260,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"突然引入精确分解、判别式门槛、λ=3特判和最终区间，整体更像已知标准解后的倒推总结。\"},\n  \"coherence\": {\"label\": \"M\", \"reason\": \"和前文“先看不动点、再找其余解”的方向有关，但从卡在四次方程到直接二次分解，过渡偏跳。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心结论与标准答案一致：需分析额外二次因子，λ=3无非平凡二周期点，λ>3时存在，最终为(3,4]。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只想继续试λ=2，修复后续已经抓住正确突破口并基本推进到正确结论。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"几乎把标准题解的主结构和最终答案都直接给出，暴露程度过高，不像正常做题中的局部续写。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "突然引入精确分解、判别式门槛、λ=3特判和最终区间，整体更像已知标准解后的倒推总结。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "和前文“先看不动点、再找其余解”的方向有关，但从卡在四次方程到直接二次分解，过渡偏跳。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心结论与标准答案一致：需分析额外二次因子，λ=3无非平凡二周期点，λ>3时存在，最终为(3,4]。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只想继续试λ=2，修复后续已经抓住正确突破口并基本推进到正确结论。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎把标准题解的主结构和最终答案都直接给出，暴露程度过高，不像正常做题中的局部续写。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

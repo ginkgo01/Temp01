@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 70,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"基于前文已使用的坐标与已算出的边长，继续观察Q,R,S共线及PR=PS=RS并不突兀，属于自然可想到的推进。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文的坐标分析和长度计算衔接顺畅，没有凭空引入与上下文无关的新设定。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"各距离、等边/等腰判断及由此推出的30°结论都正确，边比1:√3:2也吻合。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只准备套余弦定理，修复后续直接抓住关键结构，明显更接近并到达正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"几乎完整复现了标准解的核心结构并直接确认30°，暴露程度过高，不像普通中途思考。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "基于前文已使用的坐标与已算出的边长，继续观察Q,R,S共线及PR=PS=RS并不突兀，属于自然可想到的推进。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文的坐标分析和长度计算衔接顺畅，没有凭空引入与上下文无关的新设定。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "各距离、等边/等腰判断及由此推出的30°结论都正确，边比1:√3:2也吻合。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只准备套余弦定理，修复后续直接抓住关键结构，明显更接近并到达正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎完整复现了标准解的核心结构并直接确认30°，暴露程度过高，不像普通中途思考。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

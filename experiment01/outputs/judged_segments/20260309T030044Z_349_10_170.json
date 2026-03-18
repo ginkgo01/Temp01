@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 170,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"延续了前文的矛盾与Burnside思路，表面上自然；但在未真正化解7!与8!/4冲突前就直接落到10080，略有“已知答案后回填”的感觉。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"紧接前文关于对称群大小、固定一个人、4人小例子的讨论展开，没有凭空换思路，衔接总体自然。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"结论10080是对的，但中间有不严谨之处，如把Burnside近似说成“每个轨道含4个排列”，以及把固定法失效归因于“群大小不等于人数”，未真正点明错因。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续打转，修复后续至少收束到正确方向和正确答案，更有希望把整体思路推进到完成。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已经直接给出核心解法框架和最终数值10080，基本等于把标准答案提前泄露出来。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "延续了前文的矛盾与Burnside思路，表面上自然；但在未真正化解7!与8!/4冲突前就直接落到10080，略有“已知答案后回填”的感觉。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文关于对称群大小、固定一个人、4人小例子的讨论展开，没有凭空换思路，衔接总体自然。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "结论10080是对的，但中间有不严谨之处，如把Burnside近似说成“每个轨道含4个排列”，以及把固定法失效归因于“群大小不等于人数”，未真正点明错因。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续打转，修复后续至少收束到正确方向和正确答案，更有希望把整体思路推进到完成。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经直接给出核心解法框架和最终数值10080，基本等于把标准答案提前泄露出来。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

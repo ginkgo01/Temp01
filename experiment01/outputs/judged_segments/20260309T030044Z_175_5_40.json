@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已出现的参数化与比较邻近整数的思路，像是正常解题中的继续验证，而非明显事后倒推。\"},\n  \"coherence\": {\"label\": \"M\", \"reason\": \"整体承接前文，但第一句又回顾并重提参数化，且对k的表述略有重复感，衔接不算最自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"关于n=3k+1、|m-n|=|31-7k|以及比较k=4、5、3、6的计算都正确，没有明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"比原始后续更集中于确认最小值，减少了无效发散，对收束到正确答案更有帮助。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接照搬标准题解结构，只是在已有推导基础上做局部验证与收束，暴露程度不过度。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已出现的参数化与比较邻近整数的思路，像是正常解题中的继续验证，而非明显事后倒推。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "整体承接前文，但第一句又回顾并重提参数化，且对k的表述略有重复感，衔接不算最自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "关于n=3k+1、|m-n|=|31-7k|以及比较k=4、5、3、6的计算都正确，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "比原始后续更集中于确认最小值，减少了无效发散，对收束到正确答案更有帮助。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接照搬标准题解结构，只是在已有推导基础上做局部验证与收束，暴露程度不过度。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

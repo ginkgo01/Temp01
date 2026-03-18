@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/number_theory/838.json",
+  "dataset_idx": 197,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已得到的质因数分解与指数约束，并加入了常见的遗漏质数检查与样例验证，整体像真实解题思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"虽然有少量重复回顾，但内容都建立在前文已推到的a,b,c,d取值范围上，没有突兀跳步或凭空引入新结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"质因数分解、指数不等式、组合计数及列举出的x值都正确，最终得到6无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的反复犹豫，修复后续明确完成了约束、排除遗漏并列举结果，更有效推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"后半段直接完整列出所有x值并收束到标准结论，整体结构与标准题解较接近，暴露了解法全貌。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已得到的质因数分解与指数约束，并加入了常见的遗漏质数检查与样例验证，整体像真实解题思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "虽然有少量重复回顾，但内容都建立在前文已推到的a,b,c,d取值范围上，没有突兀跳步或凭空引入新结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "质因数分解、指数不等式、组合计数及列举出的x值都正确，最终得到6无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复犹豫，修复后续明确完成了约束、排除遗漏并列举结果，更有效推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "后半段直接完整列出所有x值并收束到标准结论，整体结构与标准题解较接近，暴露了解法全貌。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

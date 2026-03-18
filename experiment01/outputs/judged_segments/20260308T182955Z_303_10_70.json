@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 70,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"前半段像自然推演，但后面出现“与标准题解一致”等元信息，明显带有已知答案后的回看痕迹。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"整体紧接前文的坐标与变量替换思路，继续用k=c-b、d=2k、kh=28推进，没有凭空引入新的核心结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"代数推导基本正确：由d=2(c-b)与梯形面积得kh=28，再得dh=56，从而[ACD]=28；中间对方程依赖性的说明也成立。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的犹疑检查，修复后续更明确地抓住了dh=2kh这一关键，直接完成求面积。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接写出“与标准题解一致”，显式暴露外部答案信息，不像普通解题过程中的自然思考。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "前半段像自然推演，但后面出现“与标准题解一致”等元信息，明显带有已知答案后的回看痕迹。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "整体紧接前文的坐标与变量替换思路，继续用k=c-b、d=2k、kh=28推进，没有凭空引入新的核心结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "代数推导基本正确：由d=2(c-b)与梯形面积得kh=28，再得dh=56，从而[ACD]=28；中间对方程依赖性的说明也成立。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的犹疑检查，修复后续更明确地抓住了dh=2kh这一关键，直接完成求面积。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接写出“与标准题解一致”，显式暴露外部答案信息，不像普通解题过程中的自然思考。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/675.json",
+  "dataset_idx": 62,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 35,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"后两句明显带有事后总结和交叉验证口吻，像是知道答案后回填，不太像当下自然推演。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"前两句紧接前文的特征方程继续求特征值并得到奇异值，主线衔接基本自然。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"“矩阵的行范数和列范数均小于4”这一说法按常见矩阵范数理解是错误的，且相关论证不严谨。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"原始后续已经直接完整求出答案；修复后续没有更推进，反而加入了无关且有风险的验证性表述。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然直接给出了C=4，但这是前文自然下一步；未完整展开标准题解细节，泄露程度不算过度。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后两句明显带有事后总结和交叉验证口吻，像是知道答案后回填，不太像当下自然推演。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "前两句紧接前文的特征方程继续求特征值并得到奇异值，主线衔接基本自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“矩阵的行范数和列范数均小于4”这一说法按常见矩阵范数理解是错误的，且相关论证不严谨。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "原始后续已经直接完整求出答案；修复后续没有更推进，反而加入了无关且有风险的验证性表述。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然直接给出了C=4，但这是前文自然下一步；未完整展开标准题解细节，泄露程度不算过度。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 75,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文对“固定AB是否合适”和“用圆排列统计”的犹豫与转向，像是自然产生的纠偏思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已多次提到的圆排列、交错顺序等想法衔接自然，没有突然引入陌生框架。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"用固定A后其余三点的6种圆序来数，交错的仅2种，得到2/6=1/3，结论正确且无明显逻辑矛盾。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续停留在怀疑阶段，修复后续已经抓住关键的“交错排列”并基本完成正确计数。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接给出6种圆排列、2种有利情况和最终1/3，已基本把完整解法与答案显式暴露出来。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文对“固定AB是否合适”和“用圆排列统计”的犹豫与转向，像是自然产生的纠偏思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已多次提到的圆排列、交错顺序等想法衔接自然，没有突然引入陌生框架。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "用固定A后其余三点的6种圆序来数，交错的仅2种，得到2/6=1/3，结论正确且无明显逻辑矛盾。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续停留在怀疑阶段，修复后续已经抓住关键的“交错排列”并基本完成正确计数。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出6种圆排列、2种有利情况和最终1/3，已基本把完整解法与答案显式暴露出来。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

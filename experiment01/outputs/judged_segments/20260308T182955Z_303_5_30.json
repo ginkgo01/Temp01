@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"以“回顾”“可能”“需验证”为表述，像是在中途调整思路的真实探索，并未明显站在已知完整题解的视角。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文正沿坐标法做代数展开，这里却突然退回概括并引入未铺垫的比例/相似想法，衔接感偏弱。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"“可能推导出AB/AD = BC/CD”缺乏根据且通常不成立，包含明显不可靠的数学内容。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原来只继续繁琐展开，它补充了梯形面积方程并提示联立条件，整体更有机会推进求解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接泄露答案，也未完整复现标准解中的关键辅助线与相似关系链条。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "以“回顾”“可能”“需验证”为表述，像是在中途调整思路的真实探索，并未明显站在已知完整题解的视角。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文正沿坐标法做代数展开，这里却突然退回概括并引入未铺垫的比例/相似想法，衔接感偏弱。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“可能推导出AB/AD = BC/CD”缺乏根据且通常不成立，包含明显不可靠的数学内容。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原来只继续繁琐展开，它补充了梯形面积方程并提示联立条件，整体更有机会推进求解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露答案，也未完整复现标准解中的关键辅助线与相似关系链条。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

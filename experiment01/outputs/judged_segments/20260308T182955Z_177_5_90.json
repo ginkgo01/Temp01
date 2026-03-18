@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 90,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"前文已用坐标和余弦定理几乎算完，修复版却转去补一整套以R为核心的几何证明，较像事后按标准解回填。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"仍基于前文已算出的坐标、边长和QRS共线关系展开，虽然转向几何验证，但整体能接上。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心结果30°正确，利用PR=PS=RS=2得PRS等边、再由QRS共线推出QRP等腰的主线是成立的。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原后续只报出30°，修复版补了验证链条，更有助于把解答收束为正确结论。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"后半段几乎复现了标准题解的完整结构（PRS等边、QRP等腰、推出30°），泄露了解法模板。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "前文已用坐标和余弦定理几乎算完，修复版却转去补一整套以R为核心的几何证明，较像事后按标准解回填。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "仍基于前文已算出的坐标、边长和QRS共线关系展开，虽然转向几何验证，但整体能接上。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心结果30°正确，利用PR=PS=RS=2得PRS等边、再由QRS共线推出QRP等腰的主线是成立的。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原后续只报出30°，修复版补了验证链条，更有助于把解答收束为正确结论。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "后半段几乎复现了标准题解的完整结构（PRS等边、QRP等腰、推出30°），泄露了解法模板。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

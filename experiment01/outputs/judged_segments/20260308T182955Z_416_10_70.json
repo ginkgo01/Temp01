@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 70,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"承接前文已求出sin18°精确值，转而直接代入原式计算，是很自然的下一步思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文“已得到x=(√5-1)/4但反复犹豫”能够自然衔接，未凭空引入新的关键结论。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"(3-√5)(√5+3)应为4，不是4√5-8；且乘积后又写成额外相加，式子自相矛盾。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的反复纠结，它明确采用了正确方向：用sin18°精确值直接代入，明显更接近解答。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有照搬标准题解结构，只是沿着前文已得结果做常规代入计算，泄露感不强。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "承接前文已求出sin18°精确值，转而直接代入原式计算，是很自然的下一步思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“已得到x=(√5-1)/4但反复犹豫”能够自然衔接，未凭空引入新的关键结论。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "(3-√5)(√5+3)应为4，不是4√5-8；且乘积后又写成额外相加，式子自相矛盾。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复纠结，它明确采用了正确方向：用sin18°精确值直接代入，明显更接近解答。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有照搬标准题解结构，只是沿着前文已得结果做常规代入计算，泄露感不强。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1232.json",
+  "dataset_idx": 496,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"延续了前文已完成两种方法核对后的状态，像是自然的收束与反思，不像事后倒推硬编。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"与前文已算出分子模为5、分母模为13并做过有理化验证的内容衔接顺畅，没有凭空引入新结论。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所述复数模长性质与结论5/13均正确，也没有明显逻辑矛盾或计算错误。\"\n  },\n  \"progress\": {\n    \"label\": \"F\",\n    \"reason\": \"相比原始后续的明确步骤总结，修复后续更偏元评论，推进解法的实际信息更少，帮助并未更强。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"T\",\n    \"reason\": \"没有额外泄露超出前文状态的完整标准题解结构，只是基于已有结果做简短收束。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已完成两种方法核对后的状态，像是自然的收束与反思，不像事后倒推硬编。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已算出分子模为5、分母模为13并做过有理化验证的内容衔接顺畅，没有凭空引入新结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所述复数模长性质与结论5/13均正确，也没有明显逻辑矛盾或计算错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续的明确步骤总结，修复后续更偏元评论，推进解法的实际信息更少，帮助并未更强。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有额外泄露超出前文状态的完整标准题解结构，只是基于已有结果做简短收束。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

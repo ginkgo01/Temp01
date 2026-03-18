@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 65,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续前文的设元与方程，按自然解题顺序继续计算，没有明显站在已知标准答案视角倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已得到的2pq+1/9=47/288、p+q=1/3直接衔接，步骤顺序自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"分数运算、代入、判别式与根的筛选都正确，最终得到p=5/24，答案29无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续，它把已有方程真正解完并得到正确结论，明显更推进整体解法。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然给出了完整收尾计算，但方法仍是基于前文推导的常规展开，没有生硬套用标准题解模板或突兀泄露结论。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续前文的设元与方程，按自然解题顺序继续计算，没有明显站在已知标准答案视角倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已得到的2pq+1/9=47/288、p+q=1/3直接衔接，步骤顺序自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "分数运算、代入、判别式与根的筛选都正确，最终得到p=5/24，答案29无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续，它把已有方程真正解完并得到正确结论，明显更推进整体解法。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然给出了完整收尾计算，但方法仍是基于前文推导的常规展开，没有生硬套用标准题解模板或突兀泄露结论。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

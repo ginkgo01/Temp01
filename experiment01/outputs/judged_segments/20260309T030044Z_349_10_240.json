@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 240,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"延续了前文围绕 Burnside 与“固定一人”矛盾的思路，但多次直接下结论“这是正确结果”，略像事后倒推。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"表面上承接了前文的核心矛盾与小例子检验，但对“为何 7! 不对”没有自然地补上关键缺口，衔接不算顺。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"虽得到正确数值 10080，但把“固定位置法出错”归因于‘人数是4的倍数’或‘对称群大小与人数不同’并不成立，逻辑解释有明显问题。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续反复打转，修复后续明确收束到按 4 个旋转对称除重，整体上更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接点明正确答案是 8!/4=10080，并基本给出标准解法框架，暴露程度过高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "延续了前文围绕 Burnside 与“固定一人”矛盾的思路，但多次直接下结论“这是正确结果”，略像事后倒推。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "表面上承接了前文的核心矛盾与小例子检验，但对“为何 7! 不对”没有自然地补上关键缺口，衔接不算顺。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "虽得到正确数值 10080，但把“固定位置法出错”归因于‘人数是4的倍数’或‘对称群大小与人数不同’并不成立，逻辑解释有明显问题。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续反复打转，修复后续明确收束到按 4 个旋转对称除重，整体上更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接点明正确答案是 8!/4=10080，并基本给出标准解法框架，暴露程度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 110,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"更像事后总结与验算清单，反复“确认/检查”已完成步骤，不太像前缀后自然续写的实时思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"内容围绕前文已求出的 s=(√5-1)/4、s^2、s^3 继续核对并求和，整体衔接基本自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心代数计算与结论 1/8 都正确，没有明显数学或逻辑错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"原始后续已经直接完成求和并得出答案，修复版主要是重复确认和补充验算，并未更有效推进解题。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接搬运标准题解的和差化积路线，虽给出最终结果，但在当前上下文下属于自然收束，不算明显泄露。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "更像事后总结与验算清单，反复“确认/检查”已完成步骤，不太像前缀后自然续写的实时思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "内容围绕前文已求出的 s=(√5-1)/4、s^2、s^3 继续核对并求和，整体衔接基本自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心代数计算与结论 1/8 都正确，没有明显数学或逻辑错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "原始后续已经直接完成求和并得出答案，修复版主要是重复确认和补充验算，并未更有效推进解题。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接搬运标准题解的和差化积路线，虽给出最终结果，但在当前上下文下属于自然收束，不算明显泄露。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"思路本身合理，确实可能从“排除不动点”自然想到因式分解；但表述过于直接、像已知标准路线后回填。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"与前文“先解 f(f(x))=x 再排除 f(x)=x”总体一致，但从已写出的 x 因子形式突然跳到完整分解，衔接略显跳。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"分解式与判别式都对，但把 Δ≥0 直接写成“λ≥3或λ≤−1”漏掉了 λ=0，这里有明显但不致命的疏漏。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续，明确抓住了关键分解、判别式和端点 λ=3 的检查，明显更接近正确解法。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"几乎完整暴露了标准题解框架：先分解、再看判别式、再验 λ>3 与 λ=3，已非常接近整套答案。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "思路本身合理，确实可能从“排除不动点”自然想到因式分解；但表述过于直接、像已知标准路线后回填。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文“先解 f(f(x))=x 再排除 f(x)=x”总体一致，但从已写出的 x 因子形式突然跳到完整分解，衔接略显跳。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "分解式与判别式都对，但把 Δ≥0 直接写成“λ≥3或λ≤−1”漏掉了 λ=0，这里有明显但不致命的疏漏。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，明确抓住了关键分解、判别式和端点 λ=3 的检查，明显更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎完整暴露了标准题解框架：先分解、再看判别式、再验 λ>3 与 λ=3，已非常接近整套答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

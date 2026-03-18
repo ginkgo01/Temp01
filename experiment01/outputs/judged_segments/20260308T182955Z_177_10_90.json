@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 90,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文的坐标法与已算出的 cosQ=√3/2，后续主要是自然收尾和核验，没有明显像拿到完整题解后倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已求边长、判定最小角在 Q、并算出 cosQ 的过程衔接自然，虽有重复总结，但无关键跳步。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"PS=2，PQ=2√3，QS=4，故角Q=30°；并且 2:2√3:4 确为 30-60-90 比例，整体无明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的未完验证，修复后续明确完成了角度求解并确认最小角，显著推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接搬运标准几何解法结构，只沿着前文的坐标计算路线继续，不算过度泄露完整题解。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文的坐标法与已算出的 cosQ=√3/2，后续主要是自然收尾和核验，没有明显像拿到完整题解后倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已求边长、判定最小角在 Q、并算出 cosQ 的过程衔接自然，虽有重复总结，但无关键跳步。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "PS=2，PQ=2√3，QS=4，故角Q=30°；并且 2:2√3:4 确为 30-60-90 比例，整体无明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的未完验证，修复后续明确完成了角度求解并确认最小角，显著推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接搬运标准几何解法结构，只沿着前文的坐标计算路线继续，不算过度泄露完整题解。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

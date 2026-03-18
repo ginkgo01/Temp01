@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 70,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"基于前文已得到p+q=1/3、pq=5/192并准备解二次方程，这样继续求根并判定p、q很自然。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"承接前文构造出的方程继续计算判别式和根，没有引入前文未出现的关键设定；虽未按“乘以192”展开，但衔接仍自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"判别式、求根、大小比较与最终结论都正确，得到p=5/24、q=1/8，m+n=29无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只算到判别式，这里完整解出p并得到最终答案，明显更推进解题。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"只是顺着已建立的方程完成常规代数求解，没有倒灌标准题解结构或额外透露超出当前推导所需的信息。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "基于前文已得到p+q=1/3、pq=5/192并准备解二次方程，这样继续求根并判定p、q很自然。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "承接前文构造出的方程继续计算判别式和根，没有引入前文未出现的关键设定；虽未按“乘以192”展开，但衔接仍自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "判别式、求根、大小比较与最终结论都正确，得到p=5/24、q=1/8，m+n=29无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只算到判别式，这里完整解出p并得到最终答案，明显更推进解题。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "只是顺着已建立的方程完成常规代数求解，没有倒灌标准题解结构或额外透露超出当前推导所需的信息。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

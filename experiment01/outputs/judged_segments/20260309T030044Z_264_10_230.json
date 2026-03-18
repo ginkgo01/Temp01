@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 230,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"一开头就说“标准题解中使用了…”，明显像事后看了解答再回填，不像前文自然推演出来的思路。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"从坐标法卡住直接跳到完整几何路线，且未先定义J、K就使用，和前文衔接较生硬。\"},\n  \"correctness\": {\"label\": \"M\", \"reason\": \"主线计算与标准解一致，但J、K的定义和BH=GK的依据没有在文中交代完整，存在跳步。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的停滞，这一版本给出了通向正确答案的有效几何路径，明显更能推进解题。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接暴露“标准题解”“标准答案一致”，并几乎按完整题解结构展开，泄露过多。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "一开头就说“标准题解中使用了…”，明显像事后看了解答再回填，不像前文自然推演出来的思路。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "从坐标法卡住直接跳到完整几何路线，且未先定义J、K就使用，和前文衔接较生硬。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "主线计算与标准解一致，但J、K的定义和BH=GK的依据没有在文中交代完整，存在跳步。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的停滞，这一版本给出了通向正确答案的有效几何路径，明显更能推进解题。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接暴露“标准题解”“标准答案一致”，并几乎按完整题解结构展开，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

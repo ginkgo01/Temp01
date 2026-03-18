@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/prealgebra/2086.json",
+  "dataset_idx": 200,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已算出42 baps→70 yaps→40 daps的检查思路，也继续尝试第二种方法，像自然复核过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文的单位换算、重复验算和“再换一种方式思考”衔接顺畅，没有凭空引入陌生设定。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"各步换算和联立都正确：42 baps=70 yaps，70 yaps=40 daps，且20 daps=21 baps推出42 baps=40 daps无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"比原始后续更直接地巩固了正确换算链，并给出独立验证路径，更稳定地推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然得出最终答案，但主要是在前文已有思路上做复核与整合，没有明显站在外部已知标准题解的视角生硬倒推。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已算出42 baps→70 yaps→40 daps的检查思路，也继续尝试第二种方法，像自然复核过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文的单位换算、重复验算和“再换一种方式思考”衔接顺畅，没有凭空引入陌生设定。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "各步换算和联立都正确：42 baps=70 yaps，70 yaps=40 daps，且20 daps=21 baps推出42 baps=40 daps无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "比原始后续更直接地巩固了正确换算链，并给出独立验证路径，更稳定地推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然得出最终答案，但主要是在前文已有思路上做复核与整合，没有明显站在外部已知标准题解的视角生硬倒推。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

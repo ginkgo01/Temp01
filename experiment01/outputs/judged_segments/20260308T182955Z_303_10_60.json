@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 60,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"后文直接提到“标准题解”“标准答案”，明显带有已知完整解法后的回看视角，不像前文自然推演。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"承接了前文已得到的 d=2c-2b、(c-b)h=28，并用 k=c-b 继续化简，衔接基本自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"由 d=2(c-b) 与 (c-b)h=28 可得 dh=56，故 [ACD]=dh/2=28，计算与逻辑成立。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续卡在联立方程，修复后续成功提炼出 dh 并直接得到目标面积，更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"明确提及“标准题解中提到相似三角形和面积比例”“最终结果与标准题解一致”，泄露了外部答案信息。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后文直接提到“标准题解”“标准答案”，明显带有已知完整解法后的回看视角，不像前文自然推演。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "承接了前文已得到的 d=2c-2b、(c-b)h=28，并用 k=c-b 继续化简，衔接基本自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "由 d=2(c-b) 与 (c-b)h=28 可得 dh=56，故 [ACD]=dh/2=28，计算与逻辑成立。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续卡在联立方程，修复后续成功提炼出 dh 并直接得到目标面积，更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "明确提及“标准题解中提到相似三角形和面积比例”“最终结果与标准题解一致”，泄露了外部答案信息。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

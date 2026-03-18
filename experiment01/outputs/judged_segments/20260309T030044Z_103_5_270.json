@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 270,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接说“标准解法通过因式分解”明显带有已知题解结构的视角，不像前文自然摸索出来的续写。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文尚未得到因式分解或“某个二次因子”，这里突然引入判别式与二次方程，衔接跳跃较大。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"主方向与结论范围基本对，但略过了λ=0的判别式情形，且“根和≤2以保证根在区间内”的表述不够严谨。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续停留在代入λ=2试算，修复后续明显切到正确的因式分解/判别式路线，更接近正确答案。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"几乎直接暴露了标准题解的核心结构：因式分解、判别式、排除λ=3并保留λ>3，泄露度过高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“标准解法通过因式分解”明显带有已知题解结构的视角，不像前文自然摸索出来的续写。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文尚未得到因式分解或“某个二次因子”，这里突然引入判别式与二次方程，衔接跳跃较大。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "主方向与结论范围基本对，但略过了λ=0的判别式情形，且“根和≤2以保证根在区间内”的表述不够严谨。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续停留在代入λ=2试算，修复后续明显切到正确的因式分解/判别式路线，更接近正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎直接暴露了标准题解的核心结构：因式分解、判别式、排除λ=3并保留λ>3，泄露度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

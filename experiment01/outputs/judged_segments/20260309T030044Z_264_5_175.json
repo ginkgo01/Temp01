@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 175,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"直接以“标准题解中”切入，并引入J、K及完整解法框架，明显像已知题解后的倒推，不像前文自然思考。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文还在坐标与缩放的困惑中，后文却突然转到勾股、相似三角形和新构点J/K，衔接断裂明显。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"所述关键结论与标准解一致：BD=4，进而可得CJ=3/4、GJ=9/4、GK=9/5，最终BH=9/5。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的反复怀疑与回退，修复后续明确转向正确的相似三角形路线，显著推进了解题。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"几乎把标准题解的核心结构和最终答案都直接暴露出来，泄露程度过高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接以“标准题解中”切入，并引入J、K及完整解法框架，明显像已知题解后的倒推，不像前文自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在坐标与缩放的困惑中，后文却突然转到勾股、相似三角形和新构点J/K，衔接断裂明显。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所述关键结论与标准解一致：BD=4，进而可得CJ=3/4、GJ=9/4、GK=9/5，最终BH=9/5。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复怀疑与回退，修复后续明确转向正确的相似三角形路线，显著推进了解题。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎把标准题解的核心结构和最终答案都直接暴露出来，泄露程度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

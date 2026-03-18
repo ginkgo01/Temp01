@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 15,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"有从坐标思路转向角度追踪与面积分拆的自然性，且包含试探性表述与未完全成熟的想法，不像直接倒背完整题解。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已提到的角平分线、垂直、面积分解等元素能接上，虽换了方法但不算凭空跳出。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"“AC平分角BAD推出AB/AD = BC/CD”明显误用角平分线定理；该定理适用于三角形BAD中C在BD上的情形，这里不成立。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只准备写余弦公式，修复版提出了由平行线得到角关系、将梯形面积拆成两个三角形等更接近正解的观察。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接暴露标准解中的关键构造、比例结论或最终数值，仍保留了探索过程。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "有从坐标思路转向角度追踪与面积分拆的自然性，且包含试探性表述与未完全成熟的想法，不像直接倒背完整题解。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已提到的角平分线、垂直、面积分解等元素能接上，虽换了方法但不算凭空跳出。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“AC平分角BAD推出AB/AD = BC/CD”明显误用角平分线定理；该定理适用于三角形BAD中C在BD上的情形，这里不成立。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只准备写余弦公式，修复版提出了由平行线得到角关系、将梯形面积拆成两个三角形等更接近正解的观察。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接暴露标准解中的关键构造、比例结论或最终数值，仍保留了探索过程。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

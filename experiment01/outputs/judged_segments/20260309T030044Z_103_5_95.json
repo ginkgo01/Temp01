@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 95,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"思路本身可由“先排除不动点、再看其余因子”自然想到，但表述过于成型，带有较强的事后总结感。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"与前文“或许转化为二次方程”有一定衔接，但直接引入可分解成二次式这一关键结论，跳步较大。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心判断与标准解一致：利用分解、看判别式、排除不动点并得到λ>3，结合题设区间得到(3,4]，无明显错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续仍在原地代入打转，修复后续明确切到正确的分解—判别式—验根路线，明显更推进解题。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"基本直接暴露了标准解法骨架和最终答案(3,4]，不太像中途真实思考过程。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "思路本身可由“先排除不动点、再看其余因子”自然想到，但表述过于成型，带有较强的事后总结感。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文“或许转化为二次方程”有一定衔接，但直接引入可分解成二次式这一关键结论，跳步较大。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心判断与标准解一致：利用分解、看判别式、排除不动点并得到λ>3，结合题设区间得到(3,4]，无明显错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续仍在原地代入打转，修复后续明确切到正确的分解—判别式—验根路线，明显更推进解题。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "基本直接暴露了标准解法骨架和最终答案(3,4]，不太像中途真实思考过程。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

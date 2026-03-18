@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 155,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"多次直接说“标准题解中…”，明显像已知完整解法后反推，不像顺着前文自然想到。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"虽有纠错意图，但很快抛开前面的坐标推导，突然引入J、K及“GKBH是矩形”等关键结构，衔接跳跃。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"把矩形BEFH的相邻边说成BE与BF，实际按顶点顺序相邻边应是BE与BH，存在明确几何错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相较原后续继续沿错误比例坐标推进，修复版至少转向BD、辅助点和相似三角形这条更接近正确解法的路线。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接透露标准解的核心结构：引入J、K、相似三角形、垂足与矩形GKBH，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "多次直接说“标准题解中…”，明显像已知完整解法后反推，不像顺着前文自然想到。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "虽有纠错意图，但很快抛开前面的坐标推导，突然引入J、K及“GKBH是矩形”等关键结构，衔接跳跃。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "把矩形BEFH的相邻边说成BE与BF，实际按顶点顺序相邻边应是BE与BH，存在明确几何错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原后续继续沿错误比例坐标推进，修复版至少转向BD、辅助点和相似三角形这条更接近正确解法的路线。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接透露标准解的核心结构：引入J、K、相似三角形、垂足与矩形GKBH，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

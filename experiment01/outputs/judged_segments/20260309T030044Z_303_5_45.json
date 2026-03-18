@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 45,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"前文一直在走坐标消元，修复后续却突然切到接近标答的纯几何思路，还点名连BE，较像已知解法后的倒推。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"没有承接前文已得的坐标关系与方程，思路跳到辅助线和面积比例，衔接明显断裂。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"“AC既是角平分线又是高”明显不对；“可推导出AB=AD”也无根据，存在明显数学不严谨甚至错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续继续代入面积和垂直关系，修复后续更泛泛而谈且含错误，对求出具体面积帮助更小。\"},\n  \"non_leakage\": {\"label\": \"M\", \"reason\": \"虽然没有直接泄露答案或完整比例结论，但已明显提示标准解中的关键辅助线BE和面积分拆方向，泄露程度偏高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "前文一直在走坐标消元，修复后续却突然切到接近标答的纯几何思路，还点名连BE，较像已知解法后的倒推。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "没有承接前文已得的坐标关系与方程，思路跳到辅助线和面积比例，衔接明显断裂。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“AC既是角平分线又是高”明显不对；“可推导出AB=AD”也无根据，存在明显数学不严谨甚至错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续继续代入面积和垂直关系，修复后续更泛泛而谈且含错误，对求出具体面积帮助更小。"
+      },
+      "non_leakage": {
+        "label": "M",
+        "reason": "虽然没有直接泄露答案或完整比例结论，但已明显提示标准解中的关键辅助线BE和面积分拆方向，泄露程度偏高。"
+      }
+    },
+    "attempts_used": 3
+  }
+}

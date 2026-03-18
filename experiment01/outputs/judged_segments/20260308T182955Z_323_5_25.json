@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 25,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已提出的“固定A”“看圆周排列”“交错即相交”的思路，不像凭空切换到完全外部视角。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文关于6种圆排列、交错条件和固定A的讨论衔接自然，没有突然引入陌生方法。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"圆周上4个不同标记点的相对圆排列可视为等可能的6种；其中交错排列恰有2种，所以概率为2/6=1/3，结论正确。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的反复犹豫，修复后续明确给出判定条件、计数方式和最终概率，明显推进到正确解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然给出了完整计数，但使用的是前文已铺垫的自然推理路径，并未直接照搬标准题解的“对顶点标记”结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已提出的“固定A”“看圆周排列”“交错即相交”的思路，不像凭空切换到完全外部视角。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于6种圆排列、交错条件和固定A的讨论衔接自然，没有突然引入陌生方法。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "圆周上4个不同标记点的相对圆排列可视为等可能的6种；其中交错排列恰有2种，所以概率为2/6=1/3，结论正确。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复犹豫，修复后续明确给出判定条件、计数方式和最终概率，明显推进到正确解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然给出了完整计数，但使用的是前文已铺垫的自然推理路径，并未直接照搬标准题解的“对顶点标记”结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

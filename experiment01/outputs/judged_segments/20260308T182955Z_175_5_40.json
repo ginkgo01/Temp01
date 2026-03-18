@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"基本是在前文两种已出现的方法上做回顾、核验并收束到结论，像是顺着已有思路自然推进。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"内容紧接前文已推到的同余条件与参数化结果，没有凭空引入全新关键结论，衔接总体自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"结论最小值为3正确，给出的解(m,n)=(16,13)也满足方程；关于负数情形不会更优的判断也成立。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的重复徘徊，修复版明确完成验证并得出正确答案，更有效推进了解题。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有突然引入标准题解中的全新捷径，只是基于前文已有推导做整理和收尾，不算过度泄露。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "基本是在前文两种已出现的方法上做回顾、核验并收束到结论，像是顺着已有思路自然推进。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "内容紧接前文已推到的同余条件与参数化结果，没有凭空引入全新关键结论，衔接总体自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "结论最小值为3正确，给出的解(m,n)=(16,13)也满足方程；关于负数情形不会更优的判断也成立。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的重复徘徊，修复版明确完成验证并得出正确答案，更有效推进了解题。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有突然引入标准题解中的全新捷径，只是基于前文已有推导做整理和收尾，不算过度泄露。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

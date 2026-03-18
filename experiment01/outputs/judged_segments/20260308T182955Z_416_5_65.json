@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 65,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文对 sin18° 精确值反复核对、反复犹豫的状态，没有明显站在已知完整题解的视角倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"内容紧接前文对 x=(\\\\sqrt5-1)/4 的确认过程展开，主题和推理对象一致，没有突然引入前文未铺垫的新主线。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"多次把 sin18° 与 (\\\\sqrt5-1)/4×2 混淆，甚至明确写成“标准公式确实是…×2”，存在明显数学错误和自相矛盾。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续并未推进到代入求值或化简原式，仍停留在重复纠结同一错误点，实际推进性很差。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接泄露标准答案 1/8，也没有复现标准题解的关键结构，整体仍像普通做题过程中的局部卡顿。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文对 sin18° 精确值反复核对、反复犹豫的状态，没有明显站在已知完整题解的视角倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "内容紧接前文对 x=(\\sqrt5-1)/4 的确认过程展开，主题和推理对象一致，没有突然引入前文未铺垫的新主线。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "多次把 sin18° 与 (\\sqrt5-1)/4×2 混淆，甚至明确写成“标准公式确实是…×2”，存在明显数学错误和自相矛盾。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续并未推进到代入求值或化简原式，仍停留在重复纠结同一错误点，实际推进性很差。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露标准答案 1/8，也没有复现标准题解的关键结构，整体仍像普通做题过程中的局部卡顿。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

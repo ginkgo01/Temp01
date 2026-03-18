@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 80,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"前半段顺着坐标法自然，但后半段突然补入PRS等边、QRP等腰的整套几何验证，更像已知完整解后回填。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"与前文已算出坐标和边长的思路基本衔接，继续用余弦定理求角，没有明显断裂。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"边长、余弦定理代入与化简都正确，得到cosθ=√3/2即30°；后续几何验证也无明显错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续只写到代公式，这个版本已经明确完成求角并锁定最小角，显著推进了解题。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"不仅直接算出30°，还额外暴露了标准题解式的PRS等边、QRP等腰、30-60-90结构，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "前半段顺着坐标法自然，但后半段突然补入PRS等边、QRP等腰的整套几何验证，更像已知完整解后回填。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已算出坐标和边长的思路基本衔接，继续用余弦定理求角，没有明显断裂。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "边长、余弦定理代入与化简都正确，得到cosθ=√3/2即30°；后续几何验证也无明显错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只写到代公式，这个版本已经明确完成求角并锁定最小角，显著推进了解题。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅直接算出30°，还额外暴露了标准题解式的PRS等边、QRP等腰、30-60-90结构，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

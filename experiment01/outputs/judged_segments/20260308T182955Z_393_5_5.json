@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/algebra/518.json",
+  "dataset_idx": 393,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"延续了前文已建立的F=ma与等力关系，先代入再自我核对，像真实解题时的自然推进。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"与前文关于a_jen/a_jack=m_jack/m_jen的推导直接衔接，没有凭空引入新设定或突兀跳步。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"等式建立、比例变形、物理直觉与约分结果都正确，最终得到3/4无误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的反复犹豫，修复后续更清晰地确认了分子分母方向并完成了化简。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"T\",\n    \"reason\": \"虽然给出了最终结果，但仍以逐步核对的方式展开，没有明显站在已知标准题解的视角直接灌输答案。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已建立的F=ma与等力关系，先代入再自我核对，像真实解题时的自然推进。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于a_jen/a_jack=m_jack/m_jen的推导直接衔接，没有凭空引入新设定或突兀跳步。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "等式建立、比例变形、物理直觉与约分结果都正确，最终得到3/4无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复犹豫，修复后续更清晰地确认了分子分母方向并完成了化简。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然给出了最终结果，但仍以逐步核对的方式展开，没有明显站在已知标准题解的视角直接灌输答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

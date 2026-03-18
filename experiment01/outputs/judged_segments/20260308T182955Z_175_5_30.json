@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已出现的两条思路（设k=m-n与设n=3k+1），像是在做交叉验证，整体上符合自然思考过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已有推导基本衔接顺畅，先回顾k≡3(mod 7)再继续当前参数化；虽有少量重复，但没有明显跳步。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"前几步计算正确，但“将m表示为7t+3”没有根据且与实际整数解参数形式不符，存在明显不严谨/错误表述。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续只停在|31-7k|，修复后续继续完成了最小化并得到正确结论，更推进了解题。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接照搬标准题解的主线，只是基于前文已得信息继续验证并收束到答案，泄露感不强。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已出现的两条思路（设k=m-n与设n=3k+1），像是在做交叉验证，整体上符合自然思考过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已有推导基本衔接顺畅，先回顾k≡3(mod 7)再继续当前参数化；虽有少量重复，但没有明显跳步。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "前几步计算正确，但“将m表示为7t+3”没有根据且与实际整数解参数形式不符，存在明显不严谨/错误表述。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续只停在|31-7k|，修复后续继续完成了最小化并得到正确结论，更推进了解题。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接照搬标准题解的主线，只是基于前文已得信息继续验证并收束到答案，泄露感不强。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

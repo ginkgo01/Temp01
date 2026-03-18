@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/2046.json",
+  "dataset_idx": 83,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 25,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续前文已引入的f(x)=10^x-9^x-19、唯一性和导数想法，转向单调性分析是自然的。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已验证x=2、并多次试算1.9与1.95附近数值的脉络一致，没有凭空换题或突兀引入全新对象。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"“x≤0时10^x和9^x都≤1，因此10^x-9^x最大为0”这一论证不严谨且一般不成立；要得出≤0还需用到x≤0时10^x≤9^x。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原后续继续做数值试探，改为用导数和单调性证明唯一解，更直接推进到正确解法。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"修复后续基本直接给出了完整证明框架和最终结论，较像整理后的标准解而非自然探索中的续写。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续前文已引入的f(x)=10^x-9^x-19、唯一性和导数想法，转向单调性分析是自然的。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已验证x=2、并多次试算1.9与1.95附近数值的脉络一致，没有凭空换题或突兀引入全新对象。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“x≤0时10^x和9^x都≤1，因此10^x-9^x最大为0”这一论证不严谨且一般不成立；要得出≤0还需用到x≤0时10^x≤9^x。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原后续继续做数值试探，改为用导数和单调性证明唯一解，更直接推进到正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "修复后续基本直接给出了完整证明框架和最终结论，较像整理后的标准解而非自然探索中的续写。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

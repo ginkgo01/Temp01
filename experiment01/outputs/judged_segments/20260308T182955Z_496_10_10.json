@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1232.json",
+  "dataset_idx": 496,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"紧接前文已算出的模长继续推进，并提出再用有理化验证，像真实解题中的复核思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"直接承接前文“分子模为5、分母模为13”的结论，没有凭空引入新前提，衔接自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"复数模长性质、共轭有理化、展开与最终化简都正确，结论|w|=5/13无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"明确先由模长比得到答案，再用标准形式复核，能稳定推进并确认正确结果。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽给出完整验证，但都建立在前文已算出的中间结果上，没有突兀泄露超出当前进度的题解结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "紧接前文已算出的模长继续推进，并提出再用有理化验证，像真实解题中的复核思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "直接承接前文“分子模为5、分母模为13”的结论，没有凭空引入新前提，衔接自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "复数模长性质、共轭有理化、展开与最终化简都正确，结论|w|=5/13无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "明确先由模长比得到答案，再用标准形式复核，能稳定推进并确认正确结果。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽给出完整验证，但都建立在前文已算出的中间结果上，没有突兀泄露超出当前进度的题解结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

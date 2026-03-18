@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文的五倍角与因式分解思路，先得到二次因子再求sin18°精确值，整体像是顺着当前推导自然前进。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已得到的四次方程分解尝试衔接自然，直接承接到(4x²+2x-1)^2并继续代入原式计算，没有明显断裂。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"由(4x²+2x-1)^2=0可得正根x=(√5-1)/4，且文中给出的sin²18°=(3-√5)/8也正确，未出现明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停留在求p、r，修复后续已得到sin18°的精确值并开始代入原式，明显更接近正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"最后一句直接透露“可能最终结果会简化为1/8”，已明显暴露目标答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文的五倍角与因式分解思路，先得到二次因子再求sin18°精确值，整体像是顺着当前推导自然前进。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已得到的四次方程分解尝试衔接自然，直接承接到(4x²+2x-1)^2并继续代入原式计算，没有明显断裂。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "由(4x²+2x-1)^2=0可得正根x=(√5-1)/4，且文中给出的sin²18°=(3-√5)/8也正确，未出现明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停留在求p、r，修复后续已得到sin18°的精确值并开始代入原式，明显更接近正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "最后一句直接透露“可能最终结果会简化为1/8”，已明显暴露目标答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

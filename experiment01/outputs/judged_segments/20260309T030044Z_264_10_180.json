@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 180,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"多次直接说“标准解法中…”并提前点出辅助点和关键比例，明显像已知题解后的回填，不像承接前文自然产生的思路。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还在坐标与缩放误区中，修复后续却突然跳到 J、K、相似三角形和矩形结构，过渡很弱；且对 J 的来源表述前后不一致。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"“J 可能与 BD 和 GC 的交点有关”这一说法明显不对，并与后面使用的比例关系不兼容，存在实质性几何错误和自相矛盾。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原后续继续在错误的线性比例上打转，修复后续转向勾股、辅助线和相似三角形，明显更接近正确求解路径。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"基本泄露了标准题解骨架：引入 J、K，给出 CJ/BC=DE/BD，提示 GKBH 为矩形并由 GK 得到 BH。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "多次直接说“标准解法中…”并提前点出辅助点和关键比例，明显像已知题解后的回填，不像承接前文自然产生的思路。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在坐标与缩放误区中，修复后续却突然跳到 J、K、相似三角形和矩形结构，过渡很弱；且对 J 的来源表述前后不一致。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“J 可能与 BD 和 GC 的交点有关”这一说法明显不对，并与后面使用的比例关系不兼容，存在实质性几何错误和自相矛盾。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原后续继续在错误的线性比例上打转，修复后续转向勾股、辅助线和相似三角形，明显更接近正确求解路径。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "基本泄露了标准题解骨架：引入 J、K，给出 CJ/BC=DE/BD，提示 GKBH 为矩形并由 GK 得到 BH。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

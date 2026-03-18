@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 125,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"紧接前文“固定位置法”和 Burnside 引理冲突的疑问，转而怀疑固定法并回到 8!/4 的思路，整体像自然纠偏。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"承接了前文已出现的 Burnside、不动点、只考虑旋转不考虑反射等内容，没有明显跳步或凭空引入新框架。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"用 Burnside 得到 8!/4 这一主结论是对的，但把固定一人法的问题说成“无法完全消除旋转对称性”并不精确，真实症结更细。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续只是反复困惑，修复后续明确把思路推进到正确的群作用计数方向，更接近正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已经直接给出核心解题结构“非恒等不动点为 0，所以 8!/4”，基本等于把标准题解主线直接说出了。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "紧接前文“固定位置法”和 Burnside 引理冲突的疑问，转而怀疑固定法并回到 8!/4 的思路，整体像自然纠偏。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "承接了前文已出现的 Burnside、不动点、只考虑旋转不考虑反射等内容，没有明显跳步或凭空引入新框架。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "用 Burnside 得到 8!/4 这一主结论是对的，但把固定一人法的问题说成“无法完全消除旋转对称性”并不精确，真实症结更细。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只是反复困惑，修复后续明确把思路推进到正确的群作用计数方向，更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经直接给出核心解题结构“非恒等不动点为 0，所以 8!/4”，基本等于把标准题解主线直接说出了。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

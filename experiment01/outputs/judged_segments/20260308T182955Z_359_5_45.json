@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1407.json",
+  "dataset_idx": 359,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 45,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"前文当前分支正重做代入推导，修复后续却直接转入验算并补出一套标准对称多项式解法，较像已知题解后的回填。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"与“将T=24/S代入”这一语境衔接不自然，直接出现T=4、s1^3=64等当前分支尚未推出的关键结论。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"把s1^3=64直接推出s1=4，并以“实数变量假设”排除其余复根，但题面未明确给出该假设，严格说这一步不成立。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"虽然有跳步，但它至少把目标量推进到6并尝试核对，比原后续继续机械化简更接近完成求解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"后半段几乎直接复现标准解法框架（设s1,s2，算s1s2与s1^3），泄露了解题主结构和答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "前文当前分支正重做代入推导，修复后续却直接转入验算并补出一套标准对称多项式解法，较像已知题解后的回填。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "与“将T=24/S代入”这一语境衔接不自然，直接出现T=4、s1^3=64等当前分支尚未推出的关键结论。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "把s1^3=64直接推出s1=4，并以“实数变量假设”排除其余复根，但题面未明确给出该假设，严格说这一步不成立。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "虽然有跳步，但它至少把目标量推进到6并尝试核对，比原后续继续机械化简更接近完成求解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "后半段几乎直接复现标准解法框架（设s1,s2，算s1s2与s1^3），泄露了解题主结构和答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

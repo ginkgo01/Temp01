@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"后半段突然贴近标准解并点出1/8，像已知题解后的倒推，不像前文仍在犹豫精确值时的自然思路。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文主要在想五倍角和直接求sin18°，修复稿却说“之前尝试”分解与和差化积，并直接引入cos36°精确值，衔接较生硬。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"把sin18°、cos36°写成“原式再乘以2”的形式，数值明显错误；最后得到1/8也没有建立在正确计算上。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"虽然提到了一些可行方向，但混入错误精确值和预设答案，整体并不比原始后续更有希望稳定推进到正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接暴露了标准解关键结构（sin²(sin+1)、和差化积、sin54°=cos36°）且提前点出1/8，泄露过多。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后半段突然贴近标准解并点出1/8，像已知题解后的倒推，不像前文仍在犹豫精确值时的自然思路。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文主要在想五倍角和直接求sin18°，修复稿却说“之前尝试”分解与和差化积，并直接引入cos36°精确值，衔接较生硬。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "把sin18°、cos36°写成“原式再乘以2”的形式，数值明显错误；最后得到1/8也没有建立在正确计算上。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "虽然提到了一些可行方向，但混入错误精确值和预设答案，整体并不比原始后续更有希望稳定推进到正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接暴露了标准解关键结构（sin²(sin+1)、和差化积、sin54°=cos36°）且提前点出1/8，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

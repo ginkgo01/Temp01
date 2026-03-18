@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 15,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"延续了前文已出现的“固定A”“看圆周顺序”“交替排列”思路，没有明显像是知道标准解后反推。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"与前文衔接自然，仍围绕固定一点、枚举顺序、判断交错条件展开，没有突兀引入全新框架。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"核心判断“端点交替则相交”是对的，但对3!与圆排列的表述略混乱，且“在A两侧”说法不够精确。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的摇摆和猜测，修复版更明确地朝着固定A后枚举并统计有利排列的正确方向推进。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"T\",\n    \"reason\": \"没有直接给出1/3或标准题解中的“对顶点”关键收束，只是在搭建可行计数思路。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已出现的“固定A”“看圆周顺序”“交替排列”思路，没有明显像是知道标准解后反推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文衔接自然，仍围绕固定一点、枚举顺序、判断交错条件展开，没有突兀引入全新框架。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "核心判断“端点交替则相交”是对的，但对3!与圆排列的表述略混乱，且“在A两侧”说法不够精确。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的摇摆和猜测，修复版更明确地朝着固定A后枚举并统计有利排列的正确方向推进。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接给出1/3或标准题解中的“对顶点”关键收束，只是在搭建可行计数思路。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

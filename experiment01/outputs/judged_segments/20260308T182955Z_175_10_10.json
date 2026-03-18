@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"主线从前文已提出的整除条件自然展开，先做同余再参数化求最小值，整体像真实可产生的思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文“右边必须为整数”的观察衔接顺畅，没有凭空跳出陌生结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"同余推导、参数化、最小化 |7k-25| 及验证解 (16,13) 都正确，无明显数学或逻辑错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原后续，这个版本更直接地把整数解参数化，并迅速转成单变量最小化，更有效推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"在已得到答案后又补充第二套完整参数化与总结，显得过于完整和定稿化，暴露了较多标准解结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "主线从前文已提出的整除条件自然展开，先做同余再参数化求最小值，整体像真实可产生的思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文“右边必须为整数”的观察衔接顺畅，没有凭空跳出陌生结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "同余推导、参数化、最小化 |7k-25| 及验证解 (16,13) 都正确，无明显数学或逻辑错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原后续，这个版本更直接地把整数解参数化，并迅速转成单变量最小化，更有效推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "在已得到答案后又补充第二套完整参数化与总结，显得过于完整和定稿化，暴露了较多标准解结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

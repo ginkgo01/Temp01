@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/47.json",
+  "dataset_idx": 78,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文的系数比较思路，先用一次项再代回求解，属于自然可想到的推进；虽补充了导数法，但不显得明显倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已完成的展开和列系数过程衔接顺畅，只是有少量重复，没有凭空引入未铺垫的关键结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"系数方程、代入求解、常数项验证以及导数法判断二重根都正确，没有明显逻辑或计算错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，它直接利用一次项得到b=-a/2并迅速求出a,b，还完成了验证，更有效地推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接照搬标准题解的结构，主要仍在做自然的系数比较；虽给出备选导数法，但未过度暴露标准答案来源。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文的系数比较思路，先用一次项再代回求解，属于自然可想到的推进；虽补充了导数法，但不显得明显倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已完成的展开和列系数过程衔接顺畅，只是有少量重复，没有凭空引入未铺垫的关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "系数方程、代入求解、常数项验证以及导数法判断二重根都正确，没有明显逻辑或计算错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，它直接利用一次项得到b=-a/2并迅速求出a,b，还完成了验证，更有效地推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接照搬标准题解的结构，主要仍在做自然的系数比较；虽给出备选导数法，但未过度暴露标准答案来源。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

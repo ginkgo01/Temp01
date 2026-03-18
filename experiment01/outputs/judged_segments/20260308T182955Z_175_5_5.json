@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"先由n=(100-3m)/4代入|m-n|，再检查整除条件并参数化，属于从前文自然可延伸出的思路，不算明显倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文对n的表达式继续化简并讨论整数条件，步骤衔接顺畅，虽提到“之前的转换”但不影响整体连贯。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"同余推导m≡0(mod4)、设m=4k后得到n=25-3k及|m-n|=|7k-25|都正确，结论最小值3无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的泛泛讨论，修复后续明确利用整除与参数化，直接推进到可求最小值的形式。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"基本完整展开了标准解法并直接给出最小值与对应(m,n)，暴露了解题结构和答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "先由n=(100-3m)/4代入|m-n|，再检查整除条件并参数化，属于从前文自然可延伸出的思路，不算明显倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文对n的表达式继续化简并讨论整数条件，步骤衔接顺畅，虽提到“之前的转换”但不影响整体连贯。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "同余推导m≡0(mod4)、设m=4k后得到n=25-3k及|m-n|=|7k-25|都正确，结论最小值3无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的泛泛讨论，修复后续明确利用整除与参数化，直接推进到可求最小值的形式。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "基本完整展开了标准解法并直接给出最小值与对应(m,n)，暴露了解题结构和答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

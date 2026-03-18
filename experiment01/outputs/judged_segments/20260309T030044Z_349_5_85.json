@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 85,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文正卡在 7! 与 8!/4 冲突、反复比较固定法和 Burnside 的状态，像是自然继续思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文的核心矛盾展开，没有跳到全新话题，衔接比原始后续更顺。\"},\n  \"correctness\": {\"label\": \"M\", \"reason\": \"倾向 8!/4 的主方向是对的，但把 7! 的问题说成“还有重复计数”并不准确，真实症结没有说清。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续转去怀疑题意和座位结构，修复后续更集中地推进到正确的对称性计数思路。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接写出“总轨道数为 8!/4”，已经基本暴露了标准解的核心结论与结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文正卡在 7! 与 8!/4 冲突、反复比较固定法和 Burnside 的状态，像是自然继续思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文的核心矛盾展开，没有跳到全新话题，衔接比原始后续更顺。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "倾向 8!/4 的主方向是对的，但把 7! 的问题说成“还有重复计数”并不准确，真实症结没有说清。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续转去怀疑题意和座位结构，修复后续更集中地推进到正确的对称性计数思路。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接写出“总轨道数为 8!/4”，已经基本暴露了标准解的核心结论与结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 70,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"后续以“检查/确认”清单形式并提前点出 p=5/24、q=1/8 和 29，明显带有已知完整解后的回看痕迹。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文正在实际求解二次方程，修复后续却转成元层面的核对清单，还提前引入最终数值，衔接感较弱。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"2pq+1/9 的分解、pq=5/192、二次方程求根、条件筛选及最终 m+n=29 都是正确的。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"它补上了原后续未完成的选根、验算和收尾步骤，确实更能把思路推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接暴露了关键中间结果 p=5/24、q=1/8 以及最终答案 29，泄露过多。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后续以“检查/确认”清单形式并提前点出 p=5/24、q=1/8 和 29，明显带有已知完整解后的回看痕迹。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文正在实际求解二次方程，修复后续却转成元层面的核对清单，还提前引入最终数值，衔接感较弱。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "2pq+1/9 的分解、pq=5/192、二次方程求根、条件筛选及最终 m+n=29 都是正确的。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "它补上了原后续未完成的选根、验算和收尾步骤，确实更能把思路推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接暴露了关键中间结果 p=5/24、q=1/8 以及最终答案 29，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

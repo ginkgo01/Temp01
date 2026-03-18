@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"在已有k同余分析后，转而用m模4参数化来交叉验证，是人类做题中可能自然出现的补充思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"开头承接前文的k≡3(mod 7)结论，再换一种等价方法确认最小值，衔接基本自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"同余变形m≡0(mod4)、设m=4t、得到|m-n|=|7t-25|并比较邻近整数t=3,4的过程都正确。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的重复枚举，这一版把问题转成最小化|7t-25|，更系统也更接近完整证明。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"一开始就直接点出最小值为3及对应解(m,n)=(16,13)，随后又给出较完整替代解法，结论暴露偏早。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "在已有k同余分析后，转而用m模4参数化来交叉验证，是人类做题中可能自然出现的补充思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "开头承接前文的k≡3(mod 7)结论，再换一种等价方法确认最小值，衔接基本自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "同余变形m≡0(mod4)、设m=4t、得到|m-n|=|7t-25|并比较邻近整数t=3,4的过程都正确。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的重复枚举，这一版把问题转成最小化|7t-25|，更系统也更接近完整证明。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "一开始就直接点出最小值为3及对应解(m,n)=(16,13)，随后又给出较完整替代解法，结论暴露偏早。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

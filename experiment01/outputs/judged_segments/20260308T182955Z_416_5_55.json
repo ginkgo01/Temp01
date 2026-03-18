@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 55,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文的犹豫与回顾口吻，没有直接站在已知标准解的视角倒推。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文刚进行到四次式可能分解为平方并准备验算，修复后续却突然回到泛泛重整思路，衔接较生硬。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"没有明确引入错误结论，提到的公式与方向都以“需要确认”“可能”表述，未出现明显硬性数学错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续已接近完成因式分解并可求出sin18°，修复后续反而退回到空泛讨论，推进性更差。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接暴露标准答案或完整题解结构，仍保持普通解题过程中的探索状态。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文的犹豫与回顾口吻，没有直接站在已知标准解的视角倒推。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文刚进行到四次式可能分解为平方并准备验算，修复后续却突然回到泛泛重整思路，衔接较生硬。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "没有明确引入错误结论，提到的公式与方向都以“需要确认”“可能”表述，未出现明显硬性数学错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续已接近完成因式分解并可求出sin18°，修复后续反而退回到空泛讨论，推进性更差。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接暴露标准答案或完整题解结构，仍保持普通解题过程中的探索状态。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

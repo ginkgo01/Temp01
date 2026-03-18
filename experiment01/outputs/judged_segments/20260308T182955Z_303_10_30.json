@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"第8句直接提到“标准题解”并引入点E与相似思路，明显带有已知完整解法后的倒推痕迹。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文已推进到坐标方程化简，修复后续却反复回到泛泛讨论，还突然引入E点和标准题解，衔接不自然。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"将角平分线定理误写为AB/AD=BC/CD属明显错误，后面关于BC的比例式也无依据，存在实质性数学问题。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续继续化简现有方程，修复后续大量重复与发散，且掺入错误关系，整体更不利于推进到正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"明确提到“标准题解”并泄露相似三角形与点E的结构，暴露了关键解题框架。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "第8句直接提到“标准题解”并引入点E与相似思路，明显带有已知完整解法后的倒推痕迹。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文已推进到坐标方程化简，修复后续却反复回到泛泛讨论，还突然引入E点和标准题解，衔接不自然。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "将角平分线定理误写为AB/AD=BC/CD属明显错误，后面关于BC的比例式也无依据，存在实质性数学问题。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续继续化简现有方程，修复后续大量重复与发散，且掺入错误关系，整体更不利于推进到正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "明确提到“标准题解”并泄露相似三角形与点E的结构，暴露了关键解题框架。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

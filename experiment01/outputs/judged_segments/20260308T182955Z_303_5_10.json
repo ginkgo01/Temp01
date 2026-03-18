@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"先做角追得到AB=BC是自然想法，后面还有试探性设元和误用定理，整体更像真实解题过程而非倒背标准解。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文主要在走坐标与点积，这里突然切到纯几何且未承接；中间还出现“梯形面积由三角形ABC和梯形BCDA组成”这类不连贯表述。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"第4步把角平分线定理错误地用于点C不在BD上的情形；第3步的面积分解表述也明显不对。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"虽然有错误，但至少抓到了关键角关系并推出AB=BC，比原始后续的反复犹豫更接近正确思路。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接泄露答案28，也没有复现标准解中的作辅助线、相似三角形和面积比例的完整结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "先做角追得到AB=BC是自然想法，后面还有试探性设元和误用定理，整体更像真实解题过程而非倒背标准解。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文主要在走坐标与点积，这里突然切到纯几何且未承接；中间还出现“梯形面积由三角形ABC和梯形BCDA组成”这类不连贯表述。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "第4步把角平分线定理错误地用于点C不在BD上的情形；第3步的面积分解表述也明显不对。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "虽然有错误，但至少抓到了关键角关系并推出AB=BC，比原始后续的反复犹豫更接近正确思路。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露答案28，也没有复现标准解中的作辅助线、相似三角形和面积比例的完整结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

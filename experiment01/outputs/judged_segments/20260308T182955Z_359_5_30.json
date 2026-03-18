@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1407.json",
+  "dataset_idx": 359,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"基于前文已设T、S且已得TS=24，转而想到用x^3+y^3+z^3与(T,S)的恒等式是自然的补救思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文变量记号T,S和关系TS=24直接衔接，虽换了路线，但没有凭空引入未出现的核心量。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"恒等式与代入计算均正确：4=T^3-3TS+12，配合TS=24得T^3=64，进而S=6。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原后续停留在繁琐代数运算中，修复后续直接导出T和S，明显更接近并得到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"基本直接给出了完整正确解法，且结构与标准题解高度接近，暴露程度偏高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "基于前文已设T、S且已得TS=24，转而想到用x^3+y^3+z^3与(T,S)的恒等式是自然的补救思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文变量记号T,S和关系TS=24直接衔接，虽换了路线，但没有凭空引入未出现的核心量。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "恒等式与代入计算均正确：4=T^3-3TS+12，配合TS=24得T^3=64，进而S=6。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原后续停留在繁琐代数运算中，修复后续直接导出T和S，明显更接近并得到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "基本直接给出了完整正确解法，且结构与标准题解高度接近，暴露程度偏高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

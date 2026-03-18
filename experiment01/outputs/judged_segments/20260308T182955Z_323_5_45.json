@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 45,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文“固定A并枚举其余三点顺序”的思路，整体像自然推进，而非明显直接搬出完整题解。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"从举一个排列例子突然跳到“B和D位于A的两侧”的判据，缺少中间论证，且该表述与前文讨论的判据不自然衔接。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"相交判据与所列有利排列都不对；固定A后应是B夹在C、D之间时才相交，而文中给出的C,D,B和D,C,B并非相交情形。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"虽然数值上得到1/3，但依赖错误判据和错误计数示例；相比原始后续正在接近的正确几何条件，并没有更可靠地推进。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接照搬标准题解中“B是A的对顶点”的结构，仍保留了枚举与试探的过程感。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文“固定A并枚举其余三点顺序”的思路，整体像自然推进，而非明显直接搬出完整题解。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "从举一个排列例子突然跳到“B和D位于A的两侧”的判据，缺少中间论证，且该表述与前文讨论的判据不自然衔接。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "相交判据与所列有利排列都不对；固定A后应是B夹在C、D之间时才相交，而文中给出的C,D,B和D,C,B并非相交情形。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "虽然数值上得到1/3，但依赖错误判据和错误计数示例；相比原始后续正在接近的正确几何条件，并没有更可靠地推进。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接照搬标准题解中“B是A的对顶点”的结构，仍保留了枚举与试探的过程感。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/number_theory/838.json",
+  "dataset_idx": 197,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"前文已基本完成核心推导，修复后续只是顺势收束并列举结果，像自然继续思考而非明显倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文关于a、b取值范围的分析衔接自然，继续补完c、d并完成计数，没有突兀换方法。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"10!分解、指数约束、组合计数和列举的x值都正确，结论6无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的犹豫和未列完，修复后续明确完成枚举与验证，更有效推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然给出最终结论和完整枚举，但这些都是沿着前文已展开的思路自然得出，并未突然泄露额外解题捷径。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "前文已基本完成核心推导，修复后续只是顺势收束并列举结果，像自然继续思考而非明显倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于a、b取值范围的分析衔接自然，继续补完c、d并完成计数，没有突兀换方法。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "10!分解、指数约束、组合计数和列举的x值都正确，结论6无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的犹豫和未列完，修复后续明确完成枚举与验证，更有效推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然给出最终结论和完整枚举，但这些都是沿着前文已展开的思路自然得出，并未突然泄露额外解题捷径。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"前文已多次用到 Asy 坐标并计算过若干圆心距，因此顺着这些坐标与相切关系继续推出 Q,R,S 共线、P 的位置，属于自然可产生的下一步。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文的坐标化分析能衔接上，没有明显自相矛盾；只是比原文更果断地提炼出关键几何关系。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"Q,R,S 共线且相邻距为 2，P 满足 PR=PS=2 可得 P=(1,√3)，进而 PQ=2√3、PS=2、QS=4，最小角确为 30°。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的反复猜测，这一版本明确抓住了可解的结构并成功推进到正确结论。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"它几乎直接给出了完整解法结构、边长与角度结论，明显过度暴露标准解路径和答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "前文已多次用到 Asy 坐标并计算过若干圆心距，因此顺着这些坐标与相切关系继续推出 Q,R,S 共线、P 的位置，属于自然可产生的下一步。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文的坐标化分析能衔接上，没有明显自相矛盾；只是比原文更果断地提炼出关键几何关系。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "Q,R,S 共线且相邻距为 2，P 满足 PR=PS=2 可得 P=(1,√3)，进而 PQ=2√3、PS=2、QS=4，最小角确为 30°。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的反复猜测，这一版本明确抓住了可解的结构并成功推进到正确结论。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "它几乎直接给出了完整解法结构、边长与角度结论，明显过度暴露标准解路径和答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

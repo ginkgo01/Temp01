@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 35,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"M\", \"reason\": \"有一定延续前文探索的样子，但也出现了带结论回看的表述，如“当前最小值确实为3”和“让7m尽可能接近100”，略像事后修补。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文最后已把 k 作为参数写成 n=3k+1，但修复后续又回到 earlier 的 k=m-n，并在两种含义间来回切换，衔接明显混乱。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"同一个 k 被赋予不同含义，导致内部不一致；例如“设定n=3k+1”后又说“k=3时对应m=16,n=13”，这在该参数化下并不成立。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续直接最小化 |31-7k| 并得出解，修复后续主要在重复和回顾，未更有效推进，反而增加了变量混乱。\"},\n  \"non_leakage\": {\"label\": \"M\", \"reason\": \"没有完整照搬标准题解，但直接点出“让7m尽可能接近100”和最终最小值为3，已有一定答案/题解结构暴露。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "有一定延续前文探索的样子，但也出现了带结论回看的表述，如“当前最小值确实为3”和“让7m尽可能接近100”，略像事后修补。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文最后已把 k 作为参数写成 n=3k+1，但修复后续又回到 earlier 的 k=m-n，并在两种含义间来回切换，衔接明显混乱。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "同一个 k 被赋予不同含义，导致内部不一致；例如“设定n=3k+1”后又说“k=3时对应m=16,n=13”，这在该参数化下并不成立。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续直接最小化 |31-7k| 并得出解，修复后续主要在重复和回顾，未更有效推进，反而增加了变量混乱。"
+      },
+      "non_leakage": {
+        "label": "M",
+        "reason": "没有完整照搬标准题解，但直接点出“让7m尽可能接近100”和最终最小值为3，已有一定答案/题解结构暴露。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

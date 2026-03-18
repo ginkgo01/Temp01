@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"出现“这与标准答案一致”等表述，明显带有已知答案后回填的痕迹，不太像前文自然推演。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"能接上前文对 Burnside 与“固定一人”矛盾的讨论，但直接跳过了前文正准备展开的座位循环分析，衔接略显突兀。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"结论 8!/4=10080 是对的，但把“固定一人法”失效的原因说成‘未完全消除旋转对称性’并不准确，关键问题其实是方桌下座位不在同一旋转轨道。\"\n  },\n  \"progress\": {\n    \"label\": \"M\",\n    \"reason\": \"比原始后续更快收束到正确方法与答案，但没有真正澄清 7! 与 8!/4 的核心矛盾，推进有限。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接点出“标准答案”并明确给出最终做法和结果，泄露感较强，不像普通中途思考。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“这与标准答案一致”等表述，明显带有已知答案后回填的痕迹，不太像前文自然推演。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "能接上前文对 Burnside 与“固定一人”矛盾的讨论，但直接跳过了前文正准备展开的座位循环分析，衔接略显突兀。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "结论 8!/4=10080 是对的，但把“固定一人法”失效的原因说成‘未完全消除旋转对称性’并不准确，关键问题其实是方桌下座位不在同一旋转轨道。"
+      },
+      "progress": {
+        "label": "M",
+        "reason": "比原始后续更快收束到正确方法与答案，但没有真正澄清 7! 与 8!/4 的核心矛盾，推进有限。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接点出“标准答案”并明确给出最终做法和结果，泄露感较强，不像普通中途思考。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

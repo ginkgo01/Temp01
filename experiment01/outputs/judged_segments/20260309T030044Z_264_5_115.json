@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 115,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"直接以“题解中...”为出发点，并引入标准解里的点J，不像前文自然推演出来的想法。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文一直在坐标与向量设定中挣扎，修复后续却突然转向引用题解和点J，衔接生硬。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"所述相似、垂直、设元建方程等方向本身没有明显数学错误，也未出现自相矛盾。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续沿着错误坐标继续算，修复后续至少把思路引向相似三角形与辅助点，更接近正确解法。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"明显泄露标准题解结构，尤其是直接点出交点J及其作用，已不太像真实做题过程中的自然探索。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接以“题解中...”为出发点，并引入标准解里的点J，不像前文自然推演出来的想法。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文一直在坐标与向量设定中挣扎，修复后续却突然转向引用题解和点J，衔接生硬。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所述相似、垂直、设元建方程等方向本身没有明显数学错误，也未出现自相矛盾。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续沿着错误坐标继续算，修复后续至少把思路引向相似三角形与辅助点，更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "明显泄露标准题解结构，尤其是直接点出交点J及其作用，已不太像真实做题过程中的自然探索。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

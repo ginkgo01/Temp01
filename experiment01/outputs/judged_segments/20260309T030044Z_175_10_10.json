@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"T\",\n    \"reason\": \"延续了前文“设差值变量再代入”的探索方向，没有显出已知完整解后倒推的痕迹。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"与前文关于“设差值、联立分析整数条件”的思路衔接自然，没有突然引入陌生结论。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所述方法在数学上是合理的，没有明显错误或自相矛盾，只是尚未展开计算。\"\n  },\n  \"progress\": {\n    \"label\": \"F\",\n    \"reason\": \"相比原始后续已实际推出同余条件并接近答案，修复后续基本停留在重复规划层面，推进明显变弱。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"T\",\n    \"reason\": \"没有直接泄露答案，也没有暴露标准题解的关键计算结构，只是提出一般性思路。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文“设差值变量再代入”的探索方向，没有显出已知完整解后倒推的痕迹。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于“设差值、联立分析整数条件”的思路衔接自然，没有突然引入陌生结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所述方法在数学上是合理的，没有明显错误或自相矛盾，只是尚未展开计算。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续已实际推出同余条件并接近答案，修复后续基本停留在重复规划层面，推进明显变弱。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露答案，也没有暴露标准题解的关键计算结构，只是提出一般性思路。"
+      }
+    },
+    "attempts_used": 2
+  }
+}

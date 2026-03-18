@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 300,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接说“标准解法”并给出判别式与目标区间，明显像已知全解后的倒推，不像前文自然思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文还在对 λ=2 的三次式做综合除法，这里突然跳到整体因式分解和二次判别式，衔接断裂明显。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"所述关键结论基本正确：确有二次因子，判别式与 λ=3 的情形也对，方向上没有明显数学错误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续只是在局部计算 λ=2，这里转向了更接近完整解法的参数分析，明显更能推进到正确答案。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"不仅点出“标准解法”，还提前暴露判别式结构和最终应得区间 (3,4]，泄露过多。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“标准解法”并给出判别式与目标区间，明显像已知全解后的倒推，不像前文自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文还在对 λ=2 的三次式做综合除法，这里突然跳到整体因式分解和二次判别式，衔接断裂明显。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所述关键结论基本正确：确有二次因子，判别式与 λ=3 的情形也对，方向上没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只是在局部计算 λ=2，这里转向了更接近完整解法的参数分析，明显更能推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅点出“标准解法”，还提前暴露判别式结构和最终应得区间 (3,4]，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

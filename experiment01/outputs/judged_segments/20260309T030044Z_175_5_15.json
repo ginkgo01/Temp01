@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 15,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"M\", \"reason\": \"前半段像是顺着已有推导继续想，但后半段突然转向“让7m接近100”的路线，略有从完整题解回看式的痕迹。\"},\n  \"coherence\": {\"label\": \"M\", \"reason\": \"与前文的k≡3(mod 7)能衔接上，但后面改走7m的思路较突兀，且没有说明它与最小化|m-n|的直接关系。\"},\n  \"correctness\": {\"label\": \"M\", \"reason\": \"k的同余结论、候选值和n=(100-3k)/7都正确，但“直接找7m接近100”缺少必要推导，逻辑上不够完整。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"原始后续已经在检查k=3、-4并逼近结论；修复后续反而退回到泛泛分析和枚举建议，推进性更差。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接泄露答案，也没有完整展开标准题解，只是轻微提示了另一条可能思路。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "前半段像是顺着已有推导继续想，但后半段突然转向“让7m接近100”的路线，略有从完整题解回看式的痕迹。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "与前文的k≡3(mod 7)能衔接上，但后面改走7m的思路较突兀，且没有说明它与最小化|m-n|的直接关系。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "k的同余结论、候选值和n=(100-3k)/7都正确，但“直接找7m接近100”缺少必要推导，逻辑上不够完整。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "原始后续已经在检查k=3、-4并逼近结论；修复后续反而退回到泛泛分析和枚举建议，推进性更差。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接泄露答案，也没有完整展开标准题解，只是轻微提示了另一条可能思路。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

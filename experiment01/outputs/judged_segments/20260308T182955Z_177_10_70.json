@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 70,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"只是空泛的“思考片段1...10”占位符，不像真实延续已有思路的自然思考。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"与前文正在进行的坐标与余弦定理推导完全脱节，没有承接已有内容。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"没有给出任何可检验的数学推理或结论，作为修复后续是不成立的。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相较原始后续没有推进解题，未补全计算也未引向正确几何思路。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有暴露标准答案或完整题解结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "只是空泛的“思考片段1...10”占位符，不像真实延续已有思路的自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "与前文正在进行的坐标与余弦定理推导完全脱节，没有承接已有内容。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "没有给出任何可检验的数学推理或结论，作为修复后续是不成立的。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相较原始后续没有推进解题，未补全计算也未引向正确几何思路。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有暴露标准答案或完整题解结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

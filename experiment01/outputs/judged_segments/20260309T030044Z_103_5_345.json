@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 345,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"多次直接提到“标准解法”“标准解法中提到的判别式”，明显像是已知题解后的倒推，不像前文自然推演。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"虽然与前文“分离不动点与二周期点”的方向有关，但突然引入因式分解、判别式公式和结论，缺少过渡与推导。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"提到的关键结论与标准解一致：通过二次因子与判别式分析，最终应排除λ=3并得到(3,4]。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续的停滞与数值化倾向，修复后续明确转向正确的代数分解与判别式路线，显著推进了解题。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"不仅暴露了完整解题结构，还直接给出判别式和最终答案区间(3,4]，泄露程度过高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "多次直接提到“标准解法”“标准解法中提到的判别式”，明显像是已知题解后的倒推，不像前文自然推演。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "虽然与前文“分离不动点与二周期点”的方向有关，但突然引入因式分解、判别式公式和结论，缺少过渡与推导。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "提到的关键结论与标准解一致：通过二次因子与判别式分析，最终应排除λ=3并得到(3,4]。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的停滞与数值化倾向，修复后续明确转向正确的代数分解与判别式路线，显著推进了解题。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "不仅暴露了完整解题结构，还直接给出判别式和最终答案区间(3,4]，泄露程度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

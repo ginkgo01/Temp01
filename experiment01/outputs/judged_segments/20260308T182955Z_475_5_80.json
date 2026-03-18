@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 80,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"是在已求出两个根后回头核查前面步骤并筛选根，属于当前上下文下可能出现的自然复查。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"虽然先回查再结论，但都围绕前文已得到的2pq+1/9、pq和两根展开，没有凭空引入新结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"对总和为7的分类、方程变形、根的筛选以及m+n=29都正确且一致。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停在选根，这里补上了关键核查并明确给出最终答案，更接近完整正确解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接搬出标准题解的设元结构或额外信息，只基于前文已有推导做检查并收束到答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "是在已求出两个根后回头核查前面步骤并筛选根，属于当前上下文下可能出现的自然复查。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "虽然先回查再结论，但都围绕前文已得到的2pq+1/9、pq和两根展开，没有凭空引入新结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "对总和为7的分类、方程变形、根的筛选以及m+n=29都正确且一致。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停在选根，这里补上了关键核查并明确给出最终答案，更接近完整正确解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接搬出标准题解的设元结构或额外信息，只基于前文已有推导做检查并收束到答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/algebra/518.json",
+  "dataset_idx": 393,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文已得到的等力关系和反比判断，只是在代入、约分和复核，没有明显事后倒推痕迹。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文关于F=ma、a_jen/a_jack=m_jack/m_jen及3/4的犹豫自然衔接，没有凭空引入新前提。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"公式变形、代入150/200、约分为3/4以及物理意义核对都正确，无明显矛盾或计算错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，更清晰地完成代入、约分和方向核验，能更稳妥地推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然给出了3/4，但这是基于前文已几乎完成的推导自然得出，并未生硬照搬完整标准题解结构。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文已得到的等力关系和反比判断，只是在代入、约分和复核，没有明显事后倒推痕迹。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于F=ma、a_jen/a_jack=m_jack/m_jen及3/4的犹豫自然衔接，没有凭空引入新前提。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "公式变形、代入150/200、约分为3/4以及物理意义核对都正确，无明显矛盾或计算错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，更清晰地完成代入、约分和方向核验，能更稳妥地推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然给出了3/4，但这是基于前文已几乎完成的推导自然得出，并未生硬照搬完整标准题解结构。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

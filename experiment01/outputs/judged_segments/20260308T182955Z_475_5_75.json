@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 75,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"以回头核对前面分解与方程的方式继续推理，虽有重复但仍像真实解题中的自检过程。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已得到的2pq+1/9、p+q=1/3及判别式结果自然衔接，没有凭空引入新结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"概率分解、代数化简、二次方程求根及根的筛选都正确，最终答案29无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停在两根与条件判断前，修复后续完整选出正确根并得到最终答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接套用标准题解中的额外设元或暴露外部答案，只沿已有p、q推导完成求解。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "以回头核对前面分解与方程的方式继续推理，虽有重复但仍像真实解题中的自检过程。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已得到的2pq+1/9、p+q=1/3及判别式结果自然衔接，没有凭空引入新结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "概率分解、代数化简、二次方程求根及根的筛选都正确，最终答案29无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停在两根与条件判断前，修复后续完整选出正确根并得到最终答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接套用标准题解中的额外设元或暴露外部答案，只沿已有p、q推导完成求解。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 40,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"主要是在前文已得到的两种参数化基础上回顾、核验并收尾，虽偏总结，但仍像自然的解题末段思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"承接了前文的 k≡3 mod7 以及 n=3k+1、m=32-4k 两条思路，没有凭空引入新的关键结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"代入检验和绝对值比较均正确，最终得到 |m-n| 的最小值为 3，与题目答案一致。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相较原始后续更快完成排查与收束，明确确认最优值和对应整数解，更有助于走向正确结论。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接照搬标准题解结构，主要是沿着前文已出现的方法继续验证并得出答案，泄露感不强。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "主要是在前文已得到的两种参数化基础上回顾、核验并收尾，虽偏总结，但仍像自然的解题末段思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "承接了前文的 k≡3 mod7 以及 n=3k+1、m=32-4k 两条思路，没有凭空引入新的关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "代入检验和绝对值比较均正确，最终得到 |m-n| 的最小值为 3，与题目答案一致。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续更快完成排查与收束，明确确认最优值和对应整数解，更有助于走向正确结论。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接照搬标准题解结构，主要是沿着前文已出现的方法继续验证并得出答案，泄露感不强。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

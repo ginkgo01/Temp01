@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 10,
+  "cut_idx": 70,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"一开头直接说“标准题解中使用了…”，明显是站在已知完整解法的视角回填，不像前文自然推进出来的思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文一直在坐标设定与图形关系上徘徊，修复后续却突然引入J、K及两组相似三角形，缺少自然过渡。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"主线路基本对应正确解法，但表述中有不严谨甚至错误之处，如在△GJE中应是GJ与GE垂直，不是GJ与JE垂直。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续陷在坐标困境中，修复后续明显转向可得正解的相似三角形+勾股路径，推进更有效。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"几乎按标准题解顺序完整暴露了关键辅助点、相似关系和结论链条，泄露程度过高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "一开头直接说“标准题解中使用了…”，明显是站在已知完整解法的视角回填，不像前文自然推进出来的思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文一直在坐标设定与图形关系上徘徊，修复后续却突然引入J、K及两组相似三角形，缺少自然过渡。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "主线路基本对应正确解法，但表述中有不严谨甚至错误之处，如在△GJE中应是GJ与GE垂直，不是GJ与JE垂直。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续陷在坐标困境中，修复后续明显转向可得正解的相似三角形+勾股路径，推进更有效。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "几乎按标准题解顺序完整暴露了关键辅助点、相似关系和结论链条，泄露程度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

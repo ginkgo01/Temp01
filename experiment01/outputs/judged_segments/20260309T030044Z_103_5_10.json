@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/558.json",
+  "dataset_idx": 103,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"M\", \"reason\": \"先分离不动点与二周期点是自然想法，但直接给出可分解结构和精确判别式，略显像已知题解后的回填。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"延续了前文“解f(f(x))=x并排除f(x)=x”的思路，整体衔接自然，没有明显跑题。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"关于因式分解、判别式以及λ=3需单独检查的判断都与标准解一致，没有明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，明确引入了关键分解与判别式分析，明显更接近正确解法。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"已经暴露了标准解的核心结构：提取不动点因子、计算判别式并直接锁定(3,4]这一关键区间，泄露较重。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "先分离不动点与二周期点是自然想法，但直接给出可分解结构和精确判别式，略显像已知题解后的回填。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "延续了前文“解f(f(x))=x并排除f(x)=x”的思路，整体衔接自然，没有明显跑题。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "关于因式分解、判别式以及λ=3需单独检查的判断都与标准解一致，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，明确引入了关键分解与判别式分析，明显更接近正确解法。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经暴露了标准解的核心结构：提取不动点因子、计算判别式并直接锁定(3,4]这一关键区间，泄露较重。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/238.json",
+  "dataset_idx": 349,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 150,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"M\",\n    \"reason\": \"延续了前文在 Burnside 与固定位置法之间摇摆的语境，但“因此，正确方向是……”这种总结式口吻略显事后回看。\"\n  },\n  \"coherence\": {\n    \"label\": \"M\",\n    \"reason\": \"表面上承接了前文的矛盾点，但对“固定一个人为何失效”的解释跳得较快，且没有接上前文真正卡住的座位类型问题。\"\n  },\n  \"correctness\": {\n    \"label\": \"F\",\n    \"reason\": \"明显把 0° 旋转也说成不动点数为 0，这是错的；而且把固定位置法出错的原因归结为“群大小与人数不匹配”也不对。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续原地打转，修复后续至少把思路推向了 Burnside/按 4 除的正确方向，更接近正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"已经直接给出关键结构“轨道数 = 8!/4，并应依赖 Burnside 引理”，基本暴露了标准解法主干。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "M",
+        "reason": "延续了前文在 Burnside 与固定位置法之间摇摆的语境，但“因此，正确方向是……”这种总结式口吻略显事后回看。"
+      },
+      "coherence": {
+        "label": "M",
+        "reason": "表面上承接了前文的矛盾点，但对“固定一个人为何失效”的解释跳得较快，且没有接上前文真正卡住的座位类型问题。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "明显把 0° 旋转也说成不动点数为 0，这是错的；而且把固定位置法出错的原因归结为“群大小与人数不匹配”也不对。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续原地打转，修复后续至少把思路推向了 Burnside/按 4 除的正确方向，更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "已经直接给出关键结构“轨道数 = 8!/4，并应依赖 Burnside 引理”，基本暴露了标准解法主干。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

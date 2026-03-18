@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 15,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"后续几乎一步到位走向标准解，直接锁定共线、等边、120°与30-60-90结构，较像已知题解后的倒推，不太像前文仍在困惑时的自然探索。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已用坐标、已算出QR=RS=PR=2的内容基本衔接，继续利用Q、R、S共线和等边三角形推进，整体没有明显自相矛盾。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"所用关系和角度结论都正确：Q、R、S共线，PRS等边，∠QRP=120°，从而得到∠PQS=30°，最小角为30°。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续继续停留在猜测阶段，修复后续明确建立关键几何关系并顺利导向正确答案，推进明显更强。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"基本复现了标准题解的完整骨架和关键角度链条，连30-60-90结构都直接点出，泄露程度偏高。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后续几乎一步到位走向标准解，直接锁定共线、等边、120°与30-60-90结构，较像已知题解后的倒推，不太像前文仍在困惑时的自然探索。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已用坐标、已算出QR=RS=PR=2的内容基本衔接，继续利用Q、R、S共线和等边三角形推进，整体没有明显自相矛盾。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "所用关系和角度结论都正确：Q、R、S共线，PRS等边，∠QRP=120°，从而得到∠PQS=30°，最小角为30°。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续停留在猜测阶段，修复后续明确建立关键几何关系并顺利导向正确答案，推进明显更强。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "基本复现了标准题解的完整骨架和关键角度链条，连30-60-90结构都直接点出，泄露程度偏高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

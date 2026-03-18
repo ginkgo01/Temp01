@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/number_theory/612.json",
+  "dataset_idx": 141,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 5,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文对N、k和余数的探索，也保留了对题意可能矛盾的犹豫，像是自然推进而非明显事后倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文已引入的模3、3k≤N、剩余量等表述直接衔接，没有突然引入陌生设定或结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心结论“剩余数是N除以3的余数，最大为2”在数学上正确，整体无明显逻辑错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，修复版更快把矛盾整理为‘看余数’，并更明确地收束到正确答案2。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接照搬标准题解的关键句式，只是用常见余数分析得到结论，仍像正常解题过程。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文对N、k和余数的探索，也保留了对题意可能矛盾的犹豫，像是自然推进而非明显事后倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文已引入的模3、3k≤N、剩余量等表述直接衔接，没有突然引入陌生设定或结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心结论“剩余数是N除以3的余数，最大为2”在数学上正确，整体无明显逻辑错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，修复版更快把矛盾整理为‘看余数’，并更明确地收束到正确答案2。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接照搬标准题解的关键句式，只是用常见余数分析得到结论，仍像正常解题过程。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/826.json",
+  "dataset_idx": 264,
+  "source": "failed",
+  "l_value": 5,
+  "cut_idx": 95,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"直接说“题解中通过构造交点J”“题解中提到GK与BH相等”，明显是站在已知题解的视角倒推，不像前文自然思考。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文一直在坐标、缩放和Asy构造上摸索，修复后续却突然引入J、GK、K及题解线索，衔接很生硬。\"\n  },\n  \"correctness\": {\n    \"label\": \"M\",\n    \"reason\": \"所说的BE⊂BH、可用勾股算BD、GK可能与BH对应等方向大体不违背正确解，但表述较跳且关键对象未经建立。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续继续纠缠缩放和bisectorpoint，修复后续至少把思路拉向相似三角形、勾股和矩形对应边这些更接近正解的方向。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"暴露了标准解的核心骨架：构造J、使用相似三角形、引入GK并令其等于BH，泄露程度过高。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "直接说“题解中通过构造交点J”“题解中提到GK与BH相等”，明显是站在已知题解的视角倒推，不像前文自然思考。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文一直在坐标、缩放和Asy构造上摸索，修复后续却突然引入J、GK、K及题解线索，衔接很生硬。"
+      },
+      "correctness": {
+        "label": "M",
+        "reason": "所说的BE⊂BH、可用勾股算BD、GK可能与BH对应等方向大体不违背正确解，但表述较跳且关键对象未经建立。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续继续纠缠缩放和bisectorpoint，修复后续至少把思路拉向相似三角形、勾股和矩形对应边这些更接近正解的方向。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "暴露了标准解的核心骨架：构造J、使用相似三角形、引入GK并令其等于BH，泄露程度过高。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

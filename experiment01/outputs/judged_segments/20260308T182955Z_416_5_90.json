@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 90,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文“已知sin18°精确值后直接代入”的思路，属于自然推进，不像从完整题解倒推。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文最后一句“转化为计算[(√5-1)/4]^3+[(√5-1)/4]^2”直接衔接，步骤顺畅。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"平方展开与化简正确，后续立方相乘及相加得到1/8也正确，无明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停留在准备计算，这里明确完成了平方、立方和求和的关键推进，更接近正确解。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有照搬标准题解结构，只是沿着前文已有代入路线完成计算，虽给出结果但不算过度泄露。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文“已知sin18°精确值后直接代入”的思路，属于自然推进，不像从完整题解倒推。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文最后一句“转化为计算[(√5-1)/4]^3+[(√5-1)/4]^2”直接衔接，步骤顺畅。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "平方展开与化简正确，后续立方相乘及相加得到1/8也正确，无明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停留在准备计算，这里明确完成了平方、立方和求和的关键推进，更接近正确解。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有照搬标准题解结构，只是沿着前文已有代入路线完成计算，虽给出结果但不算过度泄露。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

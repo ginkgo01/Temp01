@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/675.json",
+  "dataset_idx": 62,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"后半段直接确认答案并提到“对比标准题解”，明显带有事后已知结论的视角，不像当下自然推演。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"虽延续了“算子范数=最大奇异值”的路线，但直接报出A^TA与特征值且突然提“标准题解”，有明显跳步和语境断裂。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"A^TA=[[4,6],[6,13]]，其特征值为16和1，最大奇异值为4，因此C=4，数学上正确。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的卡顿与反复，修复后续明确推进到计算A^TA、求特征值并得到正确结论。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接给出关键矩阵、特征值和最终答案，还提及标准题解，暴露了几乎完整解题结果。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后半段直接确认答案并提到“对比标准题解”，明显带有事后已知结论的视角，不像当下自然推演。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "虽延续了“算子范数=最大奇异值”的路线，但直接报出A^TA与特征值且突然提“标准题解”，有明显跳步和语境断裂。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "A^TA=[[4,6],[6,13]]，其特征值为16和1，最大奇异值为4，因此C=4，数学上正确。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的卡顿与反复，修复后续明确推进到计算A^TA、求特征值并得到正确结论。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出关键矩阵、特征值和最终答案，还提及标准题解，暴露了几乎完整解题结果。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

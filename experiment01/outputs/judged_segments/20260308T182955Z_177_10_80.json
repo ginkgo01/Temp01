@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 80,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"后半段出现“与标准题解一致”等元话语，明显带有事后总结视角，不像是在当前思路中自然继续推导。\"\n  },\n  \"coherence\": {\n    \"label\": \"F\",\n    \"reason\": \"前文已进入余弦定理代入计算，修复后续却回头重述坐标与相切关系，衔接上有明显回跳和总结式断裂。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"边长计算PQ=2√3、QS=4、PS=2正确，由余弦定理得cos∠Q=√3/2，故最小角为30°，结论无误。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相较原始后续只算到cos值，修复后续明确完成了角度判定并给出最终答案，确实推进到正确结论。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"直接给出30°、30-60-90三角形及“与标准题解一致”，暴露了完整结论与答案，不够像真实过程中的自然续写。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后半段出现“与标准题解一致”等元话语，明显带有事后总结视角，不像是在当前思路中自然继续推导。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文已进入余弦定理代入计算，修复后续却回头重述坐标与相切关系，衔接上有明显回跳和总结式断裂。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "边长计算PQ=2√3、QS=4、PS=2正确，由余弦定理得cos∠Q=√3/2，故最小角为30°，结论无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相较原始后续只算到cos值，修复后续明确完成了角度判定并给出最终答案，确实推进到正确结论。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接给出30°、30-60-90三角形及“与标准题解一致”，暴露了完整结论与答案，不够像真实过程中的自然续写。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

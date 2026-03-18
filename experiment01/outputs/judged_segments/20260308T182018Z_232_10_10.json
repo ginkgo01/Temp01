@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/1354.json",
+  "dataset_idx": 232,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"后半直接给出完整配对与结果，还出现“与标准答案一致”的表述，明显带有事后回看痕迹，不像当下自然思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"前文已在考虑k与1997-k配对及对称性，修复后续沿此展开，整体衔接基本自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"核心配对恒等式正确，1996项分成998对且每对和为1，再加上最后的1/2，得到1997/2无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的停滞与泛泛而谈，修复后续明确抓住正确配对方法，显著推进到正确解。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接暴露了关键配对技巧、计数过程和最终答案，基本等同于完整题解，泄露过多。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "后半直接给出完整配对与结果，还出现“与标准答案一致”的表述，明显带有事后回看痕迹，不像当下自然思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "前文已在考虑k与1997-k配对及对称性，修复后续沿此展开，整体衔接基本自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心配对恒等式正确，1996项分成998对且每对和为1，再加上最后的1/2，得到1997/2无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的停滞与泛泛而谈，修复后续明确抓住正确配对方法，显著推进到正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接暴露了关键配对技巧、计数过程和最终答案，基本等同于完整题解，泄露过多。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

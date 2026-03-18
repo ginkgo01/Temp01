@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/991.json",
+  "dataset_idx": 175,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 45,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"前两步和前文已得到的参数化、候选值高度一致，整体像是在继续核对最小值，基本自然。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"后半段突然转到“令7m接近100”的路线且未从前文显式推导出来，且由检验m=14、15直接跳到m=16有断层。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"“负数会导致|m-n|增大”和“14、15不行所以最近整数解是16”都缺乏充分依据，后一处还有明显逻辑跳步。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续，更明确地锁定了k=4及对应解(16,13)，更接近完整正确结论。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接引入“7m接近100”的标准解题结构，并迅速给出最终解，暴露了较完整的题解框架。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "前两步和前文已得到的参数化、候选值高度一致，整体像是在继续核对最小值，基本自然。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "后半段突然转到“令7m接近100”的路线且未从前文显式推导出来，且由检验m=14、15直接跳到m=16有断层。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "“负数会导致|m-n|增大”和“14、15不行所以最近整数解是16”都缺乏充分依据，后一处还有明显逻辑跳步。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续，更明确地锁定了k=4及对应解(16,13)，更接近完整正确结论。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接引入“7m接近100”的标准解题结构，并迅速给出最终解，暴露了较完整的题解框架。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

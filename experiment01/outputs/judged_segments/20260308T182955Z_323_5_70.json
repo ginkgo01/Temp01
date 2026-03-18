@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/870.json",
+  "dataset_idx": 323,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 70,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"延续了前文反复出现的两条思路：圆排列计数与“AB两侧/交错排列”条件，整体像是顺着已有犹豫自然推进。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"与前文关于固定A、考虑3!=6种顺序、以及三种配对方式的讨论衔接紧密，没有突兀换题。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"中间仍保留了“固定AB后，C和D分别位于两侧的概率为1/2”这一明显不严谨/不正确说法，且“有2种有利排列”未给出充分论证。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续停在错误的0.5直觉上，修复版至少引入了更接近正解的排列/配对计数，并推进到了1/3。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"后半段直接给出三种划分与2/6=1/3，已较明显暴露了标准解法骨架和最终答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "延续了前文反复出现的两条思路：圆排列计数与“AB两侧/交错排列”条件，整体像是顺着已有犹豫自然推进。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "与前文关于固定A、考虑3!=6种顺序、以及三种配对方式的讨论衔接紧密，没有突兀换题。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "中间仍保留了“固定AB后，C和D分别位于两侧的概率为1/2”这一明显不严谨/不正确说法，且“有2种有利排列”未给出充分论证。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续停在错误的0.5直觉上，修复版至少引入了更接近正解的排列/配对计数，并推进到了1/3。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "后半段直接给出三种划分与2/6=1/3，已较明显暴露了标准解法骨架和最终答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

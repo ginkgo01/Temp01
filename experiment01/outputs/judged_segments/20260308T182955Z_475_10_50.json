@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 10,
+  "cut_idx": 50,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"是在前文已建立的方程基础上继续代数求解与验证，像自然的后续推导，不像凭空倒推答案。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"紧接前文的2pq+1/9=47/288与p+q=1/3展开，变量定义和推导步骤都与前缀一致。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"分数运算、设p=1/6+x,q=1/6-x、求得x=1/24及最终p=5/24均正确，且验证无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停在“需要解方程”，修复后续真正解出了pq、p并完成检验，明显推进到正确答案。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"虽然完整解出了题目，但过程是顺着当前思路正常展开，并未生硬引入外部标准题解结构或直接暴露答案。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "是在前文已建立的方程基础上继续代数求解与验证，像自然的后续推导，不像凭空倒推答案。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "紧接前文的2pq+1/9=47/288与p+q=1/3展开，变量定义和推导步骤都与前缀一致。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "分数运算、设p=1/6+x,q=1/6-x、求得x=1/24及最终p=5/24均正确，且验证无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停在“需要解方程”，修复后续真正解出了pq、p并完成检验，明显推进到正确答案。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "虽然完整解出了题目，但过程是顺着当前思路正常展开，并未生硬引入外部标准题解结构或直接暴露答案。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/65.json",
+  "dataset_idx": 177,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 10,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\n    \"label\": \"F\",\n    \"reason\": \"修复稿几乎一步步复现标准解的关键骨架：先判QRS共线，再得PRS等边、QRP=120°、最后出30°，更像已知解法后的回填，不太像前文犹疑状态下自然生长出的思路。\"\n  },\n  \"coherence\": {\n    \"label\": \"T\",\n    \"reason\": \"虽然推进明显加速，但仍能承接前文已有的“相切圆心距为2”和图形位置观察，转向研究Q、R、S与BC的关系，整体没有硬性断裂。\"\n  },\n  \"correctness\": {\n    \"label\": \"T\",\n    \"reason\": \"核心推理正确：Q、R、S三圆同切BC得三心共线，且QR=RS=PR=PS=2，从而PRS为等边三角形，QRP=120°，再由QRP等腰得∠PQS=30°。\"\n  },\n  \"progress\": {\n    \"label\": \"T\",\n    \"reason\": \"相比原始后续只继续算距离，修复稿抓住了真正有效的几何结构，明显更接近并基本抵达正确解。\"\n  },\n  \"non_leakage\": {\n    \"label\": \"F\",\n    \"reason\": \"修复稿已经把标准题解的关键步骤和结论几乎完整展开，泄露程度较高，不像普通做题过程中的中途思考。\"\n  }\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "修复稿几乎一步步复现标准解的关键骨架：先判QRS共线，再得PRS等边、QRP=120°、最后出30°，更像已知解法后的回填，不太像前文犹疑状态下自然生长出的思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "虽然推进明显加速，但仍能承接前文已有的“相切圆心距为2”和图形位置观察，转向研究Q、R、S与BC的关系，整体没有硬性断裂。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "核心推理正确：Q、R、S三圆同切BC得三心共线，且QR=RS=PR=PS=2，从而PRS为等边三角形，QRP=120°，再由QRP等腰得∠PQS=30°。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只继续算距离，修复稿抓住了真正有效的几何结构，明显更接近并基本抵达正确解。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "修复稿已经把标准题解的关键步骤和结论几乎完整展开，泄露程度较高，不像普通做题过程中的中途思考。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

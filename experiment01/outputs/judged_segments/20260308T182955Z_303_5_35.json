@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/geometry/965.json",
+  "dataset_idx": 303,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 35,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"整体语气是试探性的“可能推导出”“若能…”，像是在换思路摸索，并未直接站在已知完整解法和答案的视角。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文正在线性展开坐标方程“展开左边：”，修复后续却突然跳到泛泛的几何讨论，和当前推导链条衔接很差。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"其中“由角平分线定理得出AB/AD = BC/CD”没有依据且一般不成立，存在明显数学错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相比原始后续继续化简已建立的方程，修复后续转为模糊设想且引入错误关系，对逼近正确解帮助更小。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接透露标准解中的关键构造、相似结论、倍数关系或答案，只是笼统提到相似与面积关联。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "整体语气是试探性的“可能推导出”“若能…”，像是在换思路摸索，并未直接站在已知完整解法和答案的视角。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文正在线性展开坐标方程“展开左边：”，修复后续却突然跳到泛泛的几何讨论，和当前推导链条衔接很差。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "其中“由角平分线定理得出AB/AD = BC/CD”没有依据且一般不成立，存在明显数学错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相比原始后续继续化简已建立的方程，修复后续转为模糊设想且引入错误关系，对逼近正确解帮助更小。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接透露标准解中的关键构造、相似结论、倍数关系或答案，只是笼统提到相似与面积关联。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

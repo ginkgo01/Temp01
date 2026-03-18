@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/intermediate_algebra/47.json",
+  "dataset_idx": 78,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 30,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"在已用系数比较几乎解完后，又回头引入导数法并评价其“更高效”，更像事后重构思路，不太像当下自然继续思考。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"先按前文要求验证方程2，再补充双重根的导数检验并复核b，整体能接在前文之后。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"代入检验、导数条件、以及用(x+2)^2(x-b)比较系数得到b=1都正确，没有明显数学错误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只是在反复检查，修复后续完成了验证并实质性收束到正确答案。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"额外暴露了“双重根推出导数为零”这一关键技巧，并几乎给出完整核对过程，题解感较强。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "在已用系数比较几乎解完后，又回头引入导数法并评价其“更高效”，更像事后重构思路，不太像当下自然继续思考。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "先按前文要求验证方程2，再补充双重根的导数检验并复核b，整体能接在前文之后。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "代入检验、导数条件、以及用(x+2)^2(x-b)比较系数得到b=1都正确，没有明显数学错误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只是在反复检查，修复后续完成了验证并实质性收束到正确答案。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "额外暴露了“双重根推出导数为零”这一关键技巧，并几乎给出完整核对过程，题解感较强。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

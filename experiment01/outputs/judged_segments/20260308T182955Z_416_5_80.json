@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 80,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"承接前文已基本求出sin18°=(√5-1)/4，接着代入原式直接算是自然可产生的后续思路。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"从前文反复确认sin18°的值，过渡到“既然已知就代入计算”很顺，没有引入前文未铺垫的新关键结论。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"平方、因式分解、通分与乘法展开都正确，最终得到1/8无误。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续的重复纠结，这段明确推进了计算并成功得到正确结果。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"采用的是前文已得到的sin18°精确值做直接代算，没有硬搬标准题解结构，也无明显‘已知答案倒推’痕迹。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "承接前文已基本求出sin18°=(√5-1)/4，接着代入原式直接算是自然可产生的后续思路。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "从前文反复确认sin18°的值，过渡到“既然已知就代入计算”很顺，没有引入前文未铺垫的新关键结论。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "平方、因式分解、通分与乘法展开都正确，最终得到1/8无误。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续的重复纠结，这段明确推进了计算并成功得到正确结果。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "采用的是前文已得到的sin18°精确值做直接代算，没有硬搬标准题解结构，也无明显‘已知答案倒推’痕迹。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

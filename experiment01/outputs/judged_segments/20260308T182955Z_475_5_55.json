@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/counting_and_probability/1003.json",
+  "dataset_idx": 475,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 55,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"F\", \"reason\": \"出现“根据标准题解”这种明显站在已知完整解法视角的表述，不像顺着前文自然思考得出。\"},\n  \"coherence\": {\"label\": \"T\", \"reason\": \"内容紧接前文的式子2pq+1/9展开，继续利用p+q=1/3求解，整体衔接基本自然。\"},\n  \"correctness\": {\"label\": \"T\", \"reason\": \"方程建立与计算均正确：由2pq+1/9=47/288得pq=5/192，再结合p+q=1/3解得p=5/24。\"},\n  \"progress\": {\"label\": \"T\", \"reason\": \"相比原始后续只停在列方程，修复后续完成了求解并得到正确结果，明显推进了解题。\"},\n  \"non_leakage\": {\"label\": \"F\", \"reason\": \"直接引用“标准题解”并基本完整复现求解路径，暴露了外部答案信息，泄露感较强。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "F",
+        "reason": "出现“根据标准题解”这种明显站在已知完整解法视角的表述，不像顺着前文自然思考得出。"
+      },
+      "coherence": {
+        "label": "T",
+        "reason": "内容紧接前文的式子2pq+1/9展开，继续利用p+q=1/3求解，整体衔接基本自然。"
+      },
+      "correctness": {
+        "label": "T",
+        "reason": "方程建立与计算均正确：由2pq+1/9=47/288得pq=5/192，再结合p+q=1/3解得p=5/24。"
+      },
+      "progress": {
+        "label": "T",
+        "reason": "相比原始后续只停在列方程，修复后续完成了求解并得到正确结果，明显推进了解题。"
+      },
+      "non_leakage": {
+        "label": "F",
+        "reason": "直接引用“标准题解”并基本完整复现求解路径，暴露了外部答案信息，泄露感较强。"
+      }
+    },
+    "attempts_used": 1
+  }
+}

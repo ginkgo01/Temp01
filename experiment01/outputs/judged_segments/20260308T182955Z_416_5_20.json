@@ -1,0 +1,34 @@
+{
+  "case_uid": "test/precalculus/681.json",
+  "dataset_idx": 416,
+  "source": "success",
+  "l_value": 5,
+  "cut_idx": 20,
+  "judge": {
+    "parsed_ok": true,
+    "raw_output": "{\n  \"truthfulness\": {\"label\": \"T\", \"reason\": \"整体语气仍是试探性探索，没有直接站在已知完整解法的视角倒推，像是做题中途的真实犹豫。\"},\n  \"coherence\": {\"label\": \"F\", \"reason\": \"前文已经进入五倍角方程并开始比较因式分解系数，修复后续却突然退回去重新讨论sin18°精确值，衔接明显断裂。\"},\n  \"correctness\": {\"label\": \"F\", \"reason\": \"把sin18°写成“(√5-1)/4×2”明显混乱，且“1+sin18°可转化为2sin²(...)”的说法含糊且基本不成立，存在数学错误。\"},\n  \"progress\": {\"label\": \"F\", \"reason\": \"相较原始后续继续完成因式分解，修复后续更多是在来回犹豫和重复旧思路，对求出结果的推进更弱。\"},\n  \"non_leakage\": {\"label\": \"T\", \"reason\": \"没有直接暴露标准答案，也没有完整复现标准题解结构，仍保持在普通尝试阶段。\"}\n}",
+    "metrics": {
+      "truthfulness": {
+        "label": "T",
+        "reason": "整体语气仍是试探性探索，没有直接站在已知完整解法的视角倒推，像是做题中途的真实犹豫。"
+      },
+      "coherence": {
+        "label": "F",
+        "reason": "前文已经进入五倍角方程并开始比较因式分解系数，修复后续却突然退回去重新讨论sin18°精确值，衔接明显断裂。"
+      },
+      "correctness": {
+        "label": "F",
+        "reason": "把sin18°写成“(√5-1)/4×2”明显混乱，且“1+sin18°可转化为2sin²(...)”的说法含糊且基本不成立，存在数学错误。"
+      },
+      "progress": {
+        "label": "F",
+        "reason": "相较原始后续继续完成因式分解，修复后续更多是在来回犹豫和重复旧思路，对求出结果的推进更弱。"
+      },
+      "non_leakage": {
+        "label": "T",
+        "reason": "没有直接暴露标准答案，也没有完整复现标准题解结构，仍保持在普通尝试阶段。"
+      }
+    },
+    "attempts_used": 1
+  }
+}
